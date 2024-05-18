@@ -143,7 +143,15 @@ body {
 
 .imgMain {
   width: 100%;
+  margin: 10px auto;
   margin-top: 100px;
+  height: 100vh;
+  box-shadow: 2px 2px 2px 4px #b6c6ca;
+}
+h1,
+h2 {
+  color: #00536a;
+  text-align: center;
 }
 #bloc {
   display: flex;
@@ -151,11 +159,18 @@ body {
   justify-content: space-around;
   align-items: center;
   width: 80%; /* Par exemple */
-  margin: 0 auto;
+  margin: 80px auto;
   gap: 60px;
+  background-color: #ced5db;
 }
 .imgBloc {
   width: 600px;
+}
+.myP {
+  font-size: 1.2rem;
+  overflow: hidden;
+  width: 70%;
+  margin: 80px auto;
 }
 p {
   width: 500px;
@@ -163,9 +178,11 @@ p {
   overflow: hidden;
 }
 .block-wrapper {
-  background-color: #ced5db;
-  width: 400px;
+  width: 540px;
   overflow: hidden;
+}
+.title-wrapper {
+  font-size: 2rem;
 }
 .content {
   overflow: hidden;
@@ -174,5 +191,15 @@ p {
 h4 {
   display: inline-block;
   text-align: center;
-  width: 50%;
+  width: 100%;
+  font-size: 1.2rem;
+}
+.svg-inline {
+  font-size: 30px;
+  z-index: 1;
+  width: 14%;
+  display: block;
+  align-self: center;
+  position: relative;
+  left: 30%;
 }
