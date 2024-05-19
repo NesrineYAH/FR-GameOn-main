@@ -143,10 +143,28 @@
 
             </a>
         </div>
+
+
+        <ol class="breadcrumb" data-crumb-count="2" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+            <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                <a href="https://festirun.inclusif-et-solidaire.org/" itemprop="item"><span
+                        itemprop="name">Accueil</span></a>
+            </li>
+            /
+            <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                <a href="https://festirun.inclusif-et-solidaire.org/" title="Festi'Run 2024" itemprop="item">Festival
+                    2024</a>
+            </li>
+            /
+            <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                Devenez bénévole le temps du Festi'Run</li>
+        </ol>
+
+
         <img class="imgMain" src="../assetes/images/ben.png" alt="image de benevelat" />
 
         <h1>Devenez bénévole le temps du Festi'Run</h1>
-        <section>
+        <section id="sectionI">
             <article id="bloc">
                 <p>Le Festival handicap, est bien plus qu'une simple course caritative. C'est
                     un événement sportif qui incarne l'esprit de solidarité et d'inclusion de notre association. Et au
@@ -174,7 +192,7 @@
 
         <h2>Pourquoi devenir bénévole ?</h2>
 
-        <section>
+        <section id="sectionII">
             <article id="bloc">
 
                 <div class="block-wrapper">
@@ -208,9 +226,7 @@
 
                 <div class="block-wrapper">
                     <h4 class="title-wrapper">Être au cœur de l'action</h4>
-
-                    <svg data-v-03b69ec8="" class="svg-inline fa-heart icon" aria-hidden="true" focusable="false"
-                        data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg"
+                    <svg class="svg-inline fa-heart " role="img" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 512 512">
                         <path class="" fill="currentColor"
                             d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z">
@@ -224,42 +240,36 @@
             </article>
         </section>
 
-        <div class="newletter newsletter" id="newsletter_0" data-component-name="Newsletter"
-            data-instance="newsletter-0">
-            <section data-v-86b83e72=""
-                class="default-newsletter position-relative default-background py-4 py-lg-50 px-lg-0" data-order=""
-                style="--3fbb430c: var(--fp-theme-color); --46e0c5c3: #999999; --260ba9c7: #faf2e7; --68c67b9f: #000000; --1c0398bc: var(--fp-theme-color); --36536ee4: #e3e3e3; --35ba2ceb: #ffffff;">
-                <!---->
-                <div data-v-ad9ab1e2="" data-v-86b83e72="" class="background-image"
-                    style="--1bb6a68d: 1; --5e02542b: top left; --1112c11d: no-repeat; --bda127fa: cover;"></div>
-                <div data-v-86b83e72="" class="container">
-                    <div data-v-86b83e72="" class="row g-0">
-                        <div data-v-86b83e72="" class="col-lg-10 offset-lg-1">
-                            <div data-v-86b83e72="" class="newsletter-wrapper row">
-                                <div data-v-86b83e72="" class="left-side col-12 col-lg-7 intro">
-                                    <h3 data-v-86b83e72="" class="text-start">Inscrivez-vous à notre newsletter</h3>
-                                    <p data-v-86b83e72="" class="mb-0 text-start">Vous souhaitez rester au courant de
-                                        l'actualité de notre association ? Abonnez-vous à notre newsletter !</p>
-                                </div>
-                                <div data-v-86b83e72="" class="right-side col-12 col-lg-5 mt-3 mt-md-0">
-                                    <div data-v-86b83e72="" role="button" href="" target="_blank"
-                                        class="fake-input newsletter_email text-uppercase"><span
-                                            data-v-86b83e72="">Indiquez votre adresse e-mail</span><span
-                                            data-v-86b83e72="" class="icon"><svg data-v-86b83e72=""
-                                                class="svg-inline--fa fa-arrow-right-long" aria-hidden="true"
-                                                focusable="false" data-prefix="fas" data-icon="arrow-right-long"
-                                                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                <path class="" fill="currentColor"
-                                                    d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z">
-                                                </path>
-                                            </svg></span></div>
+        <section class="newletter newsletter" id="newsletter_0" data-component-name="Newsletter">
+            <section class="default-newsletter">
+
+                <div class="container">
+                    <div class="row g-0">
+
+                        <div class="newsletter-wrapper row">
+                            <div class="left-side col-12 col-lg-7 intro">
+                                <h3 class="text-start">Inscrivez-vous à notre newsletter</h3>
+                                <p>Vous souhaitez rester au courant de
+                                    l'actualité de notre association ? Abonnez-vous à notre newsletter !</p>
+                            </div>
+                            <div class="right-side">
+                                <div role="button" href="" target="_blank" class="fake-input">
+                                    <input type=" Abonnez-vous à notre newsletter !" />
+                                    <span class="icon"><svg class="fa fa-arrow" aria-hidden="true" focusable="false"
+                                            data-prefix="fas" data-icon="arrow-right-long" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path class="" fill="currentColor"
+                                                d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z">
+                                            </path>
+                                        </svg></span>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div><!---->
             </section>
-        </div>
+        </section>
 
 
 
@@ -276,7 +286,24 @@
 </html>
 
 
+<!--
+<div class="modal-dialog"><div class="modal-content">
+    <div class="modal-header ">
+        <div class="modal-header-inner align-items-center d-flex justify-content-between w-100">
+            <svg class="svg-inline--fa fa-envelope" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path class="" fill="currentColor" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"></path></svg><button type="button" class="btn-close p-0" data-bs-dismiss="modal" aria-label="Close"><svg class="svg-inline--fa fa-xmark" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                <path class="" fill="currentColor" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"></path></svg></button></div></div><div class="modal-body"><h5>Inscrivez-vous à notre newsletter</h5><p>Vous souhaitez rester au courant de l'actualité de notre association ? Abonnez-vous à notre newsletter !</p><form method="post" class="mt-30"><div class="form-floating mb-3 text-start"><input id="floatingInput" type="email" name="email" class="form-control" placeholder="' '">
+                    <label for="floatingInput" class="mandatory">Adresse e-mail</label>
+                    <div class="invalid-feedback"></div></div><div class="form-fancy-toggle text-start mb-3">
+                        <input id="download_accept" type="checkbox" name="accept" class="fancy-toggle">
+                        <label for="download_accept" class="checkbox-label">Oui, je souhaite recevoir la newsletter <span></span>
+                        </label></div><button data-v-1dc6f706="" type="submit" class="disabled btn btn-primary default-btn disabled">
+                            Connecter</button><p class="mt-3">Lisez la déclaration de confidentialité <a href="/vie-privee" target="_blank">ici</a>
+                            </p></form></div></div></div>
 
+
+
+
+-->
 
 
 

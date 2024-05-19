@@ -1,13 +1,4 @@
 /* styles.css */
-body {
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background-color: #f0f0f0;
-}
 
 .container {
   text-align: center;
@@ -62,7 +53,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   position: absolute;
-  right: 0.5%;
+  right: 1%;
   top: 45%;
   cursor: pointer;
   width: 50px;
@@ -81,6 +72,7 @@ button:hover {
   width: 45px;
   padding-top: 10px;
   padding-bottom: 10px;
+  z-index: 100;
 }
 .share-item {
   width: 45px;
@@ -94,6 +86,10 @@ body {
   max-width: 1600px;
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f0f0f0;
 }
 
 /* HEADER */
@@ -104,17 +100,18 @@ body {
   background-color: #00536a;
   height: 70px;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 2%;
-  margin-bottom: 100px;
+  z-index: 100;
 }
-
+header a {
+  text-decoration: none;
+}
 .flag {
-  font-size: 24px;
+  font-size: 18px;
   color: #fff;
 }
 #nav-lang-fr {
-  font-size: 24px;
   color: #fff;
 }
 .listHeader {
@@ -140,13 +137,26 @@ body {
   justify-content: space-between;
   width: 10%;
 }
-
+.breadcrumb {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 25px;
+  color: #00536a;
+  position: absolute;
+  left: 0.5%;
+  top: 14%;
+  text-align: start;
+}
 .imgMain {
-  width: 100%;
-  margin: 10px auto;
-  margin-top: 100px;
-  height: 100vh;
-  box-shadow: 2px 2px 2px 4px #b6c6ca;
+  width: 94%;
+  margin: 14rem auto;
+  position: relative;
+  left: 2.8%;
+  height: 70vh;
+  box-shadow: 2px 2px 2px 2px #b6c6ca;
+  border-radius: 4px;
+  z-index: -1;
 }
 h1,
 h2 {
@@ -161,7 +171,6 @@ h2 {
   width: 80%; /* Par exemple */
   margin: 80px auto;
   gap: 60px;
-  background-color: #ced5db;
 }
 .imgBloc {
   width: 600px;
@@ -182,24 +191,47 @@ p {
   overflow: hidden;
 }
 .title-wrapper {
-  font-size: 2rem;
-}
-.content {
-  overflow: hidden;
-  font-size: 20px;
-}
-h4 {
+  font-size: 1.2rem;
   display: inline-block;
   text-align: center;
   width: 100%;
-  font-size: 1.2rem;
 }
+.content {
+  overflow: hidden;
+  font-size: 16px;
+  width: 90%;
+  padding: 2rem 3rem 0 3rem;
+}
+
 .svg-inline {
-  font-size: 30px;
+  margin-top: 10px;
   z-index: 1;
-  width: 14%;
+  width: 8%;
   display: block;
   align-self: center;
   position: relative;
-  left: 30%;
+  left: 45%;
+}
+#sectionII {
+  background-color: #e4e4e3;
+  height: 60vh;
+}
+
+.right-side .fake-input {
+  align-items: center;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 0.5px;
+  display: flex;
+  height: 52px;
+  width: 252px;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: absolute;
+  right: 10%;
+}
+.fa {
+  position: relative;
+  top: 15px;
+  right: 10%;
 }
