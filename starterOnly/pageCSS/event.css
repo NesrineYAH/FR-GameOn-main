@@ -62,8 +62,8 @@
   width: 50px;
   height: 2.5rem;
 }
-.social-inner.background-social .share-item [data-v-85211400],
-.social-inner.background-social .share-item[data-v-85211400] {
+.social-inner.background-social .share-item,
+.social-inner.background-social .share-item {
   color: #fff;
   text-decoration: none;
 }
@@ -354,4 +354,22 @@ h3 {
 li {
   color: #000;
   display: block;
+}
+.btn-social-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#footer-links {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.link-box,
+.text-link {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #00536a;
 }

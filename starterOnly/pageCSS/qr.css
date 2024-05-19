@@ -150,7 +150,7 @@ header a {
 }
 .imgMain {
   width: 94%;
-  margin: 14rem auto;
+  margin: 12rem auto;
   position: relative;
   left: 2.8%;
   height: 70vh;
@@ -206,7 +206,8 @@ p {
 .svg-inline {
   margin-top: 10px;
   z-index: 1;
-  width: 8%;
+  width: 16%;
+  color: #870789;
   display: block;
   align-self: center;
   position: relative;
@@ -257,4 +258,22 @@ p {
   width: 80%;
   margin: 0 auto;
   gap: 10em;
+}
+.btn-social-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#footer-links {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.link-box,
+.text-link {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #00536a;
 }
