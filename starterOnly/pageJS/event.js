@@ -4,7 +4,7 @@ const totalSlides = slides.length; //9
 
 function showSlide(index) {
   slides.forEach((slide, i) => {
-    slide.style.transform = `translateX(${200 * (i - index)}%)`;
+    slide.style.transform = `translateX(${100 * (i - index)}%)`;
   });
 }
 
@@ -21,7 +21,7 @@ function autoNextSlide() {
   nextSlide(); // Appel de la fonction nextSlide
 }
 // Appeler autoNextSlide toutes les 3 secondes (par exemple) à reactiver la ligne 24
-//const intervalId = setInterval(autoNextSlide, 10000);
+const intervalId = setInterval(autoNextSlide, 5000);
 showSlide(currentIndex);
 
 function openSidebar() {

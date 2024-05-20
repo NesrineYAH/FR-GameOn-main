@@ -2,7 +2,8 @@
 
 .carousel {
   margin: auto;
-  width: 94%;
+  width: 91.4%;
+  padding: 1px;
 }
 
 .carousel-images {
@@ -145,8 +146,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.4rem;
-  border: 2px solid #ccc;
+  font-size: 1rem;
 }
 
 /*  SIDE */
@@ -176,14 +176,14 @@ p {
   border: 1px solid #fff;
 }
 .sidebar {
-  margin-right: 4.5rem;
+  margin-right: 5.2rem;
   width: 25rem;
   height: auto;
-  background-color: #218838;
+  background-color: #3bd45c;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 10px;
-  border-radius: 10px;
+  border-radius: 2px;
 }
 h2 {
   display: block;
@@ -201,76 +201,73 @@ h2 {
 /* gOBAL*/
 
 .globle {
-  background-color: #ddd3d3;
+  background-color: #f7fefe;
   width: inherit;
-  height: 70%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 50px;
-  gap: 50px;
+  margin: 0 50px 150px 50px;
+  gap: 10px;
 }
 .globleCard {
-  width: 400px;
-  height: 320px;
-  border: 2px solid #218838;
-  border-radius: 10px;
+  width: 460px;
+  height: 500px;
 }
+
 .detail {
   overflow: hidden;
-  margin-top: -250px;
-  color: #3e0eea;
-  font-weight: bolder;
+  width: 99.5%;
+  font-weight: 500;
   opacity: 1;
+  /* border: 2px solid #e0e8e2;*/
+}
+.detail p {
+  overflow: hidden;
+  margin-top: -26px;
 }
 .globleCard img {
   width: 100%;
   height: 320px;
-  border-radius: 10px;
-  border: 2px solid #218838;
   opacity: 1;
 }
 .btn-submit {
-  width: 140px;
-  font-size: 105%;
-  background: #098254;
-  background: #fff;
+  width: 120px;
+  font-size: 14px;
+  background: #c2c5c3;
   z-index: 1;
-  display: flex;
-  margin: auto;
   color: #098254;
   padding: 0.5rem;
   cursor: pointer;
   display: block;
-  align-self: center;
-  transform: skewX(-10deg);
+  align-self: self-start;
+  margin-left: 10px;
+  /* transform: skewX(-7deg);
+   margin: auto;*/
 }
 .fa-solid,
 .fa-caret-right {
   position: absolute;
   top: 52%;
   margin-top: -4px;
-  margin-left: 4px;
+  margin-left: 0px;
   width: 0;
   height: 0;
   font-weight: bolder;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
   transition: all 0.3s ease;
-  right: 14px;
+  right: 16px;
   border-left: 12px solid #009044;
 }
 
 h3 {
-  /*display: block;
-  align-self: center;
-  transform: skewX(-10deg);
-  background: #098254;
-  border: 2px solid #218838;*/
-  padding: 0.3rem;
-  width: 48%;
+  text-align: start;
+  padding: 18px;
+  margin-top: -7px;
+  background-color: #1bb57a;
 }
 .footerNavigation {
   display: flex;
@@ -295,7 +292,7 @@ h3 {
   height: 60%;
   transform: translateY(-50%) skewX(-15deg);
   background-color: #312727;
-}*/
+}
 .footerSocial {
   height: 100%;
   display: flex;
@@ -338,8 +335,6 @@ h3 {
   opacity: 1;
   background-color: #969c99;
 }
-/*
-
 */
 .icon {
   text-transform: none;
@@ -355,6 +350,9 @@ li {
   color: #000;
   display: block;
 }
+footer {
+  margin-top: 280px;
+}
 .btn-social-holder {
   display: flex;
   flex-direction: row;
@@ -362,14 +360,16 @@ li {
 }
 #footer-links {
   width: 60%;
+  height: 90px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
 }
 .link-box,
 .text-link {
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #00536a;
 }
