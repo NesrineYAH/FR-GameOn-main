@@ -201,7 +201,7 @@ h2 {
 /* gOBAL*/
 
 .globle {
-  background-color: #f7fefe;
+  background-color: #ebf7f7;
   width: inherit;
   height: 100%;
   display: flex;
@@ -218,16 +218,15 @@ h2 {
 }
 
 .detail {
-  overflow: hidden;
-  width: 99.5%;
   font-weight: 500;
-  opacity: 1;
-  /* border: 2px solid #e0e8e2;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #1bb57a;
+  margin-top: -4px;
+  /*border: 2px solid #141514;*/
 }
-.detail p {
-  overflow: hidden;
-  margin-top: -26px;
-}
+
 .globleCard img {
   width: 100%;
   height: 320px;
@@ -265,10 +264,46 @@ h2 {
 
 h3 {
   text-align: start;
-  padding: 18px;
+  padding: 15px;
   margin-top: -7px;
-  background-color: #1bb57a;
+  color: #ffff;
+  font-size: 1rem;
+  width: 96%;
 }
+.btn {
+  margin: 10px 0;
+  padding: 10px 20px;
+  /*  background-color: #007bff;*/
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #0056b3;
+}
+.fa-regular {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 10px 0;
+  padding: 12px;
+  background-color: #c9cfd6;
+  color: #fff;
+  cursor: pointer;
+  height: 10px;
+  padding: 12px;
+}
+.fa-regular ::before {
+  color: #fff;
+  font-size: 15px;
+}
+.content {
+  display: block;
+  width: 94%;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  opacity: 1;
+}
+
 .footerNavigation {
   display: flex;
   flex-direction: row;
