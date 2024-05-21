@@ -33,8 +33,8 @@ function closeSidebar() {
 }
 
 // pour afficher le content
-function toggleContent() {
-  var content = document.getElementById("content");
+function toggleContent(contentId) {
+  var content = document.getElementById(contentId);
   if (content.style.display === "none" || content.style.display === "") {
     content.style.display = "block";
   } else {
