@@ -21,7 +21,7 @@ function autoNextSlide() {
   nextSlide(); // Appel de la fonction nextSlide
 }
 // Appeler autoNextSlide toutes les 3 secondes (par exemple) à reactiver la ligne 24
-const intervalId = setInterval(autoNextSlide, 5000);
+const intervalId = setInterval(autoNextSlide, 3000);
 showSlide(currentIndex);
 
 function openSidebar() {
