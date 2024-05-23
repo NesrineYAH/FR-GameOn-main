@@ -149,7 +149,7 @@ header a {
 }
 .imgMain {
   width: 94%;
-  margin: 12rem auto;
+  margin: 10rem auto;
   position: relative;
   left: 2.8%;
   height: 70vh;
@@ -170,6 +170,9 @@ h2 {
   width: 80%; /* Par exemple */
   margin: 80px auto;
   gap: 60px;
+}
+.sectionI {
+  margin: 0px auto;
 }
 .imgBloc {
   width: 600px;
@@ -219,8 +222,7 @@ p {
   left: 45%;
 }
 #sectionII {
-  background-color: #e4e4e3;
-  height: 60vh;
+  height: 70vh;
 }
 
 .right-side {
@@ -256,11 +258,15 @@ p {
   margin-bottom: -25px;
   color: #00536a;
 }
+#sectionIII {
+  background-color: #e2f1d7;
+  height: 40vh;
+}
 .newsletter-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 5rem;
+  padding-top: 5rem;
   width: 80%;
   margin: 0 auto;
   gap: 10em;
