@@ -11,6 +11,7 @@ function editNav() {
 // DOM Elements
 const modalbg = document.querySelector(".bground"); //responsable d'affichage du form
 const modalBtn = document.querySelectorAll(".modal-btn");
+const modalSignin = document.querySelectorAll(".modal-signIN");
 const formData = document.querySelectorAll(".formData");
 const form = document.forms["reserve"]; //  une référence au formulaire HTML nommé "reserve"
 
@@ -308,3 +309,39 @@ function close_modal2() {
 }
 ////ecoute  le click de closeModal
 document.getElementById("closeModal").addEventListener("click", close_modal);
+
+//////////////////////////////////////////////////////////////////
+
+modalSignin.forEach((btn) => btn.addEventListener("click", login));
+
+async function login(username, password) {
+  const url = "https://example.com/api/login"; // Remplacez par l'URL de votre serveur
+
+  //currentUser
+  const currentUser = {
+    username: username,
+    password: password,
+  };
+
+  try {
+    const response = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(currentUser),
+    });
+
+    if (!response.ok) {
+      throw new Error("Network response was not ok " + response.statusText);
+    }
+
+    const data = await response.json();
+    console.log("Login successful:", data);
+
+    // Vous pouvez stocker le token de session ou d'autres informations de connexion ici
+    // localStorage.setItem('token', data.token);
+  } catch (error) {
+    console.error("There was a problem with the login request:", error);
+  }
+}

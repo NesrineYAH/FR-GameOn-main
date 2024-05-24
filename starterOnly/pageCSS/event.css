@@ -1,10 +1,9 @@
 /* CAROUSEL */
 
 .carousel {
-  margin: auto;
+  margin: 5.4rem auto;
   width: 91.4%;
 }
-
 .carousel-images {
   display: flex;
   overflow: hidden;
@@ -103,7 +102,7 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  right: 0%;
+  right: 0.5%;
   top: 45%;
   cursor: pointer;
   width: 50px;
@@ -356,16 +355,6 @@ h3 {
   font-size: 14px;
   box-shadow: 1px 1px 0.2px 0.2px #9dfed4;
 }
-
-.footerNavigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: #373434;
-  width: 110%;
-  height: 300px;
-}
-
 .icon {
   text-transform: none;
   line-height: 1;
@@ -381,10 +370,10 @@ li {
   display: block;
 }
 footer {
-  margin-top: 280px;
   background: #9da4a6;
   padding: 2rem;
   background: #353333;
+  margin-top: 6rem;
 }
 .btn-social-holder {
   display: flex;
