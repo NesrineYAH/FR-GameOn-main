@@ -384,6 +384,7 @@ footer {
   margin-top: 280px;
   background: #9da4a6;
   padding: 2rem;
+  background: #353333;
 }
 .btn-social-holder {
   display: flex;
@@ -403,5 +404,11 @@ footer {
 .text-link {
   text-decoration: none;
   font-size: 1.2rem;
-  color: #00536a;
+  color: #f6fafb;
+  font-weight: bold;
+}
+.text--sm {
+  font-size: 1.2rem;
+  color: #f6fafb;
+  font-weight: bold;
 }

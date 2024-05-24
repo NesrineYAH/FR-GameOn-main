@@ -68,24 +68,35 @@
         gap: 1.2rem;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(auto, 41.6rem));
+
+        align-items: center;
         width: 100%;
         position: absolute;
         top: 30%;
+        background-color: #cdc7c7;
+        z-index: -1;
     }
-
-
 
     .styles__Picture-sc-3cfb7849-0 {
         display: flex;
         padding: 4px;
-        width: 50px;
+        width: 45px;
         height: 40px;
-        background-color: #fcfafa;
+        background-color: #cdc7c7;
         color: #0000;
+        z-index: 1;
     }
 
     .ls-is-cached {
         color: #0000;
+        padding: 3px;
+
+    }
+
+    .sc-cZPjdL {
+        width: 50px;
+        margin-right: 20px;
+        z-index: 1;
     }
 
     .eZEbUT {
@@ -93,13 +104,14 @@
     }
 
     .hdzmqC {
+        z-index: -1;
         align-items: center;
         border-radius: 0.4rem;
         padding-left: 15px;
         display: flex;
         gap: 2rem;
         height: 6.5rem;
-        max-width: 30rem;
+        max-width: 28rem;
         overflow: hidden;
         position: relative;
         background: linear-gradient(90deg, rgb(2, 35, 102) 0%, rgb(97, 207, 255) 100%);
@@ -118,9 +130,11 @@
         background: linear-gradient(270deg, rgb(2, 35, 102) 0%, rgb(97, 207, 255) 100%);
     }
 
+
     .grid-container {
         display: flex;
         flex-direction: row;
+
     }
 
     .bdhYQI {
@@ -135,6 +149,66 @@
         overflow: hidden;
         text-overflow: ellipsis;
         z-index: 0;
+    }
+
+
+
+    a {
+        color: currentcolor;
+        text-decoration: none;
+    }
+
+    .gwPPZL {
+        align-items: center;
+        border-radius: 0.4rem;
+        display: flex;
+        height: 8rem;
+        max-width: 34.3rem;
+        overflow: hidden;
+        position: relative;
+        background: linear-gradient(90deg, rgb(0, 56, 83) 0%, rgb(23, 183, 176) 100%);
+    }
+
+    .hdzmqC.style-3::before {
+        border-radius: 80% 0px;
+        content: "";
+        display: block;
+        height: 0px;
+        padding-bottom: 100%;
+        position: absolute;
+        left: 40%;
+        top: -165%;
+        transform: rotate(45deg);
+        width: 100%;
+        background: linear-gradient(rgb(0, 56, 83) 0%, rgb(23, 183, 176) 100%);
+    }
+
+    .hdzmqC.style-1::before {
+        border-top-right-radius: 100%;
+        content: "";
+        display: block;
+        height: 0px;
+        left: 0px;
+        /*  left:18%;*/
+        padding-bottom: 100%;
+        position: absolute;
+        top: -10%;
+        width: 100%;
+        background: linear-gradient(270deg, rgb(0, 56, 83) 0%, rgb(23, 183, 176) 100%);
+    }
+
+    .hdzmqC.style-2::before {
+        border-radius: 80% 0px;
+        content: "";
+        display: block;
+        height: 0px;
+        left: 0%;
+        padding-bottom: 110%;
+        position: absolute;
+        top: -320%;
+        transform: rotate(-45deg);
+        width: 110%;
+        background: linear-gradient(45deg, rgb(0, 56, 83) 0%, rgb(23, 183, 176) 100%);
     }
 </style>
 
@@ -159,6 +233,7 @@
                 </div>
             </div>
         </div>
+
         <div class="sc-bMHuHF gmhevn">
             <a data-cy="link" class="sc-jwjRgV hdzmqC style-0"
                 href="https://cloud.contact.paris2024.org/redirection_ticketing_app" data-tracking="click"
@@ -166,7 +241,6 @@
                 alt="Retrouvez vos billets" target="_blank">
                 <div class="sc-cZPjdL iVTsac">
                     <picture data-cy="picture-wrapper" class="styles__Picture-sc-3cfb7849-0 eZEbUT sc-cLpwDS iwSapK">
-
                         <img loading="lazy" alt="Retrouvez vos billets" class="ls-is-cached lazyloaded"
                             data-src="https://img.olympics.com/images/image/private/t_original/primary/vvnq94vok7ojxuhoykt5"
                             src="https://img.olympics.com/images/image/private/t_original/primary/vvnq94vok7ojxuhoykt5"
@@ -232,7 +306,8 @@
                             title="">
                     </picture>
                 </div><span class="sc-bdnyFh cFgERw sc-jhKeHc bdhYQI text--l-body">Préparez votre voyage</span>
-            </a><a data-cy="link" class="sc-jwjRgV hdzmqC style-1"
+            </a>
+            <a data-cy="link" class="sc-jwjRgV hdzmqC style-1"
                 href="https://www.airbnb.fr/e/paris2024stays?c=.pi129.pkparis2024_gamestime_fr" data-tracking="click"
                 data-tracking-payload="{&quot;content_id&quot;:&quot;8c8ad431-f73a-4980-af92-a5529608e904&quot;,&quot;destination_url&quot;:&quot;https://www.airbnb.fr/e/paris2024stays?c=.pi129.pkparis2024_gamestime_fr&quot;,&quot;link_tag&quot;:&quot;Réservez votre Airbnb&quot;,&quot;module_instance&quot;:&quot;Action collection&quot;,&quot;translation_id&quot;:&quot;12810911-39ce-4d81-9129-d2d5c9258b41&quot;,&quot;module&quot;:&quot;get ready for the games&quot;,&quot;module_position&quot;:&quot;6&quot;}"
                 alt="Réservez votre Airbnb" target="_blank">
@@ -248,7 +323,8 @@
                             title="">
                     </picture>
                 </div><span class="sc-bdnyFh cFgERw sc-jhKeHc bdhYQI text--l-body">Réservez votre Airbnb</span>
-            </a><a data-cy="link" class="sc-jwjRgV hdzmqC style-2"
+            </a>
+            <a data-cy="link" class="sc-jwjRgV hdzmqC style-2"
                 href="https://shop.olympics.com/fr/paris-2024/t-1299990829+z-949567-2073334460?_s=bm-fi-ioc-prtsite-P24-CTA-mosaic-fr-nl"
                 data-tracking="click"
                 data-tracking-payload="{&quot;content_id&quot;:&quot;8150e360-7aaf-4c39-bf25-52112d2569fb&quot;,&quot;destination_url&quot;:&quot;https://shop.olympics.com/fr/paris-2024/t-1299990829+z-949567-2073334460?_s=bm-fi-ioc-prtsite-P24-CTA-mosaic-fr-nl&quot;,&quot;link_tag&quot;:&quot;Achetez des produits&quot;,&quot;module_instance&quot;:&quot;Action collection&quot;,&quot;translation_id&quot;:&quot;70523106-6bb0-4a35-a477-cf0787a6b9cf&quot;,&quot;module&quot;:&quot;get ready for the games&quot;,&quot;module_position&quot;:&quot;7&quot;}"
