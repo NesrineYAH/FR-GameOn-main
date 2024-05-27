@@ -96,9 +96,7 @@
 /* bloc social media  */
 
 .social-inner {
-  height: var(--item-size);
   justify-content: center;
-  width: var(--item-size);
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -118,7 +116,7 @@
   align-items: center;
   height: 1.2em;
   overflow: visible;
-  width: 45px;
+  width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -373,12 +371,12 @@ footer {
   background: #9da4a6;
   padding: 2rem;
   background: #353333;
-  margin-top: 6rem;
 }
 .btn-social-holder {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 40px;
 }
 #footer-links {
   width: 60%;

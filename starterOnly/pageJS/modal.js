@@ -310,6 +310,58 @@ function close_modal2() {
 ////ecoute  le click de closeModal
 document.getElementById("closeModal").addEventListener("click", close_modal);
 
+function show(e) {
+  e.preventDefault;
+  const showDisplay = `    
+  <div id="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+          <div class="modal-header-inner">
+              <svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas"
+                  data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                  <path class="" fill="currentColor"
+                      d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
+                  </path>
+              </svg>
+              <button type="button" class="btn-close p-0" data-bs-dismiss="modal" aria-label="Close">
+                  <svg class="svg-inline--fa fa-xmark" aria-hidden="true" focusable="false" data-prefix="fas"
+                      data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                      <path class="" fill="currentColor"
+                          d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                      </path>
+                  </svg>
+              </button>
+          </div>
+      </div>
+      <div class="modal-body">
+          <h5>Tiens-moi au courant</h5>
+          <p>Voulez-vous recevoir les dernières actus de cette page, inscrivez-vous ici. Vous recevrez une
+              notification par e-mail chaque fois qu'un article est publié.</p>
+          <form method="post" class="mt-30">
+              <div class="form-floating"><input id="floatingInput" type="email" name="email" class="form-control"
+                      placeholder="' '">
+                  <label for="floatingInput" class="mandatory">Adresse e-mail</label>
+                  <div class="invalid-feedback"></div>
+              </div>
+              <div class="form-fancy-toggle">
+                  <input id="news_accept" type="checkbox" name="accept" class="fancy-toggle"><label
+                      for="news_accept" class="checkbox-label">Oui, je souhaite recevoir
+                      des notifications e-mail lors de la publication d'actualités <span></span></label>
+              </div>
+              <button data-v-1dc6f706="" type="submit" class="disabled btn">Connecter</button>
+          </form>
+      </div>
+  </div>
+</div>
+
+  `;
+  showDisplay.style.display = "block";
+  document.querySelector("#modal-dialog").innerHTML = showDisplay;
+  document
+    .getElementById("closeModal2")
+    .addEventListener("click", close_modal2);
+}
+
 //////////////////////////////////////////////////////////////////
 
 modalSignin.forEach((btn) => btn.addEventListener("click", login));

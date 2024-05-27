@@ -10,210 +10,141 @@
     <link rel="stylesheet" href="../pageCSS/bases.css" />
 
 </head>
-<style>
-    .default-header nav.navbar .left-side[data-v-2e3f84ac] {
-        align-items: center;
-    }
 
-    .form-control,
-    .col {
-        width: 300px;
-        /*  height: 60px;*/
-        border: 2px solid #0000;
-        position: absolute;
-        top: 15%;
-        left: 5%;
-    }
-
-    .form-control[data-v-2e3f84ac] {
-        background: #f2f2f2;
-        background: var(--input-bg-color, #f2f2f2);
-        border-color: #185591;
-        border-color: var(--input-border-color, #ced4da);
-        color: #bebebe;
-        color: var(--input-text-color, #bebebe);
-        padding-top: 10px;
-        display: flex;
-        flex-direction: row;
-
-    }
-
-    .svg-inline--fa {
-        display: flex;
-        align-items: center;
-        padding-left: 10px;
-        overflow: visible;
-        width: 45px;
-        padding-top: 10px;
-        z-index: 100;
-    }
-
-    .d-none {
-        padding-top: 10px;
-        padding-left: 10px;
-        padding-bottom: 10px;
-    }
-
-    .jFRgME {
-        padding-left: calc(50% - 656px);
-        padding-right: calc(50% - 656px);
-    }
-
-    .feHxSw {
-        margin-bottom: 3.2rem;
-        padding-bottom: 2.4rem;
-    }
-
-    .gmhevn {
-        gap: 1.2rem;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(auto, 41.6rem));
-        align-items: center;
-        width: 100%;
-        position: absolute;
-        top: 30%;
-        background-color: #cdc7c7;
-        z-index: -1;
-    }
-
-    .styles__Picture-sc-3cfb7849-0 {
-        display: flex;
-        padding: 4px;
-        width: 45px;
-        height: 40px;
-        background-color: #cdc7c7;
-        color: #0000;
-        z-index: 1;
-    }
-
-    .ls-is-cached {
-        color: #0000;
-        padding: 3px;
-
-    }
-
-    .sc-cZPjdL {
-        width: 50px;
-        margin-right: 20px;
-        z-index: 1;
-    }
-
-    .eZEbUT {
-        display: flex;
-    }
-
-    .hdzmqC {
-        z-index: -1;
-        align-items: center;
-        border-radius: 0.4rem;
-        padding-left: 15px;
-        display: flex;
-        gap: 2rem;
-        height: 6.5rem;
-        max-width: 28rem;
-        overflow: hidden;
-        position: relative;
-        background: linear-gradient(90deg, rgb(2, 35, 102) 0%, rgb(97, 207, 255) 100%);
-    }
-
-    .hdzmqC.style-0::before {
-        border-radius: 100%;
-        bottom: 0px;
-        content: "";
-        display: block;
-        height: 0px;
-        left: 0px;
-        padding-bottom: 100%;
-        position: absolute;
-        width: 100%;
-        background: linear-gradient(270deg, rgb(2, 35, 102) 0%, rgb(97, 207, 255) 100%);
-    }
-
-
-    .grid-container {
-        display: flex;
-        flex-direction: row;
-
-    }
-
-    .bdhYQI {
-        -moz-box-orient: vertical;
-        color: white;
-        display: -webkit-box;
-        font-weight: 700;
-        font-size: 1.4rem;
-        -webkit-line-clamp: 2;
-        margin-right: 1.6rem;
-        max-width: 24.5rem;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        z-index: 0;
-    }
-
-
-
-    a {
-        color: currentcolor;
-        text-decoration: none;
-    }
-
-    .gwPPZL {
-        align-items: center;
-        border-radius: 0.4rem;
-        display: flex;
-        height: 8rem;
-        max-width: 34.3rem;
-        overflow: hidden;
-        position: relative;
-        background: linear-gradient(90deg, rgb(0, 56, 83) 0%, rgb(23, 183, 176) 100%);
-    }
-
-    .hdzmqC.style-3::before {
-        border-radius: 80% 0px;
-        content: "";
-        display: block;
-        height: 0px;
-        padding-bottom: 100%;
-        position: absolute;
-        left: 40%;
-        top: -165%;
-        transform: rotate(45deg);
-        width: 100%;
-        background: linear-gradient(rgb(0, 56, 83) 0%, rgb(23, 183, 176) 100%);
-    }
-
-    .hdzmqC.style-1::before {
-        border-top-right-radius: 100%;
-        content: "";
-        display: block;
-        height: 0px;
-        left: 0px;
-        /*  left:18%;*/
-        padding-bottom: 100%;
-        position: absolute;
-        top: -10%;
-        width: 100%;
-        background: linear-gradient(270deg, rgb(0, 56, 83) 0%, rgb(23, 183, 176) 100%);
-    }
-
-    .hdzmqC.style-2::before {
-        border-radius: 80% 0px;
-        content: "";
-        display: block;
-        height: 0px;
-        left: 0%;
-        padding-bottom: 110%;
-        position: absolute;
-        top: -320%;
-        transform: rotate(-45deg);
-        width: 110%;
-        background: linear-gradient(45deg, rgb(0, 56, 83) 0%, rgb(23, 183, 176) 100%);
-    }
-</style>
 
 <body>
+
+    <header class="header__navigation" role="navigation">
+        <div class="dropdownI ">
+            <ul class="listHeader">
+                <a href="">
+                    <li class="flag">Acceuil</li>
+                </a>
+                <a href="./benevolat.html" target="_blank">
+                    <li class="flag">Bénévolat</li>
+                </a>
+                <a href="./soutient.html">
+                    <li class=" flag ">Nous soutenir</li>
+                </a>
+                <a href="./infos.html">
+                    <li class="flag ">qui somme nous ?</li>
+                </a>
+            </ul>
+        </div>
+        <div class="dropdownII">
+            <ul class="listLangue">
+                <li class="nav__link nav__link--arrow js-dropdown dropdown__toggle js-display-click" data-lang="fr">
+                    <a href="#" id="nav-lang-fr" data-toggle="dropdown" aria-haspopup="true" role="button"
+                        data-xtclick="header::langue">
+                        <span class="flag js-display-lazy flag--fr is-loaded" data-class="flag--fr"></span>
+                        <span class="is-ibl header__lang__label">fr</span>
+                    </a>
+
+                </li>
+
+                <li class="nav__link nav__link--arrow js-dropdown dropdown__toggle js-display-click" data-lang="en">
+                    <a href="/en/" id="nav-lang-fr" data-toggle="dropdown" aria-haspopup="true" role="button"
+                        data-xtclick="header::langue" data-lang="en">
+                        <span class="flag js-display-lazy" data-class="flag--en"></span>
+                        <span class="is-ibl header__lang__label">en</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- <script>
+                checkCookieForRedirect();
+            </script> -->
+        </div>
+    </header>
+
+    <div class="social-inner always-visible vertical background-social label-is-icon">
+
+        <a class="share-item facebook" style='background: var(--facebook-color);' href="https://facebook.com"
+            target="_blank">
+            <svg class=" svg-inline--fa fa-facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path class="" fill="currentColor" d=" M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2
+                    504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7
+                    6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512
+                    386.9 512 256h0z">
+                </path>
+            </svg>
+        </a>
+        <a class="share-item twitter" style="background-color: var(--twitter-color);" href="https://twitter.com"
+            target="_blank" data-twitter-msg="Faites un don à APF France handicap">
+            <svg class="svg-inline--fa fa-x-twitter" data-prefix="fab" data-icon="x-twitter" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path class="" fill="currentColor"
+                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+                </path>
+            </svg>
+        </a>
+
+        <a class="share-item instagram" style="background: var(--instagram-gradient);
+        " data-ga-event="share" data-ga-value="Instagram" target="_blank">
+            <svg class="svg-inline--fa fa-instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path class="" fill="currentColor"
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                </path>
+            </svg>
+        </a>
+
+        <a class="share-item linkedin" style=" background-color: var(--linkedin-color);" data-ga-event="share"
+            data-ga-value="LinkedIn" data-href="https://linkedin.com">
+            <svg data-v-85211400="" class="svg-inline--fa fa-linkedin" aria-hidden="true" focusable="false"
+                data-prefix="fab" data-icon="linkedin" role="img" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512">
+                <path class="" fill="currentColor"
+                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                </path>
+            </svg>
+        </a>
+
+        <a class="share-item email" href="" target="_blank" data-ga-event="share"
+            style="  background-color: var(--email-color);" data-ga-value="Email">
+            <svg data-v-85211400="" class="svg-inline--fa fa-envelope" aria-hidden="true" focusable="false"
+                data-prefix="fas" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512">
+                <path class="" fill="currentColor"
+                    d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z">
+                </path>
+            </svg>
+        </a>
+
+        <a class="share-item  qrcode js-show-qrmodal" style="  background: var(--qrcode-color);" data-ga-event="share"
+            data-ga-value="QrCode" href="qr.html">
+            <svg data-v-85211400="" class="svg-inline--fa fa-qrcode" aria-hidden="true" focusable="false"
+                data-prefix="fas" data-icon="qrcode" role="img" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512">
+                <path style="width:15px;" fill="currentColor"
+                    d="M0 80C0 53.5 21.5 32 48 32h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80zM64 96v64h64V96H64zM0 336c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V336zm64 16v64h64V352H64zM304 32h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H304c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48zm80 64H320v64h64V96zM256 304c0-8.8 7.2-16 16-16h64c8.8 0 16 7.2 16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s7.2-16 16-16s16 7.2 16 16v96c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s-7.2-16-16-16s-16 7.2-16 16v64c0 8.8-7.2 16-16 16H272c-8.8 0-16-7.2-16-16V304zM368 480a16 16 0 1 1 0-32 16 16 0 1 1 0 32zm64 0a16 16 0 1 1 0-32 16 16 0 1 1 0 32z">
+                </path>
+            </svg>
+        </a>
+
+        <a class="share-item  widget js-show-widget" style="  background-color: var(--widget-color);"
+            data-ga-event="share" data-ga-value="Widget">
+            <svg data-v-85211400="" class="svg-inline--fa fa-code" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 512">
+                <path class="" fill="currentColor"
+                    d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z">
+                </path>
+            </svg>
+        </a>
+
+        <a href="#modal-dialog" onclick="show()" class="share-item subscribe"
+            style="background-color: var(--theme-color);" data-ga-event="share" aria-label="Tenez-moi informé(e)"
+            data-bs-original-title="Tenez-moi informé(e)">
+            <svg class="svg-inline--fa fa-star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 576 512">
+                <path class="" fill="currentColor"
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
+                </path>
+            </svg>
+        </a>
+
+    </div>
+
     <div data-v-2e3f84ac="" class="form-control">
-        <svg data-v-2e3f84ac="" class="svg-inline--fa fa-magnifying-glass" aria-hidden="true" focusable="false"
+        <svg data-v-2e3f84ac="" class="svg-fa fa-magnifying-glass" aria-hidden="true" focusable="false"
             data-prefix="fas" data-icon="magnifying-glass" role="img" xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512">
             <path class="" fill="currentColor"
@@ -223,177 +154,238 @@
         <span data-v-2e3f84ac="" class="d-none">Recherche</span>
     </div>
 
+    <h1 class="title-container">Préparez-vous pour les Jeux</h1>
 
-    <section id="grid-container" class="sc-eHEEaq jFRgME">
-        <div data-cy="title-container" class="sc-byhIhM feHxSw">
-            <div class="sc-dWBQrG fbOZfH">
-                <div class="sc-xGzRj biXlYK  title-container title--secondary" data-cy="title-container">
-                    <h2 class="sc-bdnyFh iKojq sc-kYQakU tlDGg title-text text--title">Préparez-vous pour les Jeux</h2>
-                </div>
+
+    <section id="grid-container">
+        <div id="modal-dialog">
+            <div class="gmhevn">
+                <a data-cy="link" class="sc-jwjRgV hdzmqC style-0"
+                    href="https://cloud.contact.paris2024.org/redirection_ticketing_app" data-tracking="click"
+                    data-tracking-payload="{&quot;content_id&quot;:&quot;f587b06a-5fa4-4dca-8eb1-86e9a74c6d7d&quot;,&quot;destination_url&quot;:&quot;https://cloud.contact.paris2024.org/redirection_ticketing_app&quot;,&quot;link_tag&quot;:&quot;Retrouvez vos billets&quot;,&quot;module_instance&quot;:&quot;Action collection&quot;,&quot;translation_id&quot;:&quot;8405aec3-6281-45c0-9b96-52b926c3ecdc&quot;,&quot;module&quot;:&quot;get ready for the games&quot;,&quot;module_position&quot;:&quot;1&quot;}"
+                    alt="Retrouvez vos billets" target="_blank">
+                    <div class="sc-cZPjdL iVTsac">
+                        <picture data-cy="picture-wrapper"
+                            class="styles__Picture-sc-3cfb7849-0 eZEbUT sc-cLpwDS iwSapK">
+                            <img loading="lazy" alt="Retrouvez vos billets" class="ls-is-cached lazyloaded"
+                                data-src="https://img.olympics.com/images/image/private/t_original/primary/vvnq94vok7ojxuhoykt5"
+                                src="https://img.olympics.com/images/image/private/t_original/primary/vvnq94vok7ojxuhoykt5"
+                                title="">
+                        </picture>
+                    </div>
+                    <span class="sc-bdnyFh cFgERw sc-jhKeHc bdhYQI text--l-body">Retrouvez vos billets</span>
+                </a>
+                <a data-cy="link" class="sc-jwjRgV hdzmqC style-1"
+                    href="https://olympics.com/fr/paris-2024/carte-des-jeux" data-tracking="click"
+                    data-tracking-payload="{&quot;content_id&quot;:&quot;2c189dd9-7467-4adb-b926-1fc73078208c&quot;,&quot;destination_url&quot;:&quot;https://olympics.com/fr/paris-2024/carte-des-jeux&quot;,&quot;link_tag&quot;:&quot;Explorer la Carte des Jeux&quot;,&quot;module_instance&quot;:&quot;Action collection&quot;,&quot;translation_id&quot;:&quot;e28c042b-e10b-4e68-845a-99384615eeb5&quot;,&quot;module&quot;:&quot;get ready for the games&quot;,&quot;module_position&quot;:&quot;2&quot;}"
+                    alt="Explorer la Carte des Jeux" target="_self">
+                    <div class="sc-cZPjdL iVTsac">
+                        <picture data-cy="picture-wrapper"
+                            class="styles__Picture-sc-3cfb7849-0 eZEbUT sc-cLpwDS iwSapK">
+                            <img loading="lazy" alt="Explorer la Carte des Jeux" class=" ls-is-cached lazyloaded"
+                                data-src="https://img.olympics.com/images/image/private/t_original/primary/njwpxihj0co3xyajg2xi"
+                                src="https://img.olympics.com/images/image/private/t_original/primary/njwpxihj0co3xyajg2xi"
+                                title="">
+                        </picture>
+                    </div>
+                    <span class="sc-bdnyFh cFgERw sc-jhKeHc bdhYQI text--l-body">Explorer la Carte des Jeux</span>
+                </a>
+                <a data-cy="link" class="sc-jwjRgV hdzmqC style-2"
+                    href="https://help.paris2024.org?utm_source=GTWA&amp;utm_medium=homepage" data-tracking="click"
+                    data-tracking-payload="{&quot;content_id&quot;:&quot;79cc149c-2842-439f-8f88-5e329194672e&quot;,&quot;destination_url&quot;:&quot;https://help.paris2024.org?utm_source=GTWA&amp;utm_medium=homepage&quot;,&quot;link_tag&quot;:&quot;Une question ?&quot;,&quot;module_instance&quot;:&quot;Action collection&quot;,&quot;translation_id&quot;:&quot;44f4749b-be77-46d2-be3a-fcf9655a8f0a&quot;,&quot;module&quot;:&quot;get ready for the games&quot;,&quot;module_position&quot;:&quot;3&quot;}"
+                    alt="Une question ?" target="_blank">
+                    <div class="sc-cZPjdL iVTsac">
+                        <picture data-cy="picture-wrapper"
+                            class="styles__Picture-sc-3cfb7849-0 eZEbUT sc-cLpwDS iwSapK">
+                            <img loading="lazy" alt="Une question ?" class=" ls-is-cached lazyloaded"
+                                data-src="https://img.olympics.com/images/image/private/t_original/primary/kc5bsgpwc02wumi2a2at"
+                                src="https://img.olympics.com/images/image/private/t_original/primary/kc5bsgpwc02wumi2a2at"
+                                title="">
+                        </picture>
+                    </div>
+                    <span class="sc-bdnyFh cFgERw sc-jhKeHc bdhYQI text--l-body">Une question ?</span>
+                </a>
+                <a data-cy="link" class="sc-jwjRgV hdzmqC style-3"
+                    href="https://hospitalitytravelpackages.paris2024.org/discover?utm_source=P24_Web_Ticketing&amp;utm_medium=Main_TKT_HSP_EN&amp;utm_campaign=P24_HP_TKT&amp;utm_content=Ticketing_P24&amp;utm_term=Website&amp;language=fr"
+                    data-tracking="click"
+                    data-tracking-payload="{&quot;content_id&quot;:&quot;9721e5ea-96b4-48e7-b070-75bd79cb6fd4&quot;,&quot;destination_url&quot;:&quot;https://hospitalitytravelpackages.paris2024.org/discover?utm_source=P24_Web_Ticketing&amp;utm_medium=Main_TKT_HSP_EN&amp;utm_campaign=P24_HP_TKT&amp;utm_content=Ticketing_P24&amp;utm_term=Website&amp;language=fr&quot;,&quot;link_tag&quot;:&quot;Packages hospitalité&quot;,&quot;module_instance&quot;:&quot;Action collection&quot;,&quot;translation_id&quot;:&quot;dc11a7fb-d087-4cf9-b5af-6f162d7707a0&quot;,&quot;module&quot;:&quot;get ready for the games&quot;,&quot;module_position&quot;:&quot;4&quot;}"
+                    alt="Packages hospitalité" target="_blank">
+                    <div class="sc-cZPjdL iVTsac">
+                        <picture data-cy="picture-wrapper"
+                            class="styles__Picture-sc-3cfb7849-0 eZEbUT sc-cLpwDS iwSapK">
+                            <img loading="lazy" alt="Packages hospitalité" class=" ls-is-cached lazyloaded"
+                                data-src="https://img.olympics.com/images/image/private/t_original/primary/boyx47y0vdoqawb7d6ea"
+                                src="https://img.olympics.com/images/image/private/t_original/primary/boyx47y0vdoqawb7d6ea"
+                                title="" />
+                        </picture>
+                    </div>
+                    <span class="sc-bdnyFh cFgERw sc-jhKeHc bdhYQI text--l-body">Packages hospitalité</span>
+                </a>
+                <a data-cy="link" class="sc-jwjRgV hdzmqC style-0"
+                    href="https://olympics.com/fr/paris-2024/allianz-get-ready-to-travel" data-tracking="click"
+                    data-tracking-payload="{&quot;content_id&quot;:&quot;3a07711d-fa27-490a-8c66-35b8624013ff&quot;,&quot;destination_url&quot;:&quot;https://olympics.com/fr/paris-2024/allianz-get-ready-to-travel&quot;,&quot;link_tag&quot;:&quot;Préparez votre voyage&quot;,&quot;module_instance&quot;:&quot;Action collection&quot;,&quot;translation_id&quot;:&quot;6ee3515b-1095-46ea-824c-77cc323cca43&quot;,&quot;module&quot;:&quot;get ready for the games&quot;,&quot;module_position&quot;:&quot;5&quot;}"
+                    alt="Préparez votre voyage" target="_self">
+                    <div class="sc-cZPjdL iVTsac">
+                        <picture data-cy="picture-wrapper"
+                            class="styles__Picture-sc-3cfb7849-0 eZEbUT sc-cLpwDS iwSapK">
+
+
+                            <img loading="lazy" alt="Préparez votre voyage" class=" ls-is-cached lazyloaded"
+                                data-src="https://img.olympics.com/images/image/private/t_original/primary/xjm65gd55wyejngp43jx"
+                                src="https://img.olympics.com/images/image/private/t_original/primary/xjm65gd55wyejngp43jx"
+                                title="">
+                        </picture>
+                    </div><span class="sc-bdnyFh cFgERw sc-jhKeHc bdhYQI text--l-body">Préparez votre voyage</span>
+                </a>
+                <a data-cy="link" class="sc-jwjRgV hdzmqC style-1"
+                    href="https://www.airbnb.fr/e/paris2024stays?c=.pi129.pkparis2024_gamestime_fr"
+                    data-tracking="click"
+                    data-tracking-payload="{&quot;content_id&quot;:&quot;8c8ad431-f73a-4980-af92-a5529608e904&quot;,&quot;destination_url&quot;:&quot;https://www.airbnb.fr/e/paris2024stays?c=.pi129.pkparis2024_gamestime_fr&quot;,&quot;link_tag&quot;:&quot;Réservez votre Airbnb&quot;,&quot;module_instance&quot;:&quot;Action collection&quot;,&quot;translation_id&quot;:&quot;12810911-39ce-4d81-9129-d2d5c9258b41&quot;,&quot;module&quot;:&quot;get ready for the games&quot;,&quot;module_position&quot;:&quot;6&quot;}"
+                    alt="Réservez votre Airbnb" target="_blank">
+                    <div class="sc-cZPjdL iVTsac">
+                        <picture data-cy="picture-wrapper"
+                            class="styles__Picture-sc-3cfb7849-0 eZEbUT sc-cLpwDS iwSapK">
+                            <source class="lazy" media="(min-width: 1440px)"
+                                data-srcset="https://img.olympics.com/images/image/private/t_original/primary/h41o314zpmkdbvj5petn, https://img.olympics.com/images/image/private/t_original/primary/h41o314zpmkdbvj5petn 2x"
+                                srcset="https://img.olympics.com/images/image/private/t_original/primary/h41o314zpmkdbvj5petn, https://img.olympics.com/images/image/private/t_original/primary/h41o314zpmkdbvj5petn 2x">
+
+                            <img loading="lazy" alt="Réservez votre Airbnb" class=" ls-is-cached lazyloaded"
+                                data-src="https://img.olympics.com/images/image/private/t_original/primary/h41o314zpmkdbvj5petn"
+                                src="https://img.olympics.com/images/image/private/t_original/primary/h41o314zpmkdbvj5petn"
+                                title="">
+                        </picture>
+                    </div>
+                    <span class="sc-bdnyFh cFgERw sc-jhKeHc bdhYQI text--l-body">Réservez votre Airbnb</span>
+                </a>
+                <a data-cy="link" class="sc-jwjRgV hdzmqC style-2"
+                    href="https://shop.olympics.com/fr/paris-2024/t-1299990829+z-949567-2073334460?_s=bm-fi-ioc-prtsite-P24-CTA-mosaic-fr-nl"
+                    data-tracking="click"
+                    data-tracking-payload="{&quot;content_id&quot;:&quot;8150e360-7aaf-4c39-bf25-52112d2569fb&quot;,&quot;destination_url&quot;:&quot;https://shop.olympics.com/fr/paris-2024/t-1299990829+z-949567-2073334460?_s=bm-fi-ioc-prtsite-P24-CTA-mosaic-fr-nl&quot;,&quot;link_tag&quot;:&quot;Achetez des produits&quot;,&quot;module_instance&quot;:&quot;Action collection&quot;,&quot;translation_id&quot;:&quot;70523106-6bb0-4a35-a477-cf0787a6b9cf&quot;,&quot;module&quot;:&quot;get ready for the games&quot;,&quot;module_position&quot;:&quot;7&quot;}"
+                    alt="Achetez des produits" target="_blank">
+                    <div class="sc-cZPjdL iVTsac">
+                        <picture data-cy="picture-wrapper"
+                            class="styles__Picture-sc-3cfb7849-0 eZEbUT sc-cLpwDS iwSapK">
+
+                            <img loading="lazy" alt="Achetez des produits" class=" ls-is-cached lazyloaded"
+                                data-src="https://img.olympics.com/images/image/private/t_original/primary/wzkh0rxamv4ieckpp0sn"
+                                src="https://img.olympics.com/images/image/private/t_original/primary/wzkh0rxamv4ieckpp0sn"
+                                title="">
+                        </picture>
+                    </div>
+                    <span class="sc-bdnyFh cFgERw sc-jhKeHc bdhYQI text--l-body">Achetez des produits</span>
+                </a>
+                <a data-cy="link" class="sc-jwjRgV hdzmqC style-3" href="https://olympics.app.link/H3a5eyVw4Hb"
+                    data-tracking="click"
+                    data-tracking-payload="{&quot;content_id&quot;:&quot;15a4c967-c795-49e6-afc6-c7ea71a8d864&quot;,&quot;destination_url&quot;:&quot;https://olympics.app.link/H3a5eyVw4Hb&quot;,&quot;link_tag&quot;:&quot;Téléchargez l'app&quot;,&quot;module_instance&quot;:&quot;Action collection&quot;,&quot;translation_id&quot;:&quot;d019f189-8171-4f11-88a2-80c572461834&quot;,&quot;module&quot;:&quot;get ready for the games&quot;,&quot;module_position&quot;:&quot;8&quot;}"
+                    alt="Téléchargez l'app" target="_self">
+                    <div class="sc-cZPjdL iVTsac">
+                        <picture data-cy="picture-wrapper"
+                            class="styles__Picture-sc-3cfb7849-0 eZEbUT sc-cLpwDS iwSapK">
+                            <img loading="lazy" alt="Téléchargez l'app" class=" ls-is-cached lazyloaded"
+                                data-src="https://img.olympics.com/images/image/private/t_original/primary/qdt3cliqiwkeyuhzgztk"
+                                src="https://img.olympics.com/images/image/private/t_original/primary/qdt3cliqiwkeyuhzgztk"
+                                title="" />
+                        </picture>
+                    </div>
+                    <span class="sc-bdnyFh cFgERw sc-jhKeHc bdhYQI text--l-body">Téléchargez l'app</span>
+                </a>
+                <a data-cy="link" class="sc-jwjRgV hdzmqC style-0" href="https://olympics.com/fr/paris-2024/calendrier"
+                    data-tracking="click"
+                    data-tracking-payload="{&quot;content_id&quot;:&quot;59e07368-f88e-4023-81bf-a9b43c6687fd&quot;,&quot;destination_url&quot;:&quot;https://olympics.com/fr/paris-2024/calendrier&quot;,&quot;link_tag&quot;:&quot;Calendrier&quot;,&quot;module_instance&quot;:&quot;Action collection&quot;,&quot;translation_id&quot;:&quot;0aa7bac4-e42c-4e42-81be-1c4317cd0af4&quot;,&quot;module&quot;:&quot;get ready for the games&quot;,&quot;module_position&quot;:&quot;9&quot;}"
+                    alt="Calendrier" target="_self">
+                    <div class="sc-cZPjdL iVTsac">
+                        <picture data-cy="picture-wrapper"
+                            class="styles__Picture-sc-3cfb7849-0 eZEbUT sc-cLpwDS iwSapK">
+
+                            <img loading="lazy" alt="Calendrier" class=" ls-is-cached lazyloaded"
+                                data-src="https://img.olympics.com/images/image/private/t_original/primary/q2topxsfhmv3fxfngx60"
+                                src="https://img.olympics.com/images/image/private/t_original/primary/q2topxsfhmv3fxfngx60"
+                                title="">
+                        </picture>
+                    </div>
+                    <span class="sc-bdnyFh cFgERw sc-jhKeHc bdhYQI text--l-body">Calendrier</span>
+                </a>
             </div>
-        </div>
-
-        <div class="sc-bMHuHF gmhevn">
-            <a data-cy="link" class="sc-jwjRgV hdzmqC style-0"
-                href="https://cloud.contact.paris2024.org/redirection_ticketing_app" data-tracking="click"
-                data-tracking-payload="{&quot;content_id&quot;:&quot;f587b06a-5fa4-4dca-8eb1-86e9a74c6d7d&quot;,&quot;destination_url&quot;:&quot;https://cloud.contact.paris2024.org/redirection_ticketing_app&quot;,&quot;link_tag&quot;:&quot;Retrouvez vos billets&quot;,&quot;module_instance&quot;:&quot;Action collection&quot;,&quot;translation_id&quot;:&quot;8405aec3-6281-45c0-9b96-52b926c3ecdc&quot;,&quot;module&quot;:&quot;get ready for the games&quot;,&quot;module_position&quot;:&quot;1&quot;}"
-                alt="Retrouvez vos billets" target="_blank">
-                <div class="sc-cZPjdL iVTsac">
-                    <picture data-cy="picture-wrapper" class="styles__Picture-sc-3cfb7849-0 eZEbUT sc-cLpwDS iwSapK">
-                        <img loading="lazy" alt="Retrouvez vos billets" class="ls-is-cached lazyloaded"
-                            data-src="https://img.olympics.com/images/image/private/t_original/primary/vvnq94vok7ojxuhoykt5"
-                            src="https://img.olympics.com/images/image/private/t_original/primary/vvnq94vok7ojxuhoykt5"
-                            title="">
-                    </picture>
-                </div>
-                <span class="sc-bdnyFh cFgERw sc-jhKeHc bdhYQI text--l-body">Retrouvez vos billets</span>
-            </a>
-            <a data-cy="link" class="sc-jwjRgV hdzmqC style-1" href="https://olympics.com/fr/paris-2024/carte-des-jeux"
-                data-tracking="click"
-                data-tracking-payload="{&quot;content_id&quot;:&quot;2c189dd9-7467-4adb-b926-1fc73078208c&quot;,&quot;destination_url&quot;:&quot;https://olympics.com/fr/paris-2024/carte-des-jeux&quot;,&quot;link_tag&quot;:&quot;Explorer la Carte des Jeux&quot;,&quot;module_instance&quot;:&quot;Action collection&quot;,&quot;translation_id&quot;:&quot;e28c042b-e10b-4e68-845a-99384615eeb5&quot;,&quot;module&quot;:&quot;get ready for the games&quot;,&quot;module_position&quot;:&quot;2&quot;}"
-                alt="Explorer la Carte des Jeux" target="_self">
-                <div class="sc-cZPjdL iVTsac">
-                    <picture data-cy="picture-wrapper" class="styles__Picture-sc-3cfb7849-0 eZEbUT sc-cLpwDS iwSapK">
-                        <img loading="lazy" alt="Explorer la Carte des Jeux" class=" ls-is-cached lazyloaded"
-                            data-src="https://img.olympics.com/images/image/private/t_original/primary/njwpxihj0co3xyajg2xi"
-                            src="https://img.olympics.com/images/image/private/t_original/primary/njwpxihj0co3xyajg2xi"
-                            title="">
-                    </picture>
-                </div>
-                <span class="sc-bdnyFh cFgERw sc-jhKeHc bdhYQI text--l-body">Explorer la Carte des Jeux</span>
-            </a>
-            <a data-cy="link" class="sc-jwjRgV hdzmqC style-2"
-                href="https://help.paris2024.org?utm_source=GTWA&amp;utm_medium=homepage" data-tracking="click"
-                data-tracking-payload="{&quot;content_id&quot;:&quot;79cc149c-2842-439f-8f88-5e329194672e&quot;,&quot;destination_url&quot;:&quot;https://help.paris2024.org?utm_source=GTWA&amp;utm_medium=homepage&quot;,&quot;link_tag&quot;:&quot;Une question ?&quot;,&quot;module_instance&quot;:&quot;Action collection&quot;,&quot;translation_id&quot;:&quot;44f4749b-be77-46d2-be3a-fcf9655a8f0a&quot;,&quot;module&quot;:&quot;get ready for the games&quot;,&quot;module_position&quot;:&quot;3&quot;}"
-                alt="Une question ?" target="_blank">
-                <div class="sc-cZPjdL iVTsac">
-                    <picture data-cy="picture-wrapper" class="styles__Picture-sc-3cfb7849-0 eZEbUT sc-cLpwDS iwSapK">
-                        <img loading="lazy" alt="Une question ?" class=" ls-is-cached lazyloaded"
-                            data-src="https://img.olympics.com/images/image/private/t_original/primary/kc5bsgpwc02wumi2a2at"
-                            src="https://img.olympics.com/images/image/private/t_original/primary/kc5bsgpwc02wumi2a2at"
-                            title="">
-                    </picture>
-                </div>
-                <span class="sc-bdnyFh cFgERw sc-jhKeHc bdhYQI text--l-body">Une question ?</span>
-            </a>
-            <a data-cy="link" class="sc-jwjRgV hdzmqC style-3"
-                href="https://hospitalitytravelpackages.paris2024.org/discover?utm_source=P24_Web_Ticketing&amp;utm_medium=Main_TKT_HSP_EN&amp;utm_campaign=P24_HP_TKT&amp;utm_content=Ticketing_P24&amp;utm_term=Website&amp;language=fr"
-                data-tracking="click"
-                data-tracking-payload="{&quot;content_id&quot;:&quot;9721e5ea-96b4-48e7-b070-75bd79cb6fd4&quot;,&quot;destination_url&quot;:&quot;https://hospitalitytravelpackages.paris2024.org/discover?utm_source=P24_Web_Ticketing&amp;utm_medium=Main_TKT_HSP_EN&amp;utm_campaign=P24_HP_TKT&amp;utm_content=Ticketing_P24&amp;utm_term=Website&amp;language=fr&quot;,&quot;link_tag&quot;:&quot;Packages hospitalité&quot;,&quot;module_instance&quot;:&quot;Action collection&quot;,&quot;translation_id&quot;:&quot;dc11a7fb-d087-4cf9-b5af-6f162d7707a0&quot;,&quot;module&quot;:&quot;get ready for the games&quot;,&quot;module_position&quot;:&quot;4&quot;}"
-                alt="Packages hospitalité" target="_blank">
-                <div class="sc-cZPjdL iVTsac">
-                    <picture data-cy="picture-wrapper" class="styles__Picture-sc-3cfb7849-0 eZEbUT sc-cLpwDS iwSapK">
-                        <img loading="lazy" alt="Packages hospitalité" class=" ls-is-cached lazyloaded"
-                            data-src="https://img.olympics.com/images/image/private/t_original/primary/boyx47y0vdoqawb7d6ea"
-                            src="https://img.olympics.com/images/image/private/t_original/primary/boyx47y0vdoqawb7d6ea"
-                            title="" />
-                    </picture>
-                </div>
-                <span class="sc-bdnyFh cFgERw sc-jhKeHc bdhYQI text--l-body">Packages hospitalité</span>
-            </a>
-            <a data-cy="link" class="sc-jwjRgV hdzmqC style-0"
-                href="https://olympics.com/fr/paris-2024/allianz-get-ready-to-travel" data-tracking="click"
-                data-tracking-payload="{&quot;content_id&quot;:&quot;3a07711d-fa27-490a-8c66-35b8624013ff&quot;,&quot;destination_url&quot;:&quot;https://olympics.com/fr/paris-2024/allianz-get-ready-to-travel&quot;,&quot;link_tag&quot;:&quot;Préparez votre voyage&quot;,&quot;module_instance&quot;:&quot;Action collection&quot;,&quot;translation_id&quot;:&quot;6ee3515b-1095-46ea-824c-77cc323cca43&quot;,&quot;module&quot;:&quot;get ready for the games&quot;,&quot;module_position&quot;:&quot;5&quot;}"
-                alt="Préparez votre voyage" target="_self">
-                <div class="sc-cZPjdL iVTsac">
-                    <picture data-cy="picture-wrapper" class="styles__Picture-sc-3cfb7849-0 eZEbUT sc-cLpwDS iwSapK">
-
-
-                        <img loading="lazy" alt="Préparez votre voyage" class=" ls-is-cached lazyloaded"
-                            data-src="https://img.olympics.com/images/image/private/t_original/primary/xjm65gd55wyejngp43jx"
-                            src="https://img.olympics.com/images/image/private/t_original/primary/xjm65gd55wyejngp43jx"
-                            title="">
-                    </picture>
-                </div><span class="sc-bdnyFh cFgERw sc-jhKeHc bdhYQI text--l-body">Préparez votre voyage</span>
-            </a>
-            <a data-cy="link" class="sc-jwjRgV hdzmqC style-1"
-                href="https://www.airbnb.fr/e/paris2024stays?c=.pi129.pkparis2024_gamestime_fr" data-tracking="click"
-                data-tracking-payload="{&quot;content_id&quot;:&quot;8c8ad431-f73a-4980-af92-a5529608e904&quot;,&quot;destination_url&quot;:&quot;https://www.airbnb.fr/e/paris2024stays?c=.pi129.pkparis2024_gamestime_fr&quot;,&quot;link_tag&quot;:&quot;Réservez votre Airbnb&quot;,&quot;module_instance&quot;:&quot;Action collection&quot;,&quot;translation_id&quot;:&quot;12810911-39ce-4d81-9129-d2d5c9258b41&quot;,&quot;module&quot;:&quot;get ready for the games&quot;,&quot;module_position&quot;:&quot;6&quot;}"
-                alt="Réservez votre Airbnb" target="_blank">
-                <div class="sc-cZPjdL iVTsac">
-                    <picture data-cy="picture-wrapper" class="styles__Picture-sc-3cfb7849-0 eZEbUT sc-cLpwDS iwSapK">
-                        <source class="lazy" media="(min-width: 1440px)"
-                            data-srcset="https://img.olympics.com/images/image/private/t_original/primary/h41o314zpmkdbvj5petn, https://img.olympics.com/images/image/private/t_original/primary/h41o314zpmkdbvj5petn 2x"
-                            srcset="https://img.olympics.com/images/image/private/t_original/primary/h41o314zpmkdbvj5petn, https://img.olympics.com/images/image/private/t_original/primary/h41o314zpmkdbvj5petn 2x">
-
-                        <img loading="lazy" alt="Réservez votre Airbnb" class=" ls-is-cached lazyloaded"
-                            data-src="https://img.olympics.com/images/image/private/t_original/primary/h41o314zpmkdbvj5petn"
-                            src="https://img.olympics.com/images/image/private/t_original/primary/h41o314zpmkdbvj5petn"
-                            title="">
-                    </picture>
-                </div><span class="sc-bdnyFh cFgERw sc-jhKeHc bdhYQI text--l-body">Réservez votre Airbnb</span>
-            </a>
-            <a data-cy="link" class="sc-jwjRgV hdzmqC style-2"
-                href="https://shop.olympics.com/fr/paris-2024/t-1299990829+z-949567-2073334460?_s=bm-fi-ioc-prtsite-P24-CTA-mosaic-fr-nl"
-                data-tracking="click"
-                data-tracking-payload="{&quot;content_id&quot;:&quot;8150e360-7aaf-4c39-bf25-52112d2569fb&quot;,&quot;destination_url&quot;:&quot;https://shop.olympics.com/fr/paris-2024/t-1299990829+z-949567-2073334460?_s=bm-fi-ioc-prtsite-P24-CTA-mosaic-fr-nl&quot;,&quot;link_tag&quot;:&quot;Achetez des produits&quot;,&quot;module_instance&quot;:&quot;Action collection&quot;,&quot;translation_id&quot;:&quot;70523106-6bb0-4a35-a477-cf0787a6b9cf&quot;,&quot;module&quot;:&quot;get ready for the games&quot;,&quot;module_position&quot;:&quot;7&quot;}"
-                alt="Achetez des produits" target="_blank">
-                <div class="sc-cZPjdL iVTsac">
-                    <picture data-cy="picture-wrapper" class="styles__Picture-sc-3cfb7849-0 eZEbUT sc-cLpwDS iwSapK">
-
-                        <img loading="lazy" alt="Achetez des produits" class=" ls-is-cached lazyloaded"
-                            data-src="https://img.olympics.com/images/image/private/t_original/primary/wzkh0rxamv4ieckpp0sn"
-                            src="https://img.olympics.com/images/image/private/t_original/primary/wzkh0rxamv4ieckpp0sn"
-                            title="">
-                    </picture>
-                </div>
-                <span class="sc-bdnyFh cFgERw sc-jhKeHc bdhYQI text--l-body">Achetez des produits</span>
-            </a>
-            <a data-cy="link" class="sc-jwjRgV hdzmqC style-3" href="https://olympics.app.link/H3a5eyVw4Hb"
-                data-tracking="click"
-                data-tracking-payload="{&quot;content_id&quot;:&quot;15a4c967-c795-49e6-afc6-c7ea71a8d864&quot;,&quot;destination_url&quot;:&quot;https://olympics.app.link/H3a5eyVw4Hb&quot;,&quot;link_tag&quot;:&quot;Téléchargez l'app&quot;,&quot;module_instance&quot;:&quot;Action collection&quot;,&quot;translation_id&quot;:&quot;d019f189-8171-4f11-88a2-80c572461834&quot;,&quot;module&quot;:&quot;get ready for the games&quot;,&quot;module_position&quot;:&quot;8&quot;}"
-                alt="Téléchargez l'app" target="_self">
-                <div class="sc-cZPjdL iVTsac">
-                    <picture data-cy="picture-wrapper" class="styles__Picture-sc-3cfb7849-0 eZEbUT sc-cLpwDS iwSapK">
-                        <img loading="lazy" alt="Téléchargez l'app" class=" ls-is-cached lazyloaded"
-                            data-src="https://img.olympics.com/images/image/private/t_original/primary/qdt3cliqiwkeyuhzgztk"
-                            src="https://img.olympics.com/images/image/private/t_original/primary/qdt3cliqiwkeyuhzgztk"
-                            title="" />
-                    </picture>
-                </div>
-                <span class="sc-bdnyFh cFgERw sc-jhKeHc bdhYQI text--l-body">Téléchargez l'app</span>
-            </a>
-            <a data-cy="link" class="sc-jwjRgV hdzmqC style-0" href="https://olympics.com/fr/paris-2024/calendrier"
-                data-tracking="click"
-                data-tracking-payload="{&quot;content_id&quot;:&quot;59e07368-f88e-4023-81bf-a9b43c6687fd&quot;,&quot;destination_url&quot;:&quot;https://olympics.com/fr/paris-2024/calendrier&quot;,&quot;link_tag&quot;:&quot;Calendrier&quot;,&quot;module_instance&quot;:&quot;Action collection&quot;,&quot;translation_id&quot;:&quot;0aa7bac4-e42c-4e42-81be-1c4317cd0af4&quot;,&quot;module&quot;:&quot;get ready for the games&quot;,&quot;module_position&quot;:&quot;9&quot;}"
-                alt="Calendrier" target="_self">
-                <div class="sc-cZPjdL iVTsac">
-                    <picture data-cy="picture-wrapper" class="styles__Picture-sc-3cfb7849-0 eZEbUT sc-cLpwDS iwSapK">
-
-                        <img loading="lazy" alt="Calendrier" class=" ls-is-cached lazyloaded"
-                            data-src="https://img.olympics.com/images/image/private/t_original/primary/q2topxsfhmv3fxfngx60"
-                            src="https://img.olympics.com/images/image/private/t_original/primary/q2topxsfhmv3fxfngx60"
-                            title="">
-                    </picture>
-                </div>
-                <span class="sc-bdnyFh cFgERw sc-jhKeHc bdhYQI text--l-body">Calendrier</span>
-            </a>
         </div>
     </section>
 
 
+    <footer>
+        <div class="btn-social-holder">
+            <a class="btn-social-follow btn-social-facebook" target="_blank" href="https://www.facebook.com/apfhandicap"
+                rel="noopener"><svg class="svg-inline--fa fa-facebook" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512">
+                    <path class="" fill="currentColor"
+                        d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z">
+                    </path>
+                </svg>
+            </a>
+            <a class="btn-social-follow btn-social-x-twitter" target="_blank" href="https://twitter.com/apfhandicap"
+                rel="noopener"><svg style="color: var(--twitter-color);" class="svg-inline--fa fa-x-twitter"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path class="" fill="currentColor"
+                        d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+                    </path>
+                </svg>
+            </a>
+            <a class="btn-social-follow btn-social-linkedin" target="_blank"
+                href="https://www.linkedin.com/company/apfhandicap" rel="noopener"><svg
+                    class="svg-inline--fa fa-linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path class="" fill="currentColor"
+                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                    </path>
+                </svg>
+            </a>
+            <a class="btn-social-follow btn-social-youtube" target="_blank"
+                href="https://www.youtube.com/@APFFrancehandicap" rel="noopener"><svg
+                    style="color: var(--youtube-color);" class="svg-inline--fa fa-youtube"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                    <path class="" fill="currentColor"
+                        d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
+                    </path>
+                </svg>
+            </a>
+            <a class="btn-social-follow btn-social-instagram" target="_blank"
+                href="https://www.instagram.com/apfhandicap/" rel="noopener"><svg
+                    style="color: var(--instagram-gradient);" class="svg-inline--fa fa-instagram"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path class="" fill="currentColor"
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                    </path>
+                </svg>
+            </a>
+        </div>
+        <ul id="footer-links" class="link-box mb-0 ps-0">
+            <li id="social-links" class="link-box"><a href="/vie-privee" role="button" class="text-link">Vie
+                    privee</a>
+            </li>
+            <li id="social-links" class="link-box"><a href="/conditions-generales" role="button"
+                    class="text-link">Conditions générales</a></li>
+            <li id="social-links" class="link-box"><a href="/cookies" role="button" class="text-link">Cookies</a>
+            </li>
+            <li id="social-links" class="link-box"><a href="/reglement" role="button" class="text-link">Règlement</a>
+            </li>
+        </ul>
+        <span cla ss="text--sm">Téléchargez l'application Paris 2024</span>
+        <br />
+        <div style="display: flex; flex-direction: row; padding-top: 25px; gap:20px">
+            <img loading="lazy" alt="Télécharger l’application Android" class=" lazyloaded"
+                data-src="https://img.olympics.com/images/image/private/t_original_760/f_auto/primary/pqdqxbupq6l1jljqjcxy"
+                height="40"
+                src="https://img.olympics.com/images/image/private/t_original_760/f_auto/primary/pqdqxbupq6l1jljqjcxy"
+                width="120" title="" />
 
+            <img loading="lazy" alt="Télécharger l’application IOS" class=" lazyloaded"
+                data-src="https://img.olympics.com/images/image/private/t_original_760/f_auto/primary/a5tl7s4kndaogucwcmx4"
+                height="40"
+                src="https://img.olympics.com/images/image/private/t_original_760/f_auto/primary/a5tl7s4kndaogucwcmx4"
+                width="120" title="" />
+        </div>
+    </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <script src="../pageJS/modal.js"></script>
+    <script src="../pageJS/contact.js"></script>
+    <script src="../pageJS/cookies.js"></script>
 </body>
 
 </html>

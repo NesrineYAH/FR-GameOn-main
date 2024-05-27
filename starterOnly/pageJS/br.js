@@ -129,3 +129,14 @@ function validate() {
 
   return isFirstNameValid && isLastNameValid && isEmailValid && isMessageValid;
 }
+
+/**
+function(e) {
+  var t = e.currentTarget;
+  i("share", {
+    method: t.dataset.gaValue,
+    content_type: "Page",
+    item_id: window.location.href
+  })
+} 
+ */
