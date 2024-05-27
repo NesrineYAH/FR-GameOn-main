@@ -310,6 +310,7 @@ function close_modal2() {
 ////ecoute  le click de closeModal
 document.getElementById("closeModal").addEventListener("click", close_modal);
 
+const Btnsubscribe = document.querySelector("subscribe");
 function show(e) {
   e.preventDefault;
   const showDisplay = `    
@@ -333,7 +334,7 @@ function show(e) {
               </button>
           </div>
       </div>
-      <div class="modal-body">
+      <div class="modal-pincipal">
           <h5>Tiens-moi au courant</h5>
           <p>Voulez-vous recevoir les dernières actus de cette page, inscrivez-vous ici. Vous recevrez une
               notification par e-mail chaque fois qu'un article est publié.</p>
@@ -356,10 +357,7 @@ function show(e) {
 
   `;
   showDisplay.style.display = "block";
-  document.querySelector("#modal-dialog").innerHTML = showDisplay;
-  document
-    .getElementById("closeModal2")
-    .addEventListener("click", close_modal2);
+  document.getElementById("modal-dialog").innerHTML = showDisplay;
 }
 
 //////////////////////////////////////////////////////////////////
