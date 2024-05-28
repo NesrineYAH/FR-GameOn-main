@@ -270,7 +270,6 @@ function validate() {
 ////////  modal FOUR FERMER LE bground (form)
 function modal() {
   //cree le 2 modal
-
   const modal = `
     <div class="modal-body">
     <div class="modal_text">
@@ -310,21 +309,18 @@ function close_modal2() {
 ////ecoute  le click de closeModal
 document.getElementById("closeModal").addEventListener("click", close_modal);
 
-const Btnsubscribe = document.querySelector(".subscribe");
-const mainDialog = document.querySelector(".mainDialog");
-Btnsubscribe.forEach((btn) =>
-  Btnsubscribe.addEventListener("click", launchModal)
-);
 /*
 function show() {
   const showDisplay = ``;
   showDisplay.style.display = "block";
   document.getElementById("modal-dialog").innerHTML = showDisplay;
 }*/
-document.addEventListener("DOMContentLoaded", (event) => {
-  var modalDialog = document.getElementById("modal-dialog");
-  var btnNotify = document.getElementById("notifyBtn");
-  var span = document.getElementsByClassName("close")[0];
+modalDialog.addEventListener("DOMContentLoaded", (event) => {
+  console.log("Le DOM a été entièrement chargé et analysé");
+
+  const modalDialog = document.getElementById("modal-dialog");
+  const btnNotify = document.getElementById("notifyBtn");
+  const span = document.getElementsById("close");
 
   // Ouvrir le modal lorsque l'utilisateur clique sur le bouton
   btnNotify.onclick = function () {
@@ -346,13 +342,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
   // Soumettre le formulaire (vous pouvez ajouter votre logique de soumission ici)
   document.querySelector(".form").onsubmit = function (e) {
     e.preventDefault();
-    var email = document.getElementById("email").value;
+    const email = document.getElementById("email").value;
     alert("Merci! Votre adresse e-mail " + email + " a été enregistrée.");
     modalDialog.style.display = "none";
     // Ajouter la logique de soumission de formulaire (par exemple, envoi AJAX) ici
   };
 });
-
 //////////////////////////////////////////////////////////////////
 modalSignin.forEach((btn) => btn.addEventListener("click", login));
 
