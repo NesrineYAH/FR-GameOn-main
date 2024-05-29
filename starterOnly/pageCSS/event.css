@@ -101,10 +101,12 @@
   flex-direction: column;
   position: absolute;
   right: 0.5%;
-  top: 45%;
+  top: 26%;
+  border-radius: 4px 4px 4px 4px;
+  border: 1px solid #e9dede;
   cursor: pointer;
-  width: 50px;
-  height: 2.5rem;
+  width: 46px;
+  height: 22rem;
 }
 .social-inner.background-social .share-item,
 .social-inner.background-social .share-item {

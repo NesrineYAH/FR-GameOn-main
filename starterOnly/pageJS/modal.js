@@ -23,7 +23,6 @@ function launchModal() {
   modalbg.style.display = "block";
 }
 
-/////////////validation pour le prenom
 function validateFirst(form) {
   const regexFirstName = /^[a-zA-ZÀ-ÿ]{2,35}([-' ,][a-zA-ZÀ-ÿ]+)*$/i;
   const validateFirst = document.querySelector(".first");
@@ -52,7 +51,7 @@ function validateFirst(form) {
     return true;
   }
 }
-///////////////validation pour le nom
+
 function validateLast(form) {
   const regexLastName = /^[a-zA-ZÀ-ÿ]{2,35}([-' ,][a-zA-ZÀ-ÿ]+)*$/i;
   const validateLast = document.querySelector(".last");
@@ -81,7 +80,7 @@ function validateLast(form) {
     return true;
   }
 }
-///////////////validation pour l'email
+
 function validateEmail(form) {
   const validateEmailField = document.querySelector(".email");
   const email = form["email"].value;
@@ -109,7 +108,7 @@ function validateEmail(form) {
     return true;
   }
 }
-///////////////validation pour la date de naissance
+
 function validateBirthdate(form) {
   const regexBirthdateISO =
     /^(19|20)\d{2}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$/;
@@ -154,7 +153,7 @@ function validateBirthdate(form) {
     return true;
   }
 }
-/////////////validate la quantité
+
 function validateQuantity(form) {
   const validateQuantity = document.querySelector(".quantity");
   const quantity = form["quantity"].value;
@@ -188,7 +187,7 @@ function validateQuantity(form) {
     return true;
   }
 }
-///////////////validate pour les options
+
 function validateRadioButtons(form) {
   const validateRadioButtons = document.querySelector(".location");
   const radioButtons = document.getElementsByName("location");
@@ -215,7 +214,7 @@ function validateRadioButtons(form) {
     return true;
   }
 }
-///////////////validate pour les conditions
+
 function validateConditions(form) {
   const validateRadioConditions = document.querySelector(".checkboxCondition");
   const Conditions = document.getElementById("checkbox1");
@@ -239,14 +238,12 @@ function validateConditions(form) {
 }
 const reserveForm = document.getElementById("reserve-form");
 
-//declanche la validation de formulaire
 reserveForm.addEventListener("submit", function (event) {
   event.preventDefault();
   validate();
   //alert("formulaire envoyé avec succes");
 });
 
-/////////////// Form validation
 function validate() {
   const isFirstNameValid = validateFirst(form);
   const isLastNameValid = validateLast(form);
@@ -269,7 +266,6 @@ function validate() {
 }
 ////////  modal FOUR FERMER LE bground (form)
 function modal() {
-  //cree le 2 modal
   const modal = `
     <div class="modal-body">
     <div class="modal_text">
@@ -308,77 +304,3 @@ function close_modal2() {
 }
 ////ecoute  le click de closeModal
 document.getElementById("closeModal").addEventListener("click", close_modal);
-
-/*
-function show() {
-  const showDisplay = ``;
-  showDisplay.style.display = "block";
-  document.getElementById("modal-dialog").innerHTML = showDisplay;
-}*/
-modalDialog.addEventListener("DOMContentLoaded", (event) => {
-  console.log("Le DOM a été entièrement chargé et analysé");
-
-  const modalDialog = document.getElementById("modal-dialog");
-  const btnNotify = document.getElementById("notifyBtn");
-  const span = document.getElementsById("close");
-
-  // Ouvrir le modal lorsque l'utilisateur clique sur le bouton
-  btnNotify.onclick = function () {
-    modalDialog.style.display = "block";
-  };
-
-  // Fermer le modal lorsque l'utilisateur clique sur le X
-  span.onclick = function () {
-    modalDialog.style.display = "none";
-  };
-
-  //Fermer le modal lorsque l'utilisateur clique en dehors du modal
-  window.onclick = function (event) {
-    if (event.target == modalDialog) {
-      modalDialog.style.display = "none";
-    }
-  };
-
-  // Soumettre le formulaire (vous pouvez ajouter votre logique de soumission ici)
-  document.querySelector(".form").onsubmit = function (e) {
-    e.preventDefault();
-    const email = document.getElementById("email").value;
-    alert("Merci! Votre adresse e-mail " + email + " a été enregistrée.");
-    modalDialog.style.display = "none";
-    // Ajouter la logique de soumission de formulaire (par exemple, envoi AJAX) ici
-  };
-});
-//////////////////////////////////////////////////////////////////
-modalSignin.forEach((btn) => btn.addEventListener("click", login));
-
-async function login(username, password) {
-  const url = "https://example.com/api/login"; // Remplacez par l'URL de votre serveur
-
-  //currentUser
-  const currentUser = {
-    username: username,
-    password: password,
-  };
-
-  try {
-    const response = await fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(currentUser),
-    });
-
-    if (!response.ok) {
-      throw new Error("Network response was not ok " + response.statusText);
-    }
-
-    const data = await response.json();
-    console.log("Login successful:", data);
-
-    // Vous pouvez stocker le token de session ou d'autres informations de connexion ici
-    // localStorage.setItem('token', data.token);
-  } catch (error) {
-    console.error("There was a problem with the login request:", error);
-  }
-}
