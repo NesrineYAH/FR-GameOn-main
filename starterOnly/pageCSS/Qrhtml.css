@@ -1,0 +1,18 @@
+footer .social .icons a svg {
+  display: block;
+  fill: currentColor;
+  height: 60%;
+  margin: 20%;
+  transition: fill 0.2s linear;
+  width: 60%;
+}
+svg,
+path {
+  display: flex;
+  align-items: center;
+  height: 1.2em;
+  overflow: visible;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 11px;
+}

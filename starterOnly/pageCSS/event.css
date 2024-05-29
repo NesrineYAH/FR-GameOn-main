@@ -120,14 +120,15 @@
   overflow: visible;
   width: 100%;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 11px;
 }
 .share-item {
   width: 45px;
-  height: 3em;
+  height: 3rem;
 }
 .share-item :hover {
   background-color: var(--Theme-color);
+  padding-bottom: 12px;
 }
 
 body {
