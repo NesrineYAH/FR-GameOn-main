@@ -345,6 +345,8 @@ h3 {
   height: 20px;
   padding: 10px;
   cursor: pointer;
+  color: #dfd9e7;
+  font-size: larger;
 }
 .content {
   display: none;
