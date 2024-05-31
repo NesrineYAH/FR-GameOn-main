@@ -119,7 +119,7 @@
         style="background-color: var(--twitter-color)"
         href="https://twitter.com"
         target="_blank"
-        data-twitter-msg="Faites un don à APF France handicap"
+        data-twitter-msg="Faites un sport handicap"
       >
         <svg
           class="svg-inline--fa fa-x-twitter"
@@ -211,20 +211,15 @@
       </a>
 
       <a
-        class="share-item qrcode js-show-qrmodal"
+        class="share-item qrcode"
+        id="openModal-button"
         style="background: var(--qrcode-color)"
-        data-ga-event="share"
-        data-ga-value="QrCode"
-        href="qr.html"
       >
         <svg
-          data-v-85211400=""
           class="svg-inline--fa fa-qrcode"
           aria-hidden="true"
           focusable="false"
-          data-prefix="fas"
           data-icon="qrcode"
-          role="img"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 448 512"
         >
@@ -237,13 +232,12 @@
       </a>
 
       <a
-        class="share-item widget js-show-widget"
+        class="share-item widget"
         style="background-color: var(--widget-color)"
         data-ga-event="share"
         data-ga-value="Widget"
       >
         <svg
-          data-v-85211400=""
           class="svg-inline--fa fa-code"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 640 512"
@@ -619,7 +613,7 @@
           <div class="modal-header">
             <div class="modal-header-inner">
               <svg
-                class="svg-inline--fa fa-star"
+                class="fe fa-star"
                 aria-hidden="true"
                 focusable="false"
                 data-prefix="fas"
@@ -642,7 +636,7 @@
                 aria-label="Close"
               >
                 <svg
-                  class="svg-inline--fa fa-xmark"
+                  class="fa fa-xmark"
                   aria-hidden="true"
                   focusable="false"
                   data-prefix="fas"
@@ -693,6 +687,85 @@
                 </label>
               </div>
               <button type="submit" class="disabled btn">Connecter</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-display" class="modal-backdrop">
+      <div id="modal-ideal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-header-inner">
+              <svg
+                class="fe fa-qrcode"
+                aria-hidden="true"
+                focusable="false"
+                data-icon="qrcode"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  style="width: 15px"
+                  fill="currentColor"
+                  d="M0 80C0 53.5 21.5 32 48 32h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80zM64 96v64h64V96H64zM0 336c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V336zm64 16v64h64V352H64zM304 32h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H304c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48zm80 64H320v64h64V96zM256 304c0-8.8 7.2-16 16-16h64c8.8 0 16 7.2 16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s7.2-16 16-16s16 7.2 16 16v96c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s-7.2-16-16-16s-16 7.2-16 16v64c0 8.8-7.2 16-16 16H272c-8.8 0-16-7.2-16-16V304zM368 480a16 16 0 1 1 0-32 16 16 0 1 1 0 32zm64 0a16 16 0 1 1 0-32 16 16 0 1 1 0 32z"
+                ></path>
+              </svg>
+              <button
+                type="button"
+                id="close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <svg
+                  class="svg-inline--fa fa-xmark"
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="xmark"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                >
+                  <path
+                    class=""
+                    fill="currentColor"
+                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="modal-pincipal">
+            <p>
+              Permettez à d'autres personnes de scanner ce code QR afin qu'elles
+              puissent rapidement faire un don à cette page.
+            </p>
+            <form method="post" class="form">
+              <img src="../assetes/imgGlobale/Untitled.svg" id="qrcode" />
+              <label for="email" class="mandatory"></label>
+              <div class="invalid-feedback"></div>
+
+              <div class="form-fancy-toggle">
+                <input
+                  id="news_accept"
+                  type="checkbox"
+                  name="accept"
+                  class="fancy-toggle"
+                />
+                <label for="news_accept" class="checkbox-label">
+                  <p>
+                    Oui, je souhaite recevoir des notifications e-mail lors de
+                    la publication d'actualités
+                  </p>
+                  <span></span>
+                </label>
+              </div>
+              <div class="form-fancy">
+                <button type="submit">Télécharger ce code QR</button>
+                <button type="submit">Créer un poste QR</button>
+              </div>
             </form>
           </div>
         </div>

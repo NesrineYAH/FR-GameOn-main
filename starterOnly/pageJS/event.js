@@ -42,4 +42,17 @@ function toggleContent(contentId) {
   }
 }
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function toggleDisplay(contenuId, chevron) {
+  var contenu = document.getElementById(contenuId);
+  //  const chevron = document.getElementsByClassName(chevron);
+  if (contenu.style.display === "none") {
+    contenu.style.display = "block";
+    chevron.classList.remove("chevron__down");
+    chevron.classList.add("chevron__up");
+  } else {
+    contenu.style.display = "none";
+    chevron.classList.remove("chevron__up");
+    chevron.classList.add("chevron__down");
+  }
+}

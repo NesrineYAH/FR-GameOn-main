@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   const Modal = document.getElementById("modal-dialog");
   var backdrop = document.getElementById("modal-backdrop");
+  // var openModalButton = document.getElementById("openModal-button");
   var openModalButton = document.getElementById("open-modal-button");
   var closeModalButton = document.getElementById("close");
 
@@ -18,6 +19,28 @@ document.addEventListener("DOMContentLoaded", (event) => {
   openModalButton.addEventListener("click", openModal);
   closeModalButton.addEventListener("click", closeModal);
   backdrop.addEventListener("click", closeModal);
+});
+/////////////////////////////////////////////////////////////////////////////////////////
+document.addEventListener("DOMContentLoaded", (event) => {
+  console.log("Le DOM a été entièrement chargé et analysé");
+
+  const modalIdeal = document.getElementById("modal-ideal"); //Modal
+  var modalDisplay = document.getElementById("modal-display"); //backdrop
+  var openModalButt = document.getElementById("openModal-button"); //openModalButton
+  var closeModalButton = document.getElementById("close");
+
+  function openModal() {
+    modalIdeal.style.display = "block";
+    modalDisplay.style.display = "block";
+  }
+  // Fermer le modal lorsque l'utilisateur clique sur le X
+  function closeModal() {
+    modalIdeal.style.display = "none";
+    modalDisplay.style.display = "none";
+  }
+  openModalButt.addEventListener("click", openModal);
+  closeModalButton.addEventListener("click", closeModal);
+  modalDisplay.addEventListener("click", closeModal);
 });
 
 /*

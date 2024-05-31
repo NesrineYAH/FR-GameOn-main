@@ -23,12 +23,7 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
-#qrcode {
-  width: 160px;
-  height: 160px;
-  margin-top: 15px;
-  animation: flash 1.5s infinite;
-}
+
 button:hover {
   background-color: #0056b3;
   color: white;
