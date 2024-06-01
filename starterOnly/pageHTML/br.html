@@ -1,211 +1,252 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devenez bénévole le temps du Festi'Run </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devenez bénévole le temps du Festi'Run</title>
     <link rel="stylesheet" href="../pageCSS/qr.css" />
     <link rel="stylesheet" href="../pageCSS/event.css" />
     <link rel="stylesheet" href="../pageCSS/bases.css" />
-
-</head>
-<style>
+  </head>
+  <style>
     #modal-dialog {
-        display: none;
-        position: fixed;
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        z-index: 1;
-        left: 0;
-        top: 0;
-        min-height: 100vh;
-        width: 100%;
-        overflow: auto;
-        background-color: white;
+      display: none;
+      position: fixed;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      min-height: 100vh;
+      width: 100%;
+      overflow: auto;
+      background-color: white;
     }
 
     .modal-content {
-        margin: 5% auto;
-        width: 100%;
-        max-width: 450px;
-        animation-name: modalopen;
-        animation-duration: var(--modal-duration);
-        background: #232323;
-        border-radius: 10px;
-        overflow: hidden;
-        position: relative;
-        color: #fff;
-        padding-top: 10px;
+      margin: 5% auto;
+      width: 100%;
+      max-width: 450px;
+      animation-name: modalopen;
+      animation-duration: var(--modal-duration);
+      background: #232323;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      color: #fff;
+      padding-top: 10px;
     }
 
     /*ajout le modal_text */
     .modal_header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 600px;
     }
 
     .modal-header-inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
     .svg-inline--fa {
-        height: 1.8rem;
+      height: 1.8rem;
     }
 
     .modal_text p {
-        font-size: 40px;
+      font-size: 40px;
     }
 
     .modal-body {
-        padding: 2% 10%;
-        margin: 15px auto;
+      padding: 2% 10%;
+      margin: 15px auto;
     }
 
     .btn-close {
-        position: absolute;
-        right: 15px;
-        top: 15px;
-        width: 32px;
-        height: 32px;
-        opacity: 1;
-        cursor: pointer;
-        transform: scale(0.7);
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      width: 32px;
+      height: 32px;
+      opacity: 1;
+      cursor: pointer;
+      transform: scale(0.7);
     }
 
     .modal-body {
-        padding: 2% 10%;
-        margin: 15px auto;
+      padding: 2% 10%;
+      margin: 15px auto;
     }
 
     .modal-body h5 {
-        font-size: 1.8rem;
-        font-weight: 900;
+      font-size: 1.8rem;
+      font-weight: 900;
     }
 
     .modal-body p {
-        margin-bottom: 1rem;
-        margin-top: 0;
+      margin-bottom: 1rem;
+      margin-top: 0;
     }
 
     .form-floating {
-        margin-top: 10px;
-        text-align: "start";
+      margin-top: 10px;
+      text-align: "start";
     }
 
-    .modal .modal-content .form-floating>label {
-        color: rgba(51, 51, 51, .35);
-        font-size: .925rem;
-        padding: 1rem .75rem 1rem 1.1rem;
+    .modal .modal-content .form-floating > label {
+      color: rgba(51, 51, 51, 0.35);
+      font-size: 0.925rem;
+      padding: 1rem 0.75rem 1rem 1.1rem;
     }
 
-    .form-floating>label {
-        border: 1px solid transparent;
-        border: var(--bs-border-width) solid transparent;
-        height: 100%;
-        left: 0;
-        overflow: hidden;
-        padding: 1rem .75rem;
-        pointer-events: none;
-        position: absolute;
-        text-align: start;
-        text-overflow: ellipsis;
-        top: 0;
-        transform-origin: 0 0;
-        transition: opacity .1s ease-in-out, transform .1s ease-in-out;
-        white-space: nowrap;
-        z-index: 2;
+    .form-floating > label {
+      border: 1px solid transparent;
+      border: var(--bs-border-width) solid transparent;
+      height: 100%;
+      left: 0;
+      overflow: hidden;
+      padding: 1rem 0.75rem;
+      pointer-events: none;
+      position: absolute;
+      text-align: start;
+      text-overflow: ellipsis;
+      top: 0;
+      transform-origin: 0 0;
+      transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+      white-space: nowrap;
+      z-index: 2;
     }
 
     .form-fancy-toggle {
-        position: relative;
+      position: relative;
     }
 
     .form-fancy-toggle .fancy-toggle,
     .form-fancy-toggle .fancy-toggle:active,
     .form-fancy-toggle input[type="checkbox"],
     .form-fancy-toggle input[type="checkbox"]:active {
-        border: none;
-        height: 100%;
-        left: 0;
-        opacity: 0;
-        outline: none;
-        position: absolute;
-        width: 100%;
-        z-index: 2;
+      border: none;
+      height: 100%;
+      left: 0;
+      opacity: 0;
+      outline: none;
+      position: absolute;
+      width: 100%;
+      z-index: 2;
     }
 
     .modal .modal-content .form-fancy-toggle label {
-        font-size: .925rem;
+      font-size: 0.925rem;
     }
 
     .form-fancy-toggle .checkbox-label:not(.left) {
-        padding-right: 50px;
+      padding-right: 50px;
     }
 
     .form-fancy-toggle .checkbox-label {
-        cursor: pointer;
-        display: block;
-        margin-bottom: 20px;
-        position: relative;
+      cursor: pointer;
+      display: block;
+      margin-bottom: 20px;
+      position: relative;
     }
 
     .btn.btn-primary.default-btn:not(:hover):not(.active),
     .btn.btn-primary.fuji-btn:not(:hover):not(.active) {
-        background: var(--button-bg-color);
-        color: var(--button-color);
+      background: var(--button-bg-color);
+      color: var(--button-color);
     }
-</style>
+  </style>
 
-<body>
+  <body>
     <div id="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <div class="modal-header-inner">
-                    <svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas"
-                        data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                        <path class="" fill="currentColor"
-                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                        </path>
-                    </svg>
-                    <button type="button" class="btn-close p-0" data-bs-dismiss="modal" aria-label="Close">
-                        <svg class="svg-inline--fa fa-xmark" aria-hidden="true" focusable="false" data-prefix="fas"
-                            data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                            <path class="" fill="currentColor"
-                                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
-                            </path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            <div class="modal-body">
-                <h5>Tiens-moi au courant</h5>
-                <p>Voulez-vous recevoir les dernières actus de cette page, inscrivez-vous ici. Vous recevrez une
-                    notification par e-mail chaque fois qu'un article est publié.</p>
-                <form method="post" class="mt-30">
-                    <div class="form-floating"><input id="floatingInput" type="email" name="email" class="form-control"
-                            placeholder="' '">
-                        <label for="floatingInput" class="mandatory">Adresse e-mail</label>
-                        <div class="invalid-feedback"></div>
-                    </div>
-                    <div class="form-fancy-toggle">
-                        <input id="news_accept" type="checkbox" name="accept" class="fancy-toggle"><label
-                            for="news_accept" class="checkbox-label">Oui, je souhaite recevoir
-                            des notifications e-mail lors de la publication d'actualités <span></span></label>
-                    </div>
-                    <button data-v-1dc6f706="" type="submit" class="disabled btn">Connecter</button>
-                </form>
-            </div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-header-inner">
+            <svg
+              class="svg-inline--fa fa-star"
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="star"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+            >
+              <path
+                class=""
+                fill="currentColor"
+                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+              ></path>
+            </svg>
+            <button
+              type="button"
+              class="btn-close p-0"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <svg
+                class="svg-inline--fa fa-xmark"
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="xmark"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+              >
+                <path
+                  class=""
+                  fill="currentColor"
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                ></path>
+              </svg>
+            </button>
+          </div>
         </div>
+        <div class="modal-body">
+          <h5>Tiens-moi au courant</h5>
+          <p>
+            Voulez-vous recevoir les dernières actus de cette page,
+            inscrivez-vous ici. Vous recevrez une notification par e-mail chaque
+            fois qu'un article est publié.
+          </p>
+          <form method="post" class="mt-30">
+            <div class="form-floating">
+              <input
+                id="floatingInput"
+                type="email"
+                name="email"
+                class="form-control"
+                placeholder="' '"
+              />
+              <label for="floatingInput" class="mandatory"
+                >Adresse e-mail</label
+              >
+              <div class="invalid-feedback"></div>
+            </div>
+            <div class="form-fancy-toggle">
+              <input
+                id="news_accept"
+                type="checkbox"
+                name="accept"
+                class="fancy-toggle"
+              /><label for="news_accept" class="checkbox-label"
+                >Oui, je souhaite recevoir des notifications e-mail lors de la
+                publication d'actualités <span></span
+              ></label>
+            </div>
+            <button data-v-1dc6f706="" type="submit" class="disabled btn">
+              Connecter
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>

@@ -41,41 +41,7 @@ button:hover {
 
 /************************************************** bénevole.html****************************************************************************/
 /* bloc social media  */
-/*
-.social-inner {
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  right: 1%;
-  top: 45%;
-  cursor: pointer;
-  width: 50px;
-  height: 2.5rem;
-}
-.social-inner.background-social .share-item [data-v-85211400],
-.social-inner.background-social .share-item[data-v-85211400] {
-  color: #fff;
-  text-decoration: none;
-}
-.svg-inline--fa {
-  display: flex;
-  align-items: center;
-  height: 1.2em;
-  overflow: visible;
-  width: 45px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  z-index: 100;
-}
-.share-item {
-  width: 45px;
-  height: 3em;
-}
-.share-item :hover {
-  background-color: var(--Theme-color);
-}
-*/
+
 body {
   max-width: 1600px;
   width: 100%;
@@ -274,9 +240,8 @@ p {
 }
 footer {
   width: 100%;
-  background: #9da4a6;
+  background: #584567;
   padding: 2rem;
-  background: #353333;
   margin-top: 6rem;
 }
 #footer-links {

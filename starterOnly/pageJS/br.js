@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   function openModal() {
     modalIdeal.style.display = "block";
     modalDisplay.style.display = "block";
+    body.style.background = "rgba(0, 0, 0, 0.4)";
   }
   // Fermer le modal lorsque l'utilisateur clique sur le X
   function closeModal() {

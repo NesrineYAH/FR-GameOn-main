@@ -128,7 +128,7 @@
 }
 .share-item :hover {
   background-color: var(--Theme-color);
-  padding-bottom: 12px;
+  padding-bottom: 15px;
 }
 
 body {
@@ -384,9 +384,7 @@ li {
   display: block;
 }
 footer {
-  background: #9da4a6;
   padding: 2rem;
-  background: #353333;
 }
 .btn-social-holder {
   display: flex;
@@ -414,4 +412,20 @@ footer {
   font-size: 1.2rem;
   color: #f6fafb;
   font-weight: bold;
+}
+.lazyloaded {
+  width: 100px;
+}
+.lien-retour {
+  position: absolute;
+  top: 27px;
+  left: 15px;
+  color: #4a4848;
+}
+.fa-lien {
+  color: #4a4848;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
