@@ -29,25 +29,46 @@
       </div>
       <div class="dropdownII">
         <ul class="listLangue">
-          <li class="nav__link nav__link--arrow" data-lang="fr">
-        <select  class="btn_lang" style="width: 50px; height: 32px;">
-            <option value="fr" onclick="changeLanguage('fr')"    style="width: 50px; height: 32px; color:#000">Fr</option >
+          <li
+            class="nav__link nav__link--arrow js-dropdown dropdown__toggle js-display-click"
+            data-lang="fr"
+          >
+            <a
+              href="#"
+              id="nav-lang-fr"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              role="button"
+              data-xtclick="header::langue"
+            >
+              <span
+                class="flag js-display-lazy flag--fr is-loaded"
+                data-class="flag--fr"
+              ></span>
+              <span class="is-ibl header__lang__label">fr</span>
+            </a>
           </li>
 
-          <li class="nav__link nav__link--arrow">
-            <option value="fr" onclick="changeLanguage('en')"   style="width: 50px; height: 32px; color:#000">en</option >
-          
+          <li
+            class="nav__link nav__link--arrow js-dropdown dropdown__toggle js-display-click"
+            data-lang="en"
+          >
+            <a
+              href="/en/"
+              id="nav-lang-fr"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              role="button"
+              data-xtclick="header::langue"
+              data-lang="en"
+            >
+              <span class="flag js-display-lazy" data-class="flag--en"></span>
+              <span class="is-ibl header__lang__label">en</span>
+            </a>
           </li>
-      </select>
         </ul>
-
         <!-- <script>
                 checkCookieForRedirect();
-
-
-    <button onclick="changeLanguage('en')">English</button>
-    <button onclick="changeLanguage('es')">Español</button>
-
             </script> -->
       </div>
     </header>
@@ -283,32 +304,18 @@
       <div class="section">
         <h1 style="padding-left: 20px">PRÉPAREZ-VOUS POUR LES JEUX</h1>
 
-        <div class="globle">
-          <article class="globleCard">
+        <div class="globleSection">
+          <article class="globleCardI">
             <img
               src="../assetes/imgGlobale/img Eveil I.png"
               alt="mg de marathon"
             />
-            <div class="detail">
-              <h3>
+
+            <div class="Detail" style="color: #000; width: 98%">
+              <h3 style="color: #000">
                 JO 2024 : Relais de la flamme olympique dans le Gers, quand
                 passe le relais près de chez vous ?
               </h3>
-              <span onclick="toggleContent('content1')">
-                <svg
-                  class="arrow"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 407.437 407.437"
-                  xml:space="preserve"
-                >
-                  <polygon
-                    points="386.258,91.567 203.718,273.512 21.179,91.567 0,112.815 203.718,315.87 407.437,112.815 "
-                  ></polygon>
-                </svg>
-              </span>
-            </div>
-            <div id="content1" class="content">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
                 corporis sapiente assumenda impedit voluptates quis nemo
@@ -318,28 +325,16 @@
             </div>
           </article>
 
-          <article class="globleCard">
+          <article class="globleCardI">
             <img
               src="../assetes/imgGlobale/img Eveil II.png"
               alt="mg de marathon"
             />
-            <div class="detail">
-              <h3>World Triathlon Championship Series - Yokohama 2024</h3>
-              <span onclick="toggleContent('content2')">
-                <svg
-                  class="arrow"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 407.437 407.437"
-                  xml:space="preserve"
-                >
-                  <polygon
-                    points="386.258,91.567 203.718,273.512 21.179,91.567 0,112.815 203.718,315.87 407.437,112.815 "
-                  ></polygon>
-                </svg>
-              </span>
-            </div>
-            <div id="content2" class="content">
+            <div class="Detail" style="width: 98%">
+              <h3 style="color: #000">
+                World Triathlon Championship Series - Yokohama 2024
+              </h3>
+
               <p>
                 Searching for new races? No bucket list is truly complete
                 without this one. A race that's both challenging and rewarding.
@@ -349,31 +344,16 @@
             </div>
           </article>
 
-          <article class="globleCard">
+          <article class="globleCardI">
             <img
               src="../assetes/imgGlobale/img Eveil III.png"
               alt="mg de marathon"
             />
-            <div class="detail">
-              <h3>
+            <div class="Detail">
+              <h3 style="color: #000">
                 JO 2024 : Relais de la flamme olympique en Corse, quand passe le
                 relais près de chez vous ?
               </h3>
-              <span onclick="toggleContent('content3')">
-                <svg
-                  class="arrow"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 407.437 407.437"
-                  xml:space="preserve"
-                >
-                  <polygon
-                    points="386.258,91.567 203.718,273.512 21.179,91.567 0,112.815 203.718,315.87 407.437,112.815 "
-                  ></polygon>
-                </svg>
-              </span>
-            </div>
-            <div id="content3" class="content">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
                 corporis sapiente assumenda impedit voluptates quis nemo
@@ -383,31 +363,16 @@
             </div>
           </article>
 
-          <article class="globleCard">
+          <article class="globleCardI">
             <img
               src="../assetes/imgGlobale/img Eveil IIII.png"
               alt="mg de marathon"
             />
-            <div class="detail">
-              <h3>
-                Relais de la flamme olympique à Marseille, quand passe le relais
-                près de chez vous ?
+            <div class="Detail">
+              <h3 style="color: #000">
+                JO 2024 : Relais de la flamme olympique en Corse, quand passe le
+                relais près de chez vous ?
               </h3>
-              <span onclick="toggleContent('content4')">
-                <svg
-                  class="arrow"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 407.437 407.437"
-                  xml:space="preserve"
-                >
-                  <polygon
-                    points="386.258,91.567 203.718,273.512 21.179,91.567 0,112.815 203.718,315.87 407.437,112.815 "
-                  ></polygon>
-                </svg>
-              </span>
-            </div>
-            <div id="content4" class="content">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
                 corporis sapiente assumenda impedit voluptates quis nemo
@@ -417,28 +382,16 @@
             </div>
           </article>
 
-          <article class="globleCard">
+          <article class="globleCardI">
             <img
               src="../assetes/imgGlobale/img Eveil IIII.png"
               alt="mg de marathon"
             />
-            <div class="detail">
-              <h3>Les Bleus ont rendez-vous avec l'Histoire.</h3>
-              <span onclick="toggleContent('content5')">
-                <svg
-                  class="arrow"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 407.437 407.437"
-                  xml:space="preserve"
-                >
-                  <polygon
-                    points="386.258,91.567 203.718,273.512 21.179,91.567 0,112.815 203.718,315.87 407.437,112.815 "
-                  ></polygon>
-                </svg>
-              </span>
-            </div>
-            <div id="content5" class="content">
+            <div class="Detail">
+              <h3 style="color: #000">
+                JO 2024 : Relais de la flamme olympique en Corse, quand passe le
+                relais près de chez vous ?
+              </h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
                 corporis sapiente assumenda impedit voluptates quis nemo
@@ -448,25 +401,13 @@
             </div>
           </article>
 
-          <article class="globleCard">
+          <article class="globleCardI">
             <img src="../assetes/imgGlobale/img Eveil IIII.png" />
-            <div class="detail">
-              <h3>Informations pratiques spectateurs</h3>
-              <span onclick="toggleContent('content6')">
-                <svg
-                  class="arrow"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 407.437 407.437"
-                  xml:space="preserve"
-                >
-                  <polygon
-                    points="386.258,91.567 203.718,273.512 21.179,91.567 0,112.815 203.718,315.87 407.437,112.815 "
-                  ></polygon>
-                </svg>
-              </span>
-            </div>
-            <div id="content6" class="content">
+            <div class="Detail">
+              <h3 style="color: #000">
+                JO 2024 : Relais de la flamme olympique en Corse, quand passe le
+                relais près de chez vous ?
+              </h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
                 corporis sapiente assumenda impedit voluptates quis nemo
@@ -475,113 +416,6 @@
               </p>
             </div>
           </article>
-        </div>
-      </div>
-
-      <div class="sidebar">
-        <h2>Actualité</h2>
-
-        <div class="side">
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, est?
-            Ducimus ratione ipsum alias
-          </p>
-          <button id="openBtn" onclick="openSidebar()">Open Sidebar</button>
-          <div class="imageSide">
-            <article class="sideCard">
-              <h3>NOS DERNIER INFO</h3>
-
-              <button
-                onclick="toggleContent('contentI')"
-                class="btn-right"
-                type="submit"
-              >
-                lire la suite
-                <i class="fa-solid fa-caret-right"></i>
-              </button>
-              <div id="contentI" class="contentI">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-                  corporis sapiente assumenda impedit voluptates quis nemo
-                  reiciendis aperiam accusantium adipisci consectetur magnam qui
-                  rerum mollitia, earum fugiat quisquam quibusdam placeat!
-                </p>
-              </div>
-            </article>
-
-            <article class="sideCard">
-              <h3>UN MARATHON ENGAGÉ !</h3>
-              <button
-                onclick="toggleContent('contentII')"
-                class="btn-right"
-                type="submit"
-              >
-                lire la suite
-                <i class="fa-solid fa-caret-right"></i>
-              </button>
-              <div id="contentII" class="contentI">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-                  corporis sapiente assumenda impedit voluptates quis nemo
-                  reiciendis aperiam accusantium adipisci consectetur magnam qui
-                  rerum mollitia, earum fugiat quisquam quibusdam placeat!
-                </p>
-              </div>
-            </article>
-
-            <article class="sideCard">
-              <h3>LES JEUNES AUSSI ONT LEUR MARATHON !</h3>
-
-              <button
-                onclick="toggleContent('contentIII')"
-                class="btn-right"
-                type="submit"
-              >
-                lire la suite
-                <i class="fa-solid fa-caret-right"></i>
-              </button>
-              <div id="contentIII" class="contentI">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-                  corporis sapiente assumenda impedit voluptates quis nemo
-                  reiciendis aperiam accusantium adipisci consectetur magnam qui
-                  rerum mollitia, earum fugiat quisquam quibusdam placeat!
-                </p>
-              </div>
-            </article>
-
-            <article class="sideCard">
-              <h3>
-                LE CHOIX DU DOSSARD SOLIDAIRE ET PROFITE DE FRAIS D’INSCRIPTION
-                RÉDUITS !
-              </h3>
-              <button
-                onclick="toggleContent('contentIIII')"
-                class="btn-right"
-                type="submit"
-              >
-                lire la suite
-                <i class="fa-solid fa-caret-right"></i>
-              </button>
-              <div id="contentIIII" class="contentI">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-                  corporis sapiente assumenda impedit voluptates quis nemo
-                  reiciendis aperiam accusantium adipisci consectetur magnam qui
-                  rerum mollitia, earum fugiat quisquam quibusdam placeat!
-                </p>
-              </div>
-            </article>
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non beatae
-            quis a inventore velit, consequuntur consectetur praesentium unde
-            aliquid eveniet ex minus exercitationem ut necessitatibus,
-            dignissimos porro ea autem quas rem corporis voluptas provident
-            saepe molestias odio! Libero aperiam optio nemo numquam suscipit
-            voluptates, eaque, hic tempore illum provident adipisci.
-          </p>
-          <button onclick="closeSidebar()">Close Sidebar</button>
         </div>
       </div>
     </section>

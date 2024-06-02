@@ -103,3 +103,30 @@ async function login(username, password) {
   }
 }
 */
+const texts = {
+  en: {
+    title: "Welcome",
+    description: "This is a multi-language example.",
+  },
+  fr: {
+    title: "Bienvenue",
+    description: "Ceci est un exemple multilingue.",
+  },
+  es: {
+    title: "Bienvenido",
+    description: "Este es un ejemplo multilingüe.",
+  },
+};
+
+function changeLanguage(lang) {
+  const elements = document.querySelectorAll("[id]");
+  elements.forEach((element) => {
+    const key = element.id;
+    if (texts[lang] && texts[lang][key]) {
+      element.textContent = texts[lang][key];
+    }
+  });
+}
+
+// Initialisation avec une langue par défaut
+window.onload = () => changeLanguage("en");

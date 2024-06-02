@@ -3,6 +3,7 @@
 .carousel {
   margin: 5.4rem auto;
   width: 91.4%;
+  overflow: hidden;
 }
 .carousel-images {
   display: flex;
@@ -93,7 +94,84 @@
   width: 0.8rem;
   background-color: red;
 }
-/* bloc social media  */
+
+/**************************Medai quey******************************************************************************/
+@media (max-width: 768px) {
+  .carousel {
+    margin: 5.4rem auto;
+    width: 91.4%;
+    overflow: hidden;
+  }
+
+  .carousel-images {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .carousel-images img {
+    max-width: 768px;
+    height: 1200px;
+    transition: transform 0.5s ease;
+    border: 2px solid #2a2727;
+  }
+
+  .lorem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1rem;
+    position: absolute;
+    top: 58%;
+    left: 14%;
+    z-index: 10;
+  }
+  .loremH {
+    color: #584567;
+    display: flex;
+    align-items: center;
+    font-size: 2.8rem;
+    z-index: 1;
+  }
+  .btn-H1 {
+    font-size: 1rem;
+    position: relative;
+    top: 75%;
+    z-index: 1;
+    width: 140px;
+    padding: 10px;
+    cursor: pointer;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.4rem;
+    border: 0.2rem solid rgb(0, 0, 0);
+    margin-bottom: 10px;
+    background-color: transparent;
+  }
+  #contentM {
+    width: 500px;
+    z-index: 1;
+    color: #00536a;
+    font-size: 1.22rem;
+    font-weight: 900;
+  }
+  .fe {
+    position: absolute;
+    left: 89%;
+    z-index: 1;
+  }
+  .gcTIqD {
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
+    height: 0.8rem;
+    opacity: 0.6;
+    width: 0.8rem;
+    background-color: red;
+  }
+}
+/********************************************** bloc social media  ********************************************************************************/
 
 .social-inner {
   justify-content: center;
@@ -170,14 +248,35 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 90%;
+  width: 80%;
 }
 .dropdownII {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 10%;
+  width: 18%;
 }
+
+.btn_lang {
+  border: 1.5px solid rgb(231, 231, 237);
+  border-radius: 0.8em;
+  cursor: pointer;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.55);
+  transition: all 0.2s;
+  width: 52px;
+  height: 25px;
+}
+.btn_lang:hover {
+  border: rgb(24, 2, 35);
+  border-color: var(--Theme-color);
+  font-weight: 500;
+}
+option {
+  border-radius: 0.8em;
+}
+
 /*  Mise en page Milieu de page */
 .marathonPage {
   display: flex;
@@ -187,6 +286,94 @@ body {
 }
 .section {
   width: 90%;
+}
+/* GLOBAL*/
+
+.globle {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 50px;
+  gap: 50px;
+}
+.globleCard {
+  width: 460px;
+  height: 420px;
+  line-height: 1.2em !important;
+  opacity: 1;
+}
+
+.detail {
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #bbbcbb;
+  box-shadow: 2px 2px 2px 2px #dedcdc;
+  margin-top: -6px;
+  padding: 4px;
+}
+.globleCard img {
+  width: 100%;
+  height: 320px;
+  opacity: 1;
+  box-shadow: 2px 2px 2px 2px #dedcdc;
+}
+
+h3 {
+  text-align: start;
+  padding-top: 20px;
+  padding-left: 10px;
+  margin-top: -7px;
+  margin-bottom: 17px;
+  color: #ffff;
+  font-size: 1rem;
+  width: 96%;
+}
+
+.arrow {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  cursor: pointer;
+  color: #dfd9e7;
+  font-size: larger;
+}
+
+.content {
+  display: none;
+  width: 94%;
+  height: auto;
+  padding: 8px;
+  border: 1px solid #ddd;
+  opacity: 1;
+  /* box-shadow: 1px 1px 0.2px 0.2px #212221; */
+  transition: display 0.3s ease-in-out;
+  position: relative;
+  z-index: -1;
+  margin-top: -2.8rem;
+  margin-bottom: 1.2rem;
+  background: #e3f2fd;
+  color: #2a384f;
+  animation: collapseDrop 1s ease-in-out;
+  -webkit-animation: collapseDrop 1s ease-in-out;
+}
+content > p {
+  font-size: 13px;
+}
+.icon {
+  text-transform: none;
+  line-height: 1;
+  color: #160101;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  opacity: 1;
+  z-index: 1;
+  width: 50px;
 }
 
 /*  SIDE */
@@ -293,92 +480,7 @@ h2 {
   box-shadow: 1px 1px 0.2px 0.2px #9dfed4;
   /*  background: url("../assetes/imageSidebar/side13.png");*/
 }
-/* GLOBAL*/
 
-.globle {
-  background-color: #ebf7f7;
-  padding: 1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 50px;
-  gap: 15px;
-}
-.globleCard {
-  width: 460px;
-  height: 580px;
-}
-
-.detail {
-  font-weight: 500;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #1bb57a;
-  box-shadow: 2px 2px 2px 2px #9dfed4;
-  margin-top: -6px;
-  padding: 4px;
-}
-.globleCard img {
-  width: 100%;
-  height: 320px;
-  opacity: 1;
-  box-shadow: 2px 2px 2px 2px #9dfed4;
-}
-
-h3 {
-  text-align: start;
-  padding-top: 20px;
-  padding-left: 10px;
-  margin-top: -7px;
-  margin-bottom: 17px;
-  color: #ffff;
-  font-size: 1rem;
-  width: 96%;
-}
-
-.arrow {
-  width: 20px;
-  height: 20px;
-  padding: 10px;
-  cursor: pointer;
-  color: #dfd9e7;
-  font-size: larger;
-}
-.arrow :hover {
-  transform: translate(1.5);
-}
-.arrow__down {
-  transform: rotate(0deg);
-  color: #0000;
-}
-
-.arrow__up {
-  transform: rotate(180deg);
-}
-.content {
-  display: none;
-  width: 94%;
-  margin-top: 10px;
-  padding: 8px;
-  border: 1px solid #ddd;
-  opacity: 1;
-  font-size: 14px;
-  box-shadow: 1px 1px 0.2px 0.2px #9dfed4;
-}
-.icon {
-  text-transform: none;
-  line-height: 1;
-  color: #160101;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  opacity: 1;
-  z-index: 1;
-  width: 50px;
-}
 li {
   color: #000;
   display: block;
@@ -428,4 +530,54 @@ footer {
   height: 40px;
   font-size: 1.5rem;
   cursor: pointer;
+}
+/***********************************************************************************/
+.globleSection {
+  background-color: #d6dddd;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 50px;
+  gap: 15px;
+}
+
+.globleCardI {
+  width: 360px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.globleCardI :hover {
+  transform: scale(1.02);
+}
+.globleCardI img {
+  border-radius: 10px 10px 0 0;
+  width: 99.8%;
+  height: 280px;
+  overflow: clip;
+}
+.Detail {
+  color: #000;
+}
+/********************keyframe*************************/
+
+@keyframes collapseDrop {
+  0% {
+    overflow: hidden;
+    max-height: 0%;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    max-height: 100%;
+  }
+
+  100% {
+    opacity: 1;
+    max-height: 100%;
+  }
 }
