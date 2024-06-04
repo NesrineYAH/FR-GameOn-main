@@ -29,47 +29,18 @@
       </div>
       <div class="dropdownII">
         <ul class="listLangue">
-          <li
-            class="nav__link nav__link--arrow js-dropdown dropdown__toggle js-display-click"
-            data-lang="fr"
-          >
-            <a
-              href="#"
-              id="nav-lang-fr"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              role="button"
-              data-xtclick="header::langue"
-            >
-              <span
-                class="flag js-display-lazy flag--fr is-loaded"
-                data-class="flag--fr"
-              ></span>
-              <span class="is-ibl header__lang__label">fr</span>
-            </a>
+          <li class="nav__link nav__link--arrow" data-lang="fr">
+        <select  class="btn_lang" style="width: 50px; height: 32px;">
+            <option value="fr" onclick="changeLanguage('fr')"    style="width: 50px; height: 32px; color:#000">Fr</option >
           </li>
 
-          <li
-            class="nav__link nav__link--arrow js-dropdown dropdown__toggle js-display-click"
-            data-lang="en"
-          >
-            <a
-              href="/en/"
-              id="nav-lang-fr"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              role="button"
-              data-xtclick="header::langue"
-              data-lang="en"
-            >
-              <span class="flag js-display-lazy" data-class="flag--en"></span>
-              <span class="is-ibl header__lang__label">en</span>
-            </a>
+          <li class="nav__link nav__link--arrow">
+            <option value="fr" onclick="changeLanguage('en')"   style="width: 50px; height: 32px; color:#000">en</option >
+          
           </li>
+      </select>
         </ul>
-        <!-- <script>
-                checkCookieForRedirect();
-            </script> -->
+       
       </div>
     </header>
 
@@ -178,9 +149,6 @@
           data-v-85211400=""
           class="svg-inline--fa fa-envelope"
           aria-hidden="true"
-          focusable="false"
-          data-prefix="fas"
-          data-icon="envelope"
           role="img"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
@@ -454,8 +422,6 @@
           data-cy="link"
           class="Cadre hdzmqC style-3"
           href="https://olympics.app.link/H3a5eyVw4Hb"
-          data-tracking="click"
-          data-tracking-payload='{"content_id":"15a4c967-c795-49e6-afc6-c7ea71a8d864","destination_url":"https://olympics.app.link/H3a5eyVw4Hb","link_tag":"Téléchargez l&apos;app","module_instance":"Action collection","translation_id":"d019f189-8171-4f11-88a2-80c572461834","module":"get ready for the games","module_position":"8"}'
           alt="Téléchargez l'app"
           target="_self"
         >
@@ -504,6 +470,33 @@
       </div>
     </section>
 
+
+     <!-- <section class="newletter newsletter" id="sectionIII" data-component-name="Newsletter">-->
+      <section id="sectionIII">
+        <div class="newsletter-wrapper">
+            <div class="left-side">
+                <h3 class="text-start">Inscrivez-vous à notre newsletter</h3>
+                <p>Vous souhaitez rester au courant de
+                    l'actualité de notre association ? <br />
+                    Abonnez-vous à notre newsletter !</p>
+            </div>
+            <div class="right-side" role="button">
+                <!--<input class="inputRight" type="Abonnez-vous "
+                        placeholder=" Abonnez-vous à notre newsletter !" />-->
+                        
+                <span id="openButtonEmail">Indiquer votre adresse mail !</span>
+                <a target="_blank">
+                    <svg class="fa fa-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path class="" fill="currentColor"
+                            d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <div id="modal-backdrop" class="modal-backdrop">
       <div id="modal-dialog">
         <div class="modal-content">
@@ -512,10 +505,6 @@
               <svg
                 class="fas fa-star"
                 aria-hidden="true"
-                focusable="false"
-                data-prefix="fas"
-                data-icon="star"
-                role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 576 512"
               >
@@ -535,10 +524,6 @@
                 <svg
                   class="fa fa-xmark"
                   aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fas"
-                  data-icon="xmark"
-                  role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 384 512"
                 >
@@ -616,7 +601,7 @@
                 aria-label="Close"
               >
                 <svg
-                  class="svg-inline--fa fa-xmark"
+                  class="fa fa-xmark"
                   aria-hidden="true"
                   focusable="false"
                   data-prefix="fas"
@@ -668,6 +653,62 @@
         </div>
       </div>
     </div>
+
+
+    <div id="modal-exemple" class="modal-backdrop">
+      <div id="modal-show">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <div class="modal-header-inner">
+                      <svg class="fa-envelope fas svg-inline--fa " aria-hidden="true" 
+                          data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                          <path class="" fill="currentColor"
+                              d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
+                          </path>
+                      </svg>
+    
+                      <button type="button" id="close" data-bs-dismiss="modal" aria-label="Close">
+                          <svg class="fa fa-xmark" aria-hidden="true" focusable="false"
+                              data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 384 512">
+                              <path class="" fill="currentColor"
+                                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                              </path>
+                          </svg>
+                      </button>
+                  </div>
+              </div>
+              <div class="modal-pincipal">
+                  <h5>Inscrivez-vous à notre newsletter</h5>
+                  <p>Vous souhaitez rester au curant de l'actualité de notre association? Abonnez-vous à notre newletter!</p>
+                  <form method="post" class="form">
+    
+                      <input id="email" type="email" name="email" placeholder="Adresse e-mail" />
+                      <label for="email" class="mandatory"></label>
+                      <div class="invalid-feedback"></div>
+    
+                      <div class="form-fancy-toggle">
+                          <input id="news_accept" type="checkbox" name="accept" class="fancy-toggle" />
+                          <label for="news_accept" class="checkbox-label">
+                              <p> Oui, je souhaite recevoir des notifications e-mail lors de la publication
+                                  d'actualités
+                              </p>
+                              <span></span>
+                          </label>
+                      </div>
+                      <button type="submit" class="disabled btn">Connecter</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+         </div>
+
+
+
+
+
+
+
 
     <footer>
       <div class="btn-social-holder">
@@ -808,3 +849,27 @@
     <script src="../pageJS/br.js"></script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- <script>
+                checkCookieForRedirect();
+            </script> -->

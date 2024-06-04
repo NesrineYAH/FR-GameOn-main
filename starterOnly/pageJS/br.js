@@ -24,8 +24,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 document.addEventListener("DOMContentLoaded", (event) => {
   console.log("Le DOM a été entièrement chargé et analysé");
 
-  const modalIdeal = document.getElementById("modal-ideal"); //Modal
   var modalDisplay = document.getElementById("modal-display"); //backdrop
+  const modalIdeal = document.getElementById("modal-ideal"); //Modal
   var openModalButt = document.getElementById("openModal-button"); //openModalButton
   var closeModalButton = document.getElementById("close");
 
@@ -42,6 +42,29 @@ document.addEventListener("DOMContentLoaded", (event) => {
   openModalButt.addEventListener("click", openModal);
   closeModalButton.addEventListener("click", closeModal);
   modalDisplay.addEventListener("click", closeModal);
+});
+//////////////////////////////////////////////////////////////////////////////////////////////////
+document.addEventListener("DOMContentLoaded", (event) => {
+  console.log("Le DOM a été entièrement chargé et analysé");
+
+  const modalExample = document.getElementById("modal-exemple"); //modalDisplay
+  var modalShow = document.getElementById("modal-show"); //backdrop modalShow
+  var openModalButtonEmail = document.getElementById("openButtonEmail"); //openModalButton
+  var closeModalButton = document.getElementById("close");
+
+  function openModal() {
+    modalShow.style.display = "block"; //modalShow
+    modalExample.style.display = "block"; //modalDisplay
+    body.style.background = "rgba(0, 0, 0, 0.4)";
+  }
+  // Fermer le modal lorsque l'utilisateur clique sur le X
+  function closeModal() {
+    modalShow.style.display = "none"; //modalShow
+    modalExample.style.display = "none"; //modalDisplay
+  }
+  openModalButtonEmail.addEventListener("click", openModal); //openModalButtonEmail
+  closeModalButton.addEventListener("click", closeModal);
+  modalExample.addEventListener("click", closeModal); //modalDisplay
 });
 
 /*

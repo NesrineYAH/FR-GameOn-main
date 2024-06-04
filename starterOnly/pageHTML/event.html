@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../pageCSS/event.css" />
     <link rel="stylesheet" href="../pageCSS/qr.css" />
     <link rel="stylesheet" href="../pageCSS/bases.css" />
+    
   </head>
 
   <body>
@@ -41,14 +42,6 @@
       </select>
         </ul>
 
-        <!-- <script>
-                checkCookieForRedirect();
-
-
-    <button onclick="changeLanguage('en')">English</button>
-    <button onclick="changeLanguage('es')">Español</button>
-
-            </script> -->
       </div>
     </header>
 
@@ -285,8 +278,7 @@
 
         <div class="globle">
           <article class="globleCard">
-            <img
-              src="../assetes/imgGlobale/img Eveil I.png"
+            <img src="../assetes/imgGlobale/img Eveil I.png"
               alt="mg de marathon"
             />
             <div class="detail">
@@ -294,9 +286,10 @@
                 JO 2024 : Relais de la flamme olympique dans le Gers, quand
                 passe le relais près de chez vous ?
               </h3>
-              <span onclick="toggleContent('content1')">
+              <span onclick="toggleDisplay('content1', this)">
                 <svg
-                  class="arrow"
+                  class="chevron"
+                  fill="#fff"
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                   viewBox="0 0 407.437 407.437"
@@ -327,7 +320,7 @@
               <h3>World Triathlon Championship Series - Yokohama 2024</h3>
               <span onclick="toggleContent('content2')">
                 <svg
-                  class="arrow"
+                  class="arrow" fill="#fff"
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                   viewBox="0 0 407.437 407.437"
@@ -361,7 +354,7 @@
               </h3>
               <span onclick="toggleContent('content3')">
                 <svg
-                  class="arrow"
+                  class="arrow" fil="#fff"
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                   viewBox="0 0 407.437 407.437"
@@ -395,7 +388,7 @@
               </h3>
               <span onclick="toggleContent('content4')">
                 <svg
-                  class="arrow"
+                  class="arrow"  fill="#fff"
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                   viewBox="0 0 407.437 407.437"
@@ -680,8 +673,6 @@
               <svg
                 class="fas fa-qrcode"
                 aria-hidden="true"
-                focusable="false"
-                data-icon="qrcode"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
               >
@@ -698,7 +689,7 @@
                 aria-label="Close"
               >
                 <svg
-                  class="svg-inline--fa fa-xmark"
+                  class="fa fa-xmark"
                   aria-hidden="true"
                   focusable="false"
                   data-prefix="fas"
@@ -857,13 +848,13 @@
         </li>
         <li id="social-links" class="link-box">
           <a href="/reglement" role="button" class="text-link">Règlement</a>
-        </li>
-      </ul>
-      <span cla ss="text--sm">Téléchargez l'application Paris 2024</span>
-      <br />
+        </li> 
+         </ul> 
+         <br />
+      <span class="text--sm">Téléchargez l'application Paris 2024</span>
+      
       <div
-        style="display: flex; flex-direction: row; padding-top: 25px; gap: 20px"
-      >
+        style="display: flex; flex-direction: row; padding-top: 25px; gap: 20px">
         <img
           loading="lazy"
           alt="Télécharger l’application Android"
