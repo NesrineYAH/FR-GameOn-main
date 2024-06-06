@@ -164,6 +164,53 @@
   </style>
 
   <body>
+    <header class="header__navigation" role="navigation">
+      <div class="mobile-menu">
+        <button class="hamburger" id="hamburger">☰</button>
+      </div>
+      <div class="dropdownI" id="menu">
+        <ul class="listHeader">
+          <a href="">
+            <li class="flag">Accueil</li>
+          </a>
+          <a href="./benevolat.html">
+            <li class="flag">Bénévolat</li>
+          </a>
+          <a href="./soutient.html">
+            <li class="flag">Nous soutenir</li>
+          </a>
+          <a href="#">
+            <li class="flag">Qui sommes-nous ?</li>
+          </a>
+          <a href="#">
+            <li class="flag">Blog</li>
+          </a>
+        </ul>
+      </div>
+      <div class="dropdownII">
+        <ul class="listLangue">
+          <li class="nav__link nav__link--arrow" data-lang="fr">
+            <select class="btn_lang" style="width: 50px; height: 32px">
+              <option
+                value="fr"
+                onclick="changeLanguage('fr')"
+                style="width: 50px; height: 32px; color: #000"
+              >
+                Fr
+              </option>
+              <option
+                value="en"
+                onclick="changeLanguage('en')"
+                style="width: 50px; height: 32px; color: #000"
+              >
+                En
+              </option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </header>
+
     <div id="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">

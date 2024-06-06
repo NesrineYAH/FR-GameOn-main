@@ -47,26 +47,50 @@ document.addEventListener("DOMContentLoaded", (event) => {
 document.addEventListener("DOMContentLoaded", (event) => {
   console.log("Le DOM a été entièrement chargé et analysé");
 
-  const modalExample = document.getElementById("modal-exemple"); //modalDisplay
-  var modalShow = document.getElementById("modal-show"); //backdrop modalShow
-  var openModalButtonEmail = document.getElementById("openButtonEmail"); //openModalButton
+  const modalExample = document.getElementById("modal-exemple");
+  var modalShow = document.getElementById("modal-show");
+  var openModalButtonEmail = document.getElementById("openButtonEmail");
   var closeModalButton = document.getElementById("close");
 
   function openModal() {
-    modalShow.style.display = "block"; //modalShow
-    modalExample.style.display = "block"; //modalDisplay
+    modalShow.style.display = "block";
+    modalExample.style.display = "block";
     body.style.background = "rgba(0, 0, 0, 0.4)";
   }
   // Fermer le modal lorsque l'utilisateur clique sur le X
   function closeModal() {
-    modalShow.style.display = "none"; //modalShow
-    modalExample.style.display = "none"; //modalDisplay
+    modalShow.style.display = "none";
+    modalExample.style.display = "none";
   }
-  openModalButtonEmail.addEventListener("click", openModal); //openModalButtonEmail
+  openModalButtonEmail.addEventListener("click", openModal);
   closeModalButton.addEventListener("click", closeModal);
-  modalExample.addEventListener("click", closeModal); //modalDisplay
+  modalExample.addEventListener("click", closeModal);
 });
 
+///////////////////////show menu version mobile /////////////////////////////////////////////////
+
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.getElementById("hamburger");
+  const menu = document.getElementById("menu");
+  var closeButton = document.getElementById("closebutton");
+
+  function toggleMenu() {
+    menu.style.display = "block";
+    // menu.classList.toggle("show");
+    hamburger.classList.toggle("show");
+    closeButton.classList.toggle("show");
+  }
+
+  var closeModalButton = document.getElementById("close");
+  function closeModal() {
+    menu.style.display = "none";
+    // closeModalButton.style.display = "none";
+    closeButton.classList.toggle("show");
+    hamburger.classList.toggle("show");
+  }
+  hamburger.addEventListener("click", toggleMenu);
+  closeButton.addEventListener("click", closeModal);
+});
 /*
 document.addEventListener("DOMContentLoaded", (event) => {
   console.log("Le DOM a été entièrement chargé et analysé");
