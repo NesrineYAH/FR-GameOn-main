@@ -251,7 +251,7 @@ h2 {
   font-size: 1rem;
   overflow: hidden;
   width: 90%;
-  margin: 80px auto;
+  margin: 50px auto;
   line-height: 1.8pc;
 }
 .myPP {
@@ -345,7 +345,7 @@ p {
     margin: 0px auto;
   }
   .imgBloc {
-    width: 600px;
+    width: 480px;
   }
   .myP {
     font-size: 1rem;
@@ -364,18 +364,18 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     width: 100%;
     margin: 0 auto;
-    height: 240px;
+    height: 260px;
   }
   .left-side {
-    padding-top: 3.2rem;
+    padding-top: 1.8rem;
   }
   .left-side p {
-    width: 398px;
+    width: 350px;
     overflow: hidden;
     text-align: start;
+    line-height: 20px;
   }
   .right-side {
     display: flex;
@@ -395,7 +395,6 @@ p {
 #sectionIII {
   background-color: #edd6e7;
   height: 40vh;
-  margin-bottom: 0%;
 }
 .newsletter-wrapper {
   display: flex;
@@ -414,11 +413,9 @@ p {
   justify-content: center;
 }
 
-.sectionM1 {
-  width: 80%;
+#sectionVI {
   text-align: center;
   margin: 0 auto;
-  height: 70vh;
 }
 .col-12 {
   display: flex;
@@ -430,6 +427,30 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 40rem;
+  width: 35rem;
   height: 5rem;
+}
+/**************************************************Media query********************************************************/
+@media (max-width: 768px) {
+  #sectionVI {
+    text-align: center;
+    margin: 15px auto;
+  }
+  .col-12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .col-12I {
+    width: 24rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    padding: 0.4rem;
+    overflow: hidden;
+  }
+  h4 {
+    font-size: 14px;
+  }
 }
