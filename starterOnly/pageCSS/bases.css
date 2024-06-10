@@ -140,8 +140,8 @@ main {
 .styles__Picture-sc-3cfb7849-0 {
   display: flex;
   padding: 4px;
-  width: 45px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   background-color: #cdc7c7;
   color: #0000;
   z-index: 1;
@@ -149,10 +149,14 @@ main {
 
 .ls-is-cached {
   color: #0000;
-  padding: 3px;
+  width: 35px;
+  height: 35px;
 }
-
-.sc-cZPjdL {
+.lazyloaded {
+  width: 100px;
+  height: 35px;
+}
+.CadreDiv {
   width: 50px;
   margin-right: 20px;
   z-index: 1;
@@ -161,10 +165,12 @@ main {
 .eZEbUT {
   display: flex;
   height: 2.4rem;
-  width: 3.8rem;
+  width: 2.8rem;
+  align-items: center;
+  justify-content: center;
 }
 
-.hdzmqC {
+.Cadre {
   z-index: -1;
   align-items: center;
   border-radius: 0.4rem;
@@ -185,7 +191,7 @@ main {
   cursor: pointer;
 }
 
-.hdzmqC.style-0::before {
+.Cadre.style-0::before {
   border-radius: 100%;
   bottom: 0px;
   content: "";
@@ -209,7 +215,6 @@ main {
 
 .title-container {
   width: 100%;
-  height: 100px;
   text-align: center;
   margin-top: 16%;
   /* border: 4px solid #185591;*/
@@ -245,7 +250,7 @@ a {
   background: linear-gradient(90deg, rgb(0, 56, 83) 0%, rgb(23, 183, 176) 100%);
 }
 
-.hdzmqC.style-1::before {
+.Cadre.style-1::before {
   border-top-right-radius: 100%;
   content: "";
   display: block;
@@ -262,7 +267,7 @@ a {
   );
 }
 
-.hdzmqC.style-2::before {
+.Cadre.style-2::before {
   border-radius: 80% 0px;
   content: "";
   display: block;
@@ -275,7 +280,7 @@ a {
   width: 110%;
   background: linear-gradient(45deg, rgb(0, 56, 83) 0%, rgb(23, 183, 176) 100%);
 }
-.hdzmqC.style-3::before {
+.Cadre.style-3::before {
   border-radius: 80% 0px;
   content: "";
   display: block;
@@ -288,22 +293,30 @@ a {
   width: 100%;
   background: linear-gradient(rgb(0, 56, 83) 0%, rgb(23, 183, 176) 100%);
 }
+
 /******************************************************************************************************************/
 @media (max-width: 768px) {
+  .form-control {
+    opacity: 0;
+  }
   .title-container {
-    margin-top: 30%;
+    margin-top: 45%;
   }
   .grid-container {
     display: flex;
     flex-direction: row;
   }
   .gmhevn {
-    gap: 0.2rem;
-    display: grid;
-    grid-template-rows: repeat(auto-fill, minmax(auto, 2rem));
+    gap: 0.1rem;
+    /*   display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(auto, 1rem));
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 96%;*/
+    margin-left: 30px;
+  }
+  .Cadre {
+    width: 18rem;
   }
 }
 

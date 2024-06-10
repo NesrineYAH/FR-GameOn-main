@@ -184,7 +184,7 @@
   border: 1px solid #e9dede;
   cursor: pointer;
   width: 46px;
-  height: 22rem;
+  height: 24rem;
 }
 .social-inner.background-social .share-item,
 .social-inner.background-social .share-item {
@@ -387,8 +387,6 @@ p {
   display: flex;
   flex-direction: column;
   border: 1px, solid #e6d9d9;
-
-  /*justify-content: space-between;*/
 }
 
 h2 {
@@ -489,7 +487,7 @@ li {
 footer {
   padding: 2rem;
   background: #584567;
-  margin-top: 6rem;
+  margin-top: 7.8rem;
   width: 100%;
 }
 .btn-social-holder {
@@ -519,9 +517,7 @@ footer {
   color: #f6fafb;
   font-weight: bold;
 }
-.lazyloaded {
-  width: 100px;
-}
+
 .lien-retour {
   position: absolute;
   top: 27px;
@@ -553,7 +549,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     width: 95%;
     height: auto;
   }
