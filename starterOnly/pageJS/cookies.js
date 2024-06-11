@@ -40,3 +40,11 @@ if (username) {
 
 // Supprimer un cookie
 eraseCookie("username");
+
+/*
+Pour nous soutenir, acceptez les cookies
+
+Avec votre accord, nous et nos 285 partenaires utilisons des cookies ou technologies similaires pour stocker, consulter et traiter des données personnelles telles que votre visite sur ce site internet, les adresses IP et les identifiants de cookie. Certains partenaires ne demandent pas votre consentement pour traiter vos données et se fondent sur leur intérêt commercial légitime. À tout moment, vous pouvez retirer votre consentement ou vous opposer au traitement des données fondé sur l'intérêt légitime en cliquant sur « En savoir plus » ou en allant dans notre politique de confidentialité sur ce site internet.
+Vos données personnelles sont traitées pour les finalités suivantes:
+Contenus cartographiques/infographiques , Contenus vidéo et audio, Données de géolocalisation précises et identification par analyse de l’appareil, Mesure d'audience, Publicités et contenu personnalisés, mesure de performance des publicités et du contenu, études d’audience et développement de services, Réseaux sociaux, Stocker et/ou accéder à des informations sur un appareil
+ */
