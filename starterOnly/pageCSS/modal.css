@@ -542,3 +542,35 @@ media query********************************************************/
     top: 0;
   }
 }
+
+/***********************************************ERROR PAGE**********************************************************************/
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+}
+.errorContainer__Number {
+  font-size: 30rem;
+  text-align: center;
+  color: #1d1c3a;
+  text-decoration: none;
+}
+
+.error__Text {
+  margin: 0 11%;
+  text-align: center;
+  color: #1d1c3a;
+  text-decoration: none;
+  width: 60%;
+  padding: 1rem;
+  border: 1px solid #000;
+}
+
+.error__Text :hover,
+.error__Text :focus {
+  text-decoration-line: none;
+}
+@media screen and (max-width: 768px) {
+  .errorContainer__Text {
+    margin-top: 7rem;
+  }
+}

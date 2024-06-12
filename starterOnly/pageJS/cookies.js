@@ -10,7 +10,7 @@ function setCookie(name, value, days) {
   document.cookie = name + "=" + (value || "") + expires + "; path=/";
 }
 
-// fonction d'avoir de cookies
+// fonction d'avoir de cookies //Lire les cookies en JavaScript
 
 function getCookie(name) {
   let nameEQ = name + "=";
@@ -21,6 +21,7 @@ function getCookie(name) {
     if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
   }
   return null;
+  //   return decodeURIComponent(value);
 }
 
 function eraseCookie(name) {
@@ -31,15 +32,25 @@ function eraseCookie(name) {
 setCookie("username", "NesrineYAH", 7); // Le cookie "username" avec la valeur "JohnDoe" qui expire dans 7 jours
 
 // Lire un cookie
-let username = getCookie("username");
-if (username) {
-  console.log("Hello " + username);
-} else {
-  console.log("Cookie not found");
-}
+let user = getCookie("username"); // Lire le cookie
+console.log("Username: " + user); // Afficher la valeur du cookie
+eraseCookie("username"); // Supprimer le cookie
 
 // Supprimer un cookie
 eraseCookie("username");
+
+// Function to change language and store preference in a cookie
+function changeLanguage(lang) {
+  currentLanguage = lang;
+  setCookie("preferredLanguage", lang, 7); // Store for 7 days
+  applyTranslations(lang);
+}
+
+// Initialize translations on page load with preferred language from cookie
+document.addEventListener("DOMContentLoaded", () => {
+  const preferredLanguage = getCookie("preferredLanguage") || "fr";
+  changeLanguage(preferredLanguage);
+});
 
 /*
 Pour nous soutenir, acceptez les cookies

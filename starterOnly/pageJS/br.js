@@ -22,8 +22,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
 });
 /////////////////////////////////////////////////////////////////////////////////////////
 document.addEventListener("DOMContentLoaded", (event) => {
-  console.log("Le DOM a été entièrement chargé et analysé");
-
   var modalDisplay = document.getElementById("modal-display"); //backdrop
   const modalIdeal = document.getElementById("modal-ideal"); //Modal
   var openModalButt = document.getElementById("openModal-button"); //openModalButton
@@ -45,8 +43,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
 });
 //////////////////////////////////////////////////////////////////////////////////////////////////
 document.addEventListener("DOMContentLoaded", (event) => {
-  console.log("Le DOM a été entièrement chargé et analysé");
-
   const modalExample = document.getElementById("modal-exemple");
   var modalShow = document.getElementById("modal-show");
   var openModalButtonEmail = document.getElementById("openButtonEmail");
@@ -91,6 +87,43 @@ document.addEventListener("DOMContentLoaded", function () {
   hamburger.addEventListener("click", toggleMenu);
   closeButton.addEventListener("click", closeModal);
 });
+
+///////////////////////////////////////////////////////////////
+let currentLanguage = "fr"; // Default language
+
+// Function to load language file
+async function loadLanguage(lang) {
+  const response = await fetch(`lang/${lang}.json`);
+  const translations = await response.json();
+  return translations;
+}
+
+// Function to apply translations
+async function applyTranslations(lang) {
+  const translations = await loadLanguage(lang);
+  document.querySelectorAll("[data-translate]").forEach((element) => {
+    const key = element.getAttribute("data-translate");
+    element.textContent = translations[key] || key;
+  });
+}
+
+// Function to change language
+function changeLanguage(lang) {
+  currentLanguage = lang;
+  localStorage.setItem("preferredLanguage", lang);
+  applyTranslations(lang);
+}
+
+// Initialize translations on page load
+document.addEventListener("DOMContentLoaded", () => {
+  applyTranslations(currentLanguage);
+});
+// Initialize translations on page load with preferred language
+document.addEventListener("DOMContentLoaded", () => {
+  const preferredLanguage = localStorage.getItem("preferredLanguage") || "fr";
+  changeLanguage(preferredLanguage);
+});
+//window.onload = () => changeLanguage("fr");
 /*
 document.addEventListener("DOMContentLoaded", (event) => {
   console.log("Le DOM a été entièrement chargé et analysé");
@@ -150,21 +183,7 @@ async function login(username, password) {
   }
 }
 */
-const texts = {
-  en: {
-    title: "Welcome",
-    description: "This is a multi-language example.",
-  },
-  fr: {
-    title: "Bienvenue",
-    description: "Ceci est un exemple multilingue.",
-  },
-  es: {
-    title: "Bienvenido",
-    description: "Este es un ejemplo multilingüe.",
-  },
-};
-
+/*  //11/06/2024
 function changeLanguage(lang) {
   const elements = document.querySelectorAll("[id]");
   elements.forEach((element) => {
@@ -176,4 +195,4 @@ function changeLanguage(lang) {
 }
 
 // Initialisation avec une langue par défaut
-window.onload = () => changeLanguage("en");
+window.onload = () => changeLanguage("en");*/

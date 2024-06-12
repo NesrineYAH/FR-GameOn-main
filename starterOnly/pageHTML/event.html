@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../pageCSS/event.css" />
     <link rel="stylesheet" href="../pageCSS/qr.css" />
     <link rel="stylesheet" href="../pageCSS/bases.css" />
-    
+    <link rel="stylesheet" href="../pageCSS/FAQ.css" />
   </head>
 
   <body>
@@ -40,7 +40,7 @@
                   <li class="flag ">qui somme nous ?
                   </li>
               </a>
-              <a href="#">
+              <a href="./erreurPage.html">
                   <li class="flag ">Blog
                   </li>
               </a>
@@ -63,18 +63,15 @@
   </header>
 
     <div class="lorem">
-      <h1 class="loremH">NOS EVENEMENTS</h1>
+      <h1  data-translate="greeting" class="loremH">NOS EVENEMENTS</h1>
       <br />
       <button onclick="toggleContent('contentM')" class="btn-H1" type="submit">
         lire la suite
         <i class="fa-caret-right fe"></i>
       </button>
       <div id="contentM" class="content">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste corporis
-          sapiente assumenda impedit voluptates quis nemo reiciendis aperiam
-          accusantium adipisci consectetur magnam qui rerum mollitia, earum
-          fugiat quisquam quibusdam placeat!
+        <p data-translate="fare">
+          Géolocalisez-vous et découvrez tous les évènements des Jeux de Paris 2024 près de chez vous ! Lieux de célébrations, évènements culturels, parcours du relais de la flamme : vivez votre propre expérience des Jeux de Paris 2024, avec ou sans billet, partout en France.
         </p>
       </div>
     </div>
@@ -873,10 +870,7 @@
           alt="Télécharger l’application Android"
           class="lazyloaded"
           data-src="https://img.olympics.com/images/image/private/t_original_760/f_auto/primary/pqdqxbupq6l1jljqjcxy"
-          height="40"
           src="https://img.olympics.com/images/image/private/t_original_760/f_auto/primary/pqdqxbupq6l1jljqjcxy"
-          width="120"
-          title=""
         />
 
         <img
@@ -884,17 +878,39 @@
           alt="Télécharger l’application IOS"
           class="lazyloaded"
           data-src="https://img.olympics.com/images/image/private/t_original_760/f_auto/primary/a5tl7s4kndaogucwcmx4"
-          height="40"
-          src="https://img.olympics.com/images/image/private/t_original_760/f_auto/primary/a5tl7s4kndaogucwcmx4"
-          width="120"
-          title=""
+
+          src="https://img.olympics.com/images/image/private/t_original_760/f_auto/primary/a5tl7s4kndaogucwcmx4"S
         />
       </div>
     </footer>
 
+    
+   <div class="ot-sdk-container">
+    <div class="ot-sdk-row">
+    <div id="onetrust-group-container" class="ot-sdk-eight ot-sdk-columns">
+ 
+      <div id="onetrust-policy-text">En cliquant sur «&nbsp;Accepter tous les cookies&nbsp;», vous acceptez le stockage de cookies sur votre appareil pour améliorer la navigation sur le site, analyser son utilisation et contribuer à nos efforts de marketing.
+         </div>
+    </div>
+      <div id="onetrust-button-group-parent" class="ot-sdk-three ot-sdk-columns has-reject-all-button">
+        <div id="onetrust-button-group">
+          <button id="onetrust-pc-btn-handler">Paramètres des cookies</button>
+           <button id="onetrust-reject-all-handler">Tout refuser</button>
+            <button id="onetrust-accept-btn-handler">Autoriser tous les cookies</button>
+          </div>
+        </div>
+        </div>
+   </div>
+
+
+
+
+
     <script src="../pageJS/event.js"></script>
     <script src="../pageJS/cookies.js"></script>
     <script src="../pageJS/br.js"></script>
+
+
   </body>
 </html>
 
