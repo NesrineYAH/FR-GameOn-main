@@ -8,6 +8,7 @@ function setCookie(name, value, days) {
     expires = "; expires=" + date.toUTCString();
   }
   document.cookie = name + "=" + (value || "") + expires + "; path=/";
+  alert("cookie est crée bravo");
 }
 
 // fonction d'avoir de cookies //Lire les cookies en JavaScript
@@ -25,7 +26,8 @@ function getCookie(name) {
 }
 
 function eraseCookie(name) {
-  document.cookie = name + "=; Max-Age=-99999999;";
+  //document.cookie = name + "=; Max-Age=-99999999;";
+  document.cookie = name + "= je suis un cookie;";
 }
 
 // Ajouter un cookie
