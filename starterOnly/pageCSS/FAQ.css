@@ -14,9 +14,12 @@ h1 {
 }
 .ot-sdk-container {
   width: 100%;
+  height: 200px;
   display: block;
   animation-name: modalopen;
   animation-duration: var(--modal-duration);
+  z-index: 100;
+  transform: translateY(10%);
 }
 .ot-sdk-row {
   margin: 0;
@@ -24,16 +27,28 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
 }
 #onetrust-banner-sdk:not(.ot-iab-2) #onetrust-group-container {
-  width: 55%;
   display: flex;
   flex-direction: row;
 }
 #onetrust-button-group-parent {
+  margin: 12px;
+
+  width: 70%;
+  padding: 1.5rem;
   display: flex;
-  flex-direction: row;
-  width: 55%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.butt {
+  width: 150px;
+  padding: 0.5rem;
+  margin-bottom: 15px;
+}
+#onetrust-group-container {
+  padding: 2.5rem;
 }
 #onetrust-banner-sdk:not(.ot-iab-2) #onetrust-button-group-parent::after {
   box-sizing: border-box;
@@ -48,7 +63,7 @@ h1 {
 }
 #onetrust-policy-text {
   display: block;
-  width: 60%;
+  width: 80%;
 }
 #onetrust-button-group-paren {
   width: 60%;
@@ -140,28 +155,6 @@ article {
 span {
   color: #2a384f;
 }
-/*
-.q-card__section {
-  background-color: #d8e1ee;
-  padding: 1rem;
-  font-size: 12px;
-  display: none;
-}*/
-/*
-.q-focus-helper::after,
-.q-focus-helper::before {
-  border-radius: inherit;
-  content: "";
-  height: 100%;
-  opacity: 0;
-  /* position: absolute;
-  top: 0;
-    left: 0;*/
-/*transition: background-color 0.3s cubic-bezier(0.25, 0.8, 0.5, 1),
-    opacity 0.6s cubic-bezier(0.25, 0.8, 0.5, 1);
-  width: 100%;
-  border: 1px solid blue;
-}*/
 
 @keyframes collapseDrop {
   0% {

@@ -8,7 +8,6 @@ function setCookie(name, value, days) {
     expires = "; expires=" + date.toUTCString();
   }
   document.cookie = name + "=" + (value || "") + expires + "; path=/";
-  alert("cookie est crée bravo");
 }
 
 // fonction d'avoir de cookies //Lire les cookies en JavaScript
@@ -54,10 +53,59 @@ document.addEventListener("DOMContentLoaded", () => {
   changeLanguage(preferredLanguage);
 });
 
-/*
-Pour nous soutenir, acceptez les cookies
+// Fonction pour accepter les cookies
+function accepterLesCookies() {
+  // Sélectionner le bouton d'acceptation des cookies
+  var boutonAcceptation = document.querySelector(
+    "#onetrust-accept-btn-handler"
+  );
+  var blocCookies = document.querySelector(".ot-sdk-container");
 
-Avec votre accord, nous et nos 285 partenaires utilisons des cookies ou technologies similaires pour stocker, consulter et traiter des données personnelles telles que votre visite sur ce site internet, les adresses IP et les identifiants de cookie. Certains partenaires ne demandent pas votre consentement pour traiter vos données et se fondent sur leur intérêt commercial légitime. À tout moment, vous pouvez retirer votre consentement ou vous opposer au traitement des données fondé sur l'intérêt légitime en cliquant sur « En savoir plus » ou en allant dans notre politique de confidentialité sur ce site internet.
-Vos données personnelles sont traitées pour les finalités suivantes:
-Contenus cartographiques/infographiques , Contenus vidéo et audio, Données de géolocalisation précises et identification par analyse de l’appareil, Mesure d'audience, Publicités et contenu personnalisés, mesure de performance des publicités et du contenu, études d’audience et développement de services, Réseaux sociaux, Stocker et/ou accéder à des informations sur un appareil
- */
+  // Vérifier si le bouton existe
+  if (boutonAcceptation) {
+    // Simuler un clic sur le bouton
+    boutonAcceptation.click();
+    if (blocCookies) {
+      blocCookies.style.display = "block";
+    } else {
+      blocCookies.style.display = "block";
+    }
+    // Arrêter l'intervalle une fois que le bouton est cliqué
+    clearInterval(intervalID);
+  } else {
+    console.log("Le bouton d'acceptation des cookies n'a pas été trouvé.");
+  }
+}
+
+// Exécuter la fonction à intervalle régulier
+var intervalID = setInterval(accepterLesCookies, 1000); // Vérifier toutes les secondes
+// Exécuter la fonction
+accepterLesCookies();
+
+// Fonction pour refuser les cookies
+function refuserLesCookies() {
+  // Sélectionner le bouton de refus des cookies
+  var boutonRefus = document.querySelector("#onetrust-reject-all-handler");
+  // Sélectionner le bloc de cookies
+  var blocCookies = document.querySelector(".ot-sdk-container");
+
+  // Vérifier si le bouton existe
+  if (boutonRefus) {
+    // Simuler un clic sur le bouton
+    boutonRefus.click();
+    // Masquer le bloc de cookies
+    if (blocCookies) {
+      blocCookies.style.display = "block";
+    }
+    // Arrêter l'intervalle une fois que le bouton est cliqué
+    clearInterval(intervalID);
+  } else {
+    console.log("Le bouton de refus des cookies n'a pas été trouvé.");
+  }
+}
+
+// Exécuter la fonction à intervalle régulier
+var intervalID = setInterval(refuserLesCookies, 1000); // Vérifier toutes les secondes
+
+// Exécuter la fonction immédiatement au chargement de la page
+refuserLesCookies();
