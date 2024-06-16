@@ -101,7 +101,8 @@ function refuserLesCookies() {
     console.log("Le bouton de refus des cookies n'a pas été trouvé.");
   }
 }
-
+boutonRefus.addEventListener("click", refuserLesCookies);
+boutonAcceptation.addEventListener("click", accepterLesCookies);
 // Définir l'intervalle pour vérifier la présence du bouton
 // Exécuter les fonctions à intervalle régulier
 var intervalID = setInterval(function () {
@@ -117,6 +118,6 @@ refuserLesCookies();
 function masquerBlocCookies() {
   var blocCookies = document.querySelector(".ot-sdk-container");
   if (blocCookies) {
-    blocCookies.style.display = "block";
+    blocCookies.style.display = "none";
   }
 }
