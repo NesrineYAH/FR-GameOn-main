@@ -20,6 +20,7 @@ h1 {
   animation-duration: var(--modal-duration);
   z-index: 100;
   transform: translateY(10%);
+  background: #9ea1a5;
 }
 .ot-sdk-row {
   margin: 0;

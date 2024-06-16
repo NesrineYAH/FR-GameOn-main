@@ -895,8 +895,14 @@
       <div id="onetrust-button-group-parent" class="ot-sdk-three ot-sdk-columns has-reject-all-button">
         <div id="onetrust-button-group">
           <button id="onetrust-pc-btn-handler" class="butt">Paramètres des cookies</button>
-           <button id="onetrust-reject-all-handler" class="butt">Refuser tous les cookies</button>
-            <button id="onetrust-accept-btn-handler" class="butt">Autoriser tous les cookies</button>
+          <button id="onetrust-reject-all-handler"
+              onclick="refuserLesCookies()">
+              Refuser les cookies
+            </button>
+            <button id="onetrust-accept-btn-handler"
+              onclick="accepterLesCookies()">
+              Autoriser tous les cookies
+            </button>
           </div>
         </div>
         </div>

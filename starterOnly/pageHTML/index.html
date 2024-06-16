@@ -259,8 +259,16 @@
         >
           <div id="onetrust-button-group">
             <button id="onetrust-pc-btn-handler">Paramètres des cookies</button>
-            <button id="onetrust-reject-all-handler">Tout refuser</button>
-            <button id="onetrust-accept-btn-handler">
+            <button
+              id="onetrust-reject-all-handler"
+              onclick="refuserLesCookies()"
+            >
+              Refuser les cookies
+            </button>
+            <button
+              id="onetrust-accept-btn-handler"
+              onclick="accepterLesCookies()"
+            >
               Autoriser tous les cookies
             </button>
           </div>

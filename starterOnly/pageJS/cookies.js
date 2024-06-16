@@ -66,9 +66,7 @@ function accepterLesCookies() {
     // Simuler un clic sur le bouton
     boutonAcceptation.click();
     if (blocCookies) {
-      blocCookies.style.display = "block";
-    } else {
-      blocCookies.style.display = "block";
+      masquerBlocCookies();
     }
     // Arrêter l'intervalle une fois que le bouton est cliqué
     clearInterval(intervalID);
@@ -77,10 +75,10 @@ function accepterLesCookies() {
   }
 }
 
-// Exécuter la fonction à intervalle régulier
+/* Exécuter la fonction à intervalle régulier
 var intervalID = setInterval(accepterLesCookies, 1000); // Vérifier toutes les secondes
 // Exécuter la fonction
-accepterLesCookies();
+accepterLesCookies();*/
 
 // Fonction pour refuser les cookies
 function refuserLesCookies() {
@@ -95,17 +93,30 @@ function refuserLesCookies() {
     boutonRefus.click();
     // Masquer le bloc de cookies
     if (blocCookies) {
-      blocCookies.style.display = "block";
+      masquerBlocCookies();
     }
-    // Arrêter l'intervalle une fois que le bouton est cliqué
+
     clearInterval(intervalID);
   } else {
     console.log("Le bouton de refus des cookies n'a pas été trouvé.");
   }
 }
 
-// Exécuter la fonction à intervalle régulier
-var intervalID = setInterval(refuserLesCookies, 1000); // Vérifier toutes les secondes
+// Définir l'intervalle pour vérifier la présence du bouton
+// Exécuter les fonctions à intervalle régulier
+var intervalID = setInterval(function () {
+  accepterLesCookies();
+  refuserLesCookies();
+}, 1000); // Vérifier toutes les secondes
 
-// Exécuter la fonction immédiatement au chargement de la page
+// Exécuter les fonctions immédiatement au chargement de la page
+accepterLesCookies();
 refuserLesCookies();
+
+////////masquer le block cookies
+function masquerBlocCookies() {
+  var blocCookies = document.querySelector(".ot-sdk-container");
+  if (blocCookies) {
+    blocCookies.style.display = "block";
+  }
+}
