@@ -23,6 +23,18 @@ h1 {
   background: #9ea1a5;
   position: relative;
   bottom: 22%;
+  /*
+    position: fixed;
+  bottom: 150px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  opacity: 1;
+  transform: translateY(100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  */
 }
 .ot-sdk-row {
   margin: 0;
