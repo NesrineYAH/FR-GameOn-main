@@ -121,3 +121,28 @@ function masquerBlocCookies() {
     blocCookies.style.display = "none";
   }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  var blocCookies = document.querySelector(".ot-sdk-container");
+  setTimeout(() => {
+    blocCookies.classList.remove("hidden");
+    blocCookies.classList.add("visible");
+  }, 1000); // Attendre 1 seconde avant d'afficher le bloc
+
+  document
+    .getElementById("onetrust-accept-btn-handler")
+    .addEventListener("click", function () {
+      blocCookies.classList.remove("visible");
+      setTimeout(() => {
+        blocCookies.classList.add("hidden");
+      }, 500);
+    });
+  document
+    .getElementById("onetrust-reject-btn-handler")
+    .addEventListener("click", function () {
+      blocCookies.classList.remove("visible");
+      setTimeout(() => {
+        blocCookies.classList.add("hidden");
+      }, 500);
+    });
+});
