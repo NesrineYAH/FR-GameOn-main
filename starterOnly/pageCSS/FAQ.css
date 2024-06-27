@@ -19,10 +19,6 @@ h1 {
   animation-name: collapsecookies 0.5s ease-in-out;
   -webkit-animation: collapsecookies 0.5s ease-in-out;
   z-index: 100;
-  background: #9ea1a5;
-  /* position: relative;
-  bottom: 22%;
-*/
   position: fixed;
   bottom: 190px;
   right: 0px;
@@ -38,10 +34,7 @@ h1 {
   opacity: 1;
   transform: translateY(0);
 }
-/*
-.hidden {
-  display: none;
-}*/
+
 .ot-sdk-row {
   margin: 0;
   max-width: none;
@@ -56,7 +49,7 @@ h1 {
 }
 #onetrust-button-group-parent {
   margin: 18px;
-  width: 70%;
+  width: 55%;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -91,7 +84,7 @@ h1 {
     position: fixed;
     bottom: 310px;
     right: 0px;
-    height: 280px;
+    height: 320px;
     padding-bottom: 10px;
   }
   .ot-sdk-row {
@@ -104,14 +97,20 @@ h1 {
   }
 
   #onetrust-button-group-parent {
-    margin-top: -38px;
+    margin: -38px 0 0 0;
+    width: 100%;
   }
   #onetrust-button-group {
     display: flex;
-    gap: 2.2px;
+    gap: 5.2px;
   }
   #onetrust-button-group > button {
     padding: 6px;
+  }
+  #onetrust-policy-text {
+    display: block;
+    width: 96%;
+    font-size: 14px;
   }
 }
 /*****************************************************************************************************/
