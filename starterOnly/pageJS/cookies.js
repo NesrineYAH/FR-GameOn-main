@@ -75,11 +75,6 @@ function accepterLesCookies() {
   }
 }
 
-/* Exécuter la fonction à intervalle régulier
-var intervalID = setInterval(accepterLesCookies, 1000); // Vérifier toutes les secondes
-// Exécuter la fonction
-accepterLesCookies();*/
-
 // Fonction pour refuser les cookies
 function refuserLesCookies() {
   // Sélectionner le bouton de refus des cookies
@@ -95,7 +90,6 @@ function refuserLesCookies() {
     if (blocCookies) {
       masquerBlocCookies();
     }
-
     clearInterval(intervalID);
   } else {
     console.log("Le bouton de refus des cookies n'a pas été trouvé.");
@@ -103,16 +97,19 @@ function refuserLesCookies() {
 }
 boutonRefus.addEventListener("click", refuserLesCookies);
 boutonAcceptation.addEventListener("click", accepterLesCookies);
+boutonParamCookies.addEventListener("click", ParamCookies);
 // Définir l'intervalle pour vérifier la présence du bouton
 // Exécuter les fonctions à intervalle régulier
+
 var intervalID = setInterval(function () {
   accepterLesCookies();
   refuserLesCookies();
+  ParamCookies();
 }, 1000); // Vérifier toutes les secondes
 
 // Exécuter les fonctions immédiatement au chargement de la page
 accepterLesCookies();
-refuserLesCookies();
+refuserLesCookies();ParamCookies();
 
 ////////masquer le block cookies
 function masquerBlocCookies() {
@@ -145,4 +142,35 @@ document.addEventListener("DOMContentLoaded", function () {
         blocCookies.classList.add("hidden");
       }, 500);
     });
+  // test
+  document
+    .getElementById("onetrust-pc-btn-handler")
+    .addEventListener("click", function () {
+      blocCookies.classList.remove("visible");
+      setTimeout(() => {
+        blocCookies.classList.add("hidden");
+      }, 500);
+    });
 });
+
+function ParamCookies() {
+  var boutonParamCookies = document.querySelector("#onetrust-pc-btn-handler");
+  var blocCookies = document.querySelector(".ot-sdk-container");
+
+  if (boutonParamCookies) {
+    boutonParamCookies.click();
+    if (blocCookies) {
+      masquerBlocCookies();
+    }
+    clearInterval(intervalID);
+    console.log("Bouton des paramètres de cookies cliqué.");
+  } else {
+    console.log("Bouton des paramètres de cookies non trouvé.");
+  }
+}
+
+// Appeler la fonction (par exemple, après le chargement de la page)
+
+window.onload = function () {
+  ParamCookies();
+};
