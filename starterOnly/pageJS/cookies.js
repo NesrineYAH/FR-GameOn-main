@@ -79,7 +79,6 @@ function accepterLesCookies() {
 function refuserLesCookies() {
   // Sélectionner le bouton de refus des cookies
   var boutonRefus = document.querySelector("#onetrust-reject-all-handler");
-  // Sélectionner le bloc de cookies
   var blocCookies = document.querySelector(".ot-sdk-container");
 
   // Vérifier si le bouton existe
@@ -95,9 +94,44 @@ function refuserLesCookies() {
     console.log("Le bouton de refus des cookies n'a pas été trouvé.");
   }
 }
+/*
+function ParamCookies() {
+  var boutonParam = document.querySelector("#onetrust-pc-btn-handler");
+  var blocCookies = document.querySelector(".ot-sdk-container");
+
+  if (boutonParam) {
+    boutonParam.click();
+    if (blocCookies) {
+      masquerBlocCookies();
+    }
+    clearInterval(intervalID);
+    console.log("Bouton des paramètres de cookies cliqué.");
+  } else {
+    console.log("Bouton des paramètres de cookies non trouvé.");
+  }
+}*/
+function ParamCookies() {
+  // Sélectionner le bouton de refus des cookies
+  var boutonParam = document.querySelector("#onetrust-pc-btn-handler");
+  var blocCookies = document.querySelector(".ot-sdk-container");
+
+  // Vérifier si le bouton existe
+  if (boutonParam) {
+    // Simuler un clic sur le bouton
+    boutonParam.addEventListener("click", ParamCookies);
+    // Masquer le bloc de cookies
+    if (blocCookies) {
+      masquerBlocCookies();
+    }
+    clearInterval(intervalID);
+  } else {
+    console.log("Le bouton de refus des cookies n'a pas été trouvé.");
+  }
+}
+
 boutonRefus.addEventListener("click", refuserLesCookies);
 boutonAcceptation.addEventListener("click", accepterLesCookies);
-boutonParamCookies.addEventListener("click", ParamCookies);
+boutonParam.addEventListener("click", ParamCookies);
 // Définir l'intervalle pour vérifier la présence du bouton
 // Exécuter les fonctions à intervalle régulier
 
@@ -105,11 +139,11 @@ var intervalID = setInterval(function () {
   accepterLesCookies();
   refuserLesCookies();
   ParamCookies();
-}, 1000); // Vérifier toutes les secondes
-
+}, 1000);
 // Exécuter les fonctions immédiatement au chargement de la page
 accepterLesCookies();
-refuserLesCookies();ParamCookies();
+refuserLesCookies();
+ParamCookies();
 
 ////////masquer le block cookies
 function masquerBlocCookies() {
@@ -142,7 +176,6 @@ document.addEventListener("DOMContentLoaded", function () {
         blocCookies.classList.add("hidden");
       }, 500);
     });
-  // test
   document
     .getElementById("onetrust-pc-btn-handler")
     .addEventListener("click", function () {
@@ -152,25 +185,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 500);
     });
 });
-
-function ParamCookies() {
-  var boutonParamCookies = document.querySelector("#onetrust-pc-btn-handler");
-  var blocCookies = document.querySelector(".ot-sdk-container");
-
-  if (boutonParamCookies) {
-    boutonParamCookies.click();
-    if (blocCookies) {
-      masquerBlocCookies();
-    }
-    clearInterval(intervalID);
-    console.log("Bouton des paramètres de cookies cliqué.");
-  } else {
-    console.log("Bouton des paramètres de cookies non trouvé.");
-  }
-}
-
 // Appeler la fonction (par exemple, après le chargement de la page)
-
 window.onload = function () {
   ParamCookies();
 };

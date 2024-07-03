@@ -123,6 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const preferredLanguage = localStorage.getItem("preferredLanguage") || "fr";
   changeLanguage(preferredLanguage);
 });
+
 //window.onload = () => changeLanguage("fr");
 /*
 document.addEventListener("DOMContentLoaded", (event) => {

@@ -553,18 +553,18 @@ input {
   flex-direction: column;
 }
 .errorContainer__Number {
-  font-size: 30rem;
+  margin-top: 12%;
+  font-size: 18rem;
   text-align: center;
   color: #1d1c3a;
   text-decoration: none;
 }
 
 .error__Text {
-  margin: 0 11%;
+  margin: 0 18%;
   text-align: center;
   color: #1d1c3a;
   text-decoration: none;
-  width: 60%;
   padding: 1rem;
   border: 1px solid #000;
 }
