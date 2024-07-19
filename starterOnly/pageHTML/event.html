@@ -895,6 +895,33 @@
       <div id="onetrust-button-group-parent" class="ot-sdk-three ot-sdk-columns has-reject-all-button">
         <div id="onetrust-button-group">
           <button id="onetrust-pc-btn-handler" onclick="ParamCookies()">Paramètres des cookies</button>
+          <div id="allCookieCategory" class="allCookieCategory">
+
+            <div class="cookie-category">
+              <h4>Cookies Essentiels</h4>
+              <p>Ces cookies sont nécessaires au bon fonctionnement du site web et ne peuvent pas être désactivés dans nos systèmes.</p>
+              <label><input type="checkbox" checked disabled />Toujours activés</label>
+          </div>
+      
+          <div class="cookie-category">
+              <h4>Cookies de Performance</h4>
+              <p>Ces cookies nous permettent de compter les visites et les sources de trafic afin de mesurer et d'améliorer les performances de notre site.</p>
+              <label><input type="checkbox" id="performance-cookies" /> Activer</label>
+          </div>
+      
+          <div class="cookie-category">
+              <h4>Cookies de Fonctionnalité</h4>
+              <p>Ces cookies permettent au site web de fournir des fonctionnalités et des personnalisations améliorées.</p>
+              <label><input type="checkbox" id="functionality-cookies" /> Activer</label>
+          </div>
+      
+          <div class="cookie-category">
+              <h4>Cookies de Ciblage</h4>
+              <p>Ces cookies peuvent être configurés sur notre site par nos partenaires publicitaires.</p>
+              <label><input type="checkbox" id="targeting-cookies" /> Activer</label>
+          </div>
+          </div> 
+          
           <button id="onetrust-reject-all-handler"
               onclick="refuserLesCookies()">
               Refuser les cookies

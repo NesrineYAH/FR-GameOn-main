@@ -110,21 +110,24 @@ function ParamCookies() {
     console.log("Bouton des paramètres de cookies non trouvé.");
   }
 }*/
+
 function ParamCookies() {
   // Sélectionner le bouton de refus des cookies
   var boutonParam = document.querySelector("#onetrust-pc-btn-handler");
   var blocCookies = document.querySelector(".ot-sdk-container");
+  var allCookieCategory = document.querySelector("#allCookieCategory");
 
   // Vérifier si le bouton existe
   if (boutonParam) {
     // Simuler un clic sur le bouton
     boutonParam.addEventListener("click", ParamCookies);
-    // Masquer le bloc de cookies
+    allCookieCategory.style.display = "block";
     if (blocCookies) {
       masquerBlocCookies();
     }
     clearInterval(intervalID);
   } else {
+    allCookieCategory.style.display = "block";
     console.log("Le bouton de refus des cookies n'a pas été trouvé.");
   }
 }
@@ -132,8 +135,6 @@ function ParamCookies() {
 boutonRefus.addEventListener("click", refuserLesCookies);
 boutonAcceptation.addEventListener("click", accepterLesCookies);
 boutonParam.addEventListener("click", ParamCookies);
-// Définir l'intervalle pour vérifier la présence du bouton
-// Exécuter les fonctions à intervalle régulier
 
 var intervalID = setInterval(function () {
   accepterLesCookies();

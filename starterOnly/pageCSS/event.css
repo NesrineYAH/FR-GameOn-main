@@ -194,10 +194,10 @@
 .svg-inline--fa {
   display: flex;
   align-items: center;
-  height: 1.5em;
+  height: 1.4em;
   overflow: visible;
   width: 100%;
-  padding-top: 12px;
+  padding-top: 13px;
   padding-bottom: 11px;
   color: #fff;
 }
@@ -207,7 +207,8 @@
 }
 .share-item :hover {
   background-color: var(--Theme-color);
-  padding-bottom: 15px;
+  padding-bottom: 14px;
+  border-radius: 0 0 2px 2px;
 }
 
 /*  Mise en page Milieu de page */
