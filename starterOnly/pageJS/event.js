@@ -56,3 +56,20 @@ function toggleDisplay(contenuId, chevron) {
     chevron.classList.add("chevron__down");
   }
 }
+
+function toggleShow(contenuId, button) {
+  var contenu = document.getElementById(contenuId);
+  var Chevron = button.querySelector(".Chevron");
+
+  if (contenu.style.display === "none") {
+    contenu.style.display = "block";
+    Chevron.classList.remove("Chevron__down");
+    Chevron.classList.add("Chevron__up");
+    button.innerHTML = '<span class="Chevron Chevron__up"></span> -';
+  } else {
+    contenu.style.display = "none";
+    Chevron.classList.remove("Chevron__up");
+    Chevron.classList.add("Chevron__down");
+    button.innerHTML = '<span class="Chevron Chevron__down"></span> +';
+  }
+}

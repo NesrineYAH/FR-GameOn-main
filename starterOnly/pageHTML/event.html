@@ -895,30 +895,52 @@
       <div id="onetrust-button-group-parent" class="ot-sdk-three ot-sdk-columns has-reject-all-button">
         <div id="onetrust-button-group">
           <button id="onetrust-pc-btn-handler" onclick="ParamCookies()">Paramètres des cookies</button>
+          
           <div id="allCookieCategory" class="allCookieCategory">
+            <h2>Centre de préférences de la confidentialité</h2>
 
             <div class="cookie-category">
               <h4>Cookies Essentiels</h4>
-              <p>Ces cookies sont nécessaires au bon fonctionnement du site web et ne peuvent pas être désactivés dans nos systèmes.</p>
-              <label><input type="checkbox" checked disabled />Toujours activés</label>
+           
+                <button id="toggleButton" onclick="toggleShow('contenu36', this)">
+                  <span class="Chevron Chevron__down"></span> +
+              </button> 
+              <label>
+                <input type="checkbox" id="functionality" class="ot-switch" />
+                <span class="ot-switch-nob" aria-label="cookies de performance"></span>
+              </label>
+             
+             
+              <div id="contenu36" class="contenu" style="display: none;">
+                <p>Ces cookies sont nécessaires au bon fonctionnement du site web et ne peuvent pas être désactivés dans nos systèmes.</p></div>
           </div>
-      
+
           <div class="cookie-category">
               <h4>Cookies de Performance</h4>
-              <p>Ces cookies nous permettent de compter les visites et les sources de trafic afin de mesurer et d'améliorer les performances de notre site.</p>
-              <label><input type="checkbox" id="performance-cookies" /> Activer</label>
-          </div>
-      
+              <label>
+                <input type="checkbox" id="functionality" class="ot-switch" />
+                <span class="ot-switch-nob" aria-label="cookies de performance"></span>
+              </label>
+              <p>Ces cookies sont nécessaires au bon fonctionnement du site web et ne peuvent pas être désactivés dans nos systèmes
+              Ces cookies sont nécessaires au bon fonctionnement du site web et ne peuvent pas être désactivés dans nos systèmes.</p>
+
+           
+          </div>     
           <div class="cookie-category">
               <h4>Cookies de Fonctionnalité</h4>
-              <p>Ces cookies permettent au site web de fournir des fonctionnalités et des personnalisations améliorées.</p>
-              <label><input type="checkbox" id="functionality-cookies" /> Activer</label>
-          </div>
-      
+              <label>
+                <input type="checkbox" id="functionality" class="ot-switch"/>
+                <span class="ot-switch-nob" aria-label="cookies de performance"></span>
+              </label>
+                            <p>Ces cookies permettent au site web de fournir des fonctionnalités et des personnalisations améliorées.</p>
+
+          </div>    
           <div class="cookie-category">
               <h4>Cookies de Ciblage</h4>
               <p>Ces cookies peuvent être configurés sur notre site par nos partenaires publicitaires.</p>
-              <label><input type="checkbox" id="targeting-cookies" /> Activer</label>
+              <label><input type="checkbox" id="functionality" class="ot-switch" />
+                <span class="ot-switch-nob" aria-label="cookies de performance"></span>
+              </label>
           </div>
           </div> 
           

@@ -76,33 +76,106 @@ h1 {
   display: block;
   width: 80%;
 }
-#allCookieCategory {
+.allCookieCategory {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90%;
-  width: 1000px;
-  gap: 12px;
+  gap: 80px;
+  position: fixed;
+  top: -135%;
+  left: 28%;
+  width: 600px;
+  padding: 30px;
+  background: #dbd9d9;
 }
 .cookie-category {
   display: block;
-  width: 650px;
-  height: 250px;
-  border: 2px solid #332f2f;
-  position: fixed;
-  top: -90%;
-  left: 30%;
+  height: 20px;
   background: #fff;
-  border: 1px solid #ccc;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   color: #000;
-  margin-top: -50px;
+  margin-top: -10px;
+  border: 1px solid #000;
+}
+.cookie-category .ot-tgl input + .ot-switch .ot-switch-nob {
+  background-color: #e6e7e8 !important;
+  border-top-color: #e6e7e8 !important;
+}
+h4 {
+  color: #000;
+  font-weight: 500;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  text-decoration: underline;
+
+  padding: 15px;
+}
+p {
+  color: #000;
+  margin-top: -25px;
 }
 label {
-  border: 1px solid #ccc;
-  margin-bottom: -100px;
+  width: 570px;
+  margin-bottom: -40px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.Chevron__down::after {
+  /*content: "↓";*/
+  font-size: 30px;
+  width: 10px;
+  height: 10px;
+}
+.Chevron__up::after {
+  /* content: "↑";*/
+  font-size: 30px;
+  width: 10px;
+  height: 10px;
+}
+
+#functionality {
+  opacity: 1;
+  z-index: -1;
+}
+
+.ot-switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 25px;
+}
+
+.ot-switch-nob {
+  position: relative;
+  cursor: pointer;
+  top: -30px;
+  left: -10px;
+  right: 0;
+  bottom: 0;
+  background-color: #767676;
+  border: 1px solid #ddd;
+  border-top-color: rgb(221, 221, 221);
+  transition: all 0.2s ease-in 0s;
+  -moz-transition: all 0.2s ease-in 0s;
+  -o-transition: all 0.2s ease-in 0s;
+  -webkit-transition: all 0.2s ease-in 0s;
+  border-radius: 20px;
+  width: 45px;
+  height: 25px;
+}
+.ot-switch-nob::before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  bottom: 3px;
+  left: 3px;
+  background-color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 20px;
 }
 /********************************************************media query***************************************************************/
 @media screen and (max-width: 768px) {
@@ -203,7 +276,7 @@ article {
 
 .contenu {
   display: none;
-  width: 95.5%;
+  width: 93.5%;
   height: auto;
   padding: 20px;
   opacity: 1;
