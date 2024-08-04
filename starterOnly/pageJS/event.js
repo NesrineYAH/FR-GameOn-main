@@ -73,3 +73,15 @@ function toggleShow(contenuId, button) {
     button.innerHTML = '<span class="Chevron Chevron__down"></span> +';
   }
 }
+document.addEventListener("DOMContentLoaded", (event) => {
+  var closeIdButton = document.getElementById("Close");
+  var AllCookieCategory = document.querySelector("#allCookieCategory");
+  var allCookie = document.querySelector(".allCookieCategory");
+
+  // Fermer le modal lorsque l'utilisateur clique sur le X
+  function closeModalII() {
+    AllCookieCategory.style.display = "none";
+    allCookie.style.display = "none";
+  }
+  closeIdButton.addEventListener("click", closeModalII);
+});

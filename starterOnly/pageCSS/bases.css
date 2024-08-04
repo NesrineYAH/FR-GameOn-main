@@ -395,7 +395,8 @@ a {
   z-index: 1;
 }
 
-#close {
+#close,
+.close {
   position: absolute;
   right: 10px;
   top: 10px;
@@ -521,10 +522,12 @@ a {
 .form-fancy-toggle input[type="checkbox"]:checked + .checkbox-label span {
   background: #13bf11;
 }
+/*input*/
 .form-fancy-toggle .checkbox-label:not(.left) span {
   right: -8px;
   top: 12px;
 }
+/*label*/
 
 .checkbox-label span::before,
 input[type="checkbox"]:checked + .checkbox-label span::before {

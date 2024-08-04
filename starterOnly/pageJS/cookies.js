@@ -52,7 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const preferredLanguage = getCookie("preferredLanguage") || "fr";
   changeLanguage(preferredLanguage);
 });
-
 // Fonction pour accepter les cookies
 function accepterLesCookies() {
   // Sélectionner le bouton d'acceptation des cookies
@@ -110,41 +109,73 @@ function ParamCookies() {
     console.log("Bouton des paramètres de cookies non trouvé.");
   }
 }*/
+/*document.addEventListener("DOMContentLoaded", function () {
+  function ParamCookies() {
+    var boutonParam = document.querySelector("#onetrust-pc-btn-handler");
+    var blocCookies = document.querySelector(".ot-sdk-container");
+    var allCookieCategory = document.querySelector("#allCookieCategory");
 
-function ParamCookies() {
-  // Sélectionner le bouton de refus des cookies
-  var boutonParam = document.querySelector("#onetrust-pc-btn-handler");
-  var blocCookies = document.querySelector(".ot-sdk-container");
-  var allCookieCategory = document.querySelector("#allCookieCategory");
-
-  // Vérifier si le bouton existe
-  if (boutonParam) {
-    // Simuler un clic sur le bouton
-    boutonParam.addEventListener("click", ParamCookies);
-    allCookieCategory.style.display = "block";
-    if (blocCookies) {
-      masquerBlocCookies();
+    if (boutonParam) {
+      boutonParam.addEventListener("click", function () {
+        if (allCookieCategory) {
+          afficherBlocCookies();
+        }
+        if (blocCookies) {
+          masquerBlocCookies();
+        }
+      });
+    } else {
+      if (allCookieCategory) {
+        allCookieCategory.style.display = "none";
+      }
+      console.log("Le bouton de refus des cookies n'a pas été trouvé.");
     }
-    clearInterval(intervalID);
-  } else {
-    allCookieCategory.style.display = "block";
-    console.log("Le bouton de refus des cookies n'a pas été trouvé.");
   }
-}
+  // afficherBlocCookies();
+});
+*/
+
+//138  au 168
+document.addEventListener("DOMContentLoaded", function () {
+  function afficherBlocCookies() {
+    var allCookieCategory = document.querySelector("#allCookieCategory");
+    if (allCookieCategory) {
+      allCookieCategory.style.display = "block";
+    }
+  }
+
+  function masquerBlocCookies() {
+    var blocCookies = document.querySelector(".ot-sdk-container");
+    if (blocCookies) {
+      blocCookies.style.display = "none";
+    }
+  }
+
+  function ParamCookies() {
+    var boutonParam = document.querySelector("#onetrust-pc-btn-handler");
+
+    if (boutonParam) {
+      boutonParam.addEventListener("click", function () {
+        afficherBlocCookies();
+        // masquerBlocCookies();
+      });
+    } else {
+      console.log("Le bouton de refus des cookies n'a pas été trouvé.");
+    }
+  }
+
+  ParamCookies();
+});
 
 boutonRefus.addEventListener("click", refuserLesCookies);
 boutonAcceptation.addEventListener("click", accepterLesCookies);
-boutonParam.addEventListener("click", ParamCookies);
+boutonParam.addEventListener("click", afficherBlocCookies);
 
 var intervalID = setInterval(function () {
   accepterLesCookies();
   refuserLesCookies();
   ParamCookies();
 }, 1000);
-// Exécuter les fonctions immédiatement au chargement de la page
-accepterLesCookies();
-refuserLesCookies();
-ParamCookies();
 
 ////////masquer le block cookies
 function masquerBlocCookies() {
@@ -154,8 +185,17 @@ function masquerBlocCookies() {
   }
 }
 
+////////////////03/08/2024
+function afficherBlocCookies() {
+  var allCookieCategory = document.querySelector("#allCookieCategory");
+  if (allCookieCategory) {
+    allCookieCategory.style.display = "block";
+  }
+}
 document.addEventListener("DOMContentLoaded", function () {
   var blocCookies = document.querySelector(".ot-sdk-container");
+  var allCookieCategory = document.querySelector("#allCookieCategory");
+
   setTimeout(() => {
     blocCookies.classList.remove("hidden");
     blocCookies.classList.add("visible");
