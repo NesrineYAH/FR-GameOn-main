@@ -3,22 +3,21 @@ body {
 }
 body img {
   width: 1600px;
+  position: absolute;
 }
 
 #principal {
-  position: absolute;
-  top: 2%;
+  position: relative;
+  top: -4%;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  z-index: 1;
 }
 .principalPrg {
-  display: flex;
-  align-items: center;
-  transform: translate(30%, 30%);
-  width: 65%;
+  width: 95%;
   overflow: hidden;
   font-size: 1rem;
-  padding: 4rem;
+  padding: 1.5rem;
 }
 .contact-form {
   max-width: 500px;
