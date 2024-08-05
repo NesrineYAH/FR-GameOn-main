@@ -86,7 +86,7 @@ h1 {
   top: -160%;
   left: 28%;
   width: 600px;
-  padding: 22px;
+  padding: 15px;
   background: #dbd9d9;
   overflow-y: scroll;
 }
@@ -104,12 +104,13 @@ h1 {
   margin-top: -10px;
   margin-bottom: 10px;
   border: 1px solid #858585;
+  width: 570px;
 }
 .textCookies {
   font-size: 13px;
   line-height: 148%;
   margin-bottom: 2%;
-  padding: 20px;
+  padding: 15px;
 }
 h4 {
   color: #000;
@@ -124,6 +125,7 @@ h4 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   margin-top: -15px;
   margin-bottom: -15px;
 }
@@ -131,11 +133,9 @@ p {
   color: #000;
 }
 #lebel {
-  width: 570px;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  position: relative;
   border-radius: 2px;
   margin: 0;
   padding: 0;
@@ -170,7 +170,7 @@ input[type="checkbox"]:active {
 .switch {
   position: relative;
   display: inline-block;
-  width: 50px;
+  width: 48px;
   height: 24px;
   margin: -25px 10px;
 }
@@ -214,15 +214,61 @@ input:checked + .slider:before {
   opacity: 1;
   width: 96%;
 }
-@keyframes Before {
-  0% {
-    opacity: 1;
-    transform: translateX(0px);
+.cookieBtnI {
+  position: relative;
+  left: -37.4%;
+  width: 120px;
+}
+.cookieBtnII {
+  position: relative;
+  right: -33%;
+  bottom: 30%;
+  margin-top: 15px;
+  width: 180px;
+}
+@media screen and (max-width: 768px) {
+  .allCookieCategory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 78%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 7%;
   }
-
-  100% {
-    opacity: 1;
-    transform: translateX(22px);
+  .cookie-category {
+    display: block;
+    width: 400px;
+    width: 80%;
+  }
+  .switch {
+    margin: -25px -10px;
+    width: 42px;
+    height: 20px;
+  }
+  .slider:before {
+    width: 18px;
+    height: 18px;
+    margin-bottom: -4px;
+    margin-left: -4px;
+  }
+  .montitre {
+    font-size: 1rem;
+    width: 70%;
+  }
+  .Fermer {
+    margin-top: -10px;
+  }
+  .cookieBtnI {
+    position: relative;
+    left: -28.4%;
+  }
+  .cookieBtnII {
+    position: relative;
+    right: -19.5%;
+    bottom: 30%;
   }
 }
 /********************************************************media query***************************************************************/
@@ -254,6 +300,7 @@ input:checked + .slider:before {
   }
   #onetrust-button-group > button {
     padding: 6px;
+    width: 112px;
   }
   #onetrust-policy-text {
     display: block;

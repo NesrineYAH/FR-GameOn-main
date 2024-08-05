@@ -13,53 +13,54 @@
 
 <body>
     <header class="header__navigation" role="navigation">
-        <div class="dropdownI ">
+        <div class="mobile-menu">
+            <button class="hamburger" id="hamburger">☰</button>
+            <button  id="closebutton"  data-bs-dismiss="modal" aria-label="Close" aria-label="Close">
+                <svg class="fa fa-xmark" aria-hidden="true" focusable="false"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 384 512">
+                    <path class="" fill="currentColor"
+                        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                    </path>
+                </svg>
+            </button>
+          </div>
+        <div class="dropdownI" id="menu">
             <ul class="listHeader">
                 <a href="">
                     <li class="flag">Acceuil</li>
                 </a>
-                <a href="#">
+                <a href="./benevolat.html">
                     <li class="flag">Bénévolat</li>
                 </a>
-
+  
                 <a href="./soutient.html">
                     <li class=" flag ">Nous soutenir</li>
                 </a>
-
                 <a href="./infos.html">
                     <li class="flag ">qui somme nous ?
                     </li>
                 </a>
-                <a href="#">
+                <a href="./erreurPage.html">
                     <li class="flag ">Blog
                     </li>
                 </a>
             </ul>
-        </div>
-        <div class="dropdownII">
             <ul class="listLangue">
-                <li class="nav__link nav__link--arrow js-dropdown dropdown__toggle js-display-click" data-lang="fr">
-                    <a href="#" id="nav-lang-fr" data-toggle="dropdown" aria-haspopup="true" role="button"
-                        data-xtclick="header::langue">
-                        <span class="flag js-display-lazy flag--fr is-loaded" data-class="flag--fr"></span>
-                        <span class="is-ibl header__lang__label">fr</span>
-                    </a>
-
+                <li class="nav__link nav__link--arrow" data-lang="fr">
+              <select  class="btn_lang" style="width: 50px; height: 32px;">
+                  <option value="fr" onclick="changeLanguage('fr')"    style="width: 50px; height: 32px; color:#000">Fr</option >
                 </li>
-
-                <li class="nav__link nav__link--arrow js-dropdown dropdown__toggle js-display-click" data-lang="en">
-                    <a href="/en/" id="nav-lang-fr" data-toggle="dropdown" aria-haspopup="true" role="button"
-                        data-xtclick="header::langue" data-lang="en">
-                        <span class="flag js-display-lazy" data-class="flag--en"></span>
-                        <span class="is-ibl header__lang__label">en</span>
-                    </a>
+      
+                <li class="nav__link nav__link--arrow">
+                  <option value="fr" onclick="changeLanguage('en')"   style="width: 50px; height: 32px; color:#000">en</option >
+                
                 </li>
+            </select>
             </ul>
-            <!--  <script>
-                checkCookieForRedirect();
-            </script> -->
-
         </div>
+  
+  
     </header>
 
 
@@ -159,10 +160,10 @@
         </ol>
        
         <section id="sec"> 
-            <h1>Foire aux Questions (FAQ)</h1>
+            <h1 data-i18n="title">Foire aux Questions (FAQ)</h1>
 
         <article class="q-focus-helper">
-       <div class="q-item__section ">Pourquoi la Cnaf a-t-elle ouvert une plateforme participative ?
+       <div data-i18n="titleone" class="q-item__section ">Pourquoi Paris sport a-t-elle ouvert une plateforme participative ?
                 <span onclick="toggleDisplay('contenuI1', this)">
                <svg
                class="chevron"
@@ -179,7 +180,7 @@
         </article>
 
         <article class="q-focus-helper">
-            <div class="q-item__section">Comment participer à un jeut 2222  ?
+            <div class="q-item__section">Qui peut participer à un jeux ?
                 <span onclick="toggleDisplay('contenuI2', this)">
                 <svg
                 class="chevron"
@@ -213,7 +214,7 @@
         </article>
 
         <article class="q-focus-helper">
-            <div class="q-item__section">Comment participer à un jeut 2222  ?
+            <div class="q-item__section">Comment participer à un jeux ?
                 <span onclick="toggleDisplay('contenuI4', this)">
                 <svg
                 class="chevron"
@@ -247,7 +248,7 @@
         </article>
 
         <article class="q-focus-helper">
-            <div class="q-item__section">Comment participer à un jeut 2222  ?
+            <div class="q-item__section">Comment participer à un jeux  ?
                 <span onclick="toggleDisplay('contenuI6', this)">
                 <svg
                 class="chevron"
@@ -519,10 +520,10 @@
 </html>
 
 
-<script src="../pageJS/br.js"></script>
-<script src="../pageJS/cookies.js"></script>
-<script src="../pageJS/event.js"></script>
-
+<script src="../pageJS/br.js" defer></script>
+<script src="../pageJS/cookies.js" defer></script>
+<script src="../pageJS/event.js" defer></script>
+<!-- <script src="../pageJS/changeLang.js" defer></script> -->
 </body>
 
 </html>

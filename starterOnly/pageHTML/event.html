@@ -63,14 +63,14 @@
   </header>
 
     <div class="lorem">
-      <h1  data-translate="greeting" class="loremH">NOS EVENEMENTS</h1>
+      <h1  data-i18n="greeting" class="loremH">NOS EVENEMMNT</h1>
       <br />
       <button onclick="toggleContent('contentM')" class="btn-H1" type="submit">
         lire la suite
         <i class="fa-caret-right fe"></i>
       </button>
       <div id="contentM" class="content">
-        <p data-translate="fare">
+        <p data-i18n="fare">
           Géolocalisez-vous et découvrez tous les évènements des Jeux de Paris 2024 près de chez vous ! Lieux de célébrations, évènements culturels, parcours du relais de la flamme : vivez votre propre expérience des Jeux de Paris 2024, avec ou sans billet, partout en France.
         </p>
       </div>
@@ -260,6 +260,7 @@
         <img src="../assetes/images/marathonIR.jpg" alt="Image 7" />
         <img src="../assetes/images/marathonIH.avif" alt="Image 8" />
         <img src="../assetes/images/marathonIU.jpg" alt="Image 9" />
+        <img src="../assetes/images/" alt="Image 10" />
       </div>
 
       <div>
@@ -278,7 +279,7 @@
 
     <section class="marathonPage">
       <div class="section">
-        <h1 style="padding-left: 20px">PRÉPAREZ-VOUS POUR LES JEUX</h1>
+        <h1  data-i18n="titleth" style="padding-left: 20px">PRÉPAREZ-VOUS POUR LES JEUX</h1>
 
         <div class="globle">
           <article class="globleCard">
@@ -854,10 +855,10 @@
           <div id="allCookieCategory"  style="display: none;">
             <div class="allCookieCategory">
               <button type="button" id="Close" class="Fermer close" >x</button>
-            <h2>Centre de préférences de la confidentialité</h2>
+            <h2 class="montitre">Centre de préférences de la confidentialité</h2>
             <span class="textCookies">
               Lorsque vous consultez un site Web, des données peuvent être stockées dans votre navigateur ou récupérées à partir de celui-ci, généralement sous la forme de cookies. Ces informations peuvent porter sur vous, sur vos préférences ou sur votre appareil et sont principalement utilisées pour s'assurer que le site Web fonctionne correctement. Les informations ne permettent généralement pas de vous identifier directement, mais peuvent vous permettre de bénéficier d'une expérience Web personnalisée. Parce que nous respectons votre droit à la vie privée, nous vous donnons la possibilité de ne pas autoriser certains types de cookies. Cliquez sur les différentes catégories pour obtenir plus de détails sur chacune d'entre elles, et modifier les paramètres par défaut. Toutefois, si vous bloquez certains types de cookies, votre expérience de navigation et les services que nous sommes en mesure de vous offrir peuvent être impactés. </span>
-              <button style="position: relative; left:-39%"  id="onetrust-accept-btn-handler"
+              <button  class ="cookieBtnI"   id="onetrust-accept-btn-handler"
               onclick="accepterLesCookies()">
               Tout autoriser
             </button> 
@@ -944,18 +945,18 @@
             </div>
           </div>
 
-          <button style="position: relative; right:-35%; bottom:30%; margin-top: 15px; width: 180px;" id="onetrust-accept-btn-handler" onclick="accepterLesCookies()">Confirmer la selection</button>
+          <button class ="cookieBtnII" id="onetrust-accept-btn-handler" onclick="accepterLesCookies()">Confirmer la selection</button>
            </div>
         </div> 
 </div>
-          </div>
+      </div>
         </div>
         </div>
    </div>
 
-    <script src="../pageJS/event.js"></script>
-    <script src="../pageJS/cookies.js"></script>
-    <script src="../pageJS/br.js"></script>
+    <script src="../pageJS/event.js" defer></script>
+    <script src="../pageJS/cookies.js" defer></script>
+    <script src="../pageJS/br.js" defer></script>
 
 
   </body>

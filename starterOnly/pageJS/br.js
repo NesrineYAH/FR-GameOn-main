@@ -88,36 +88,37 @@ document.addEventListener("DOMContentLoaded", function () {
   closeButton.addEventListener("click", closeModal);
 });
 
-let currentLanguage = "fr"; // Default language
+let currentLanguage = "fr"; // Langue par défaut
 
-// Function to load language file
 async function loadLanguage(lang) {
-  const response = await fetch(`lang/${lang}.json`);
-  const translations = await response.json();
-  return translations;
+  try {
+    const response = await fetch(`../lang/${lang}.json`);
+    if (!response.ok) {
+      throw new Error(
+        `Erreur de chargement du fichier de langue: ${response.statusText}`
+      );
+    }
+    const translations = await response.json();
+    return translations;
+  } catch (error) {
+    console.error(error);
+    return {};
+  }
 }
 
-// Function to apply translations
-async function applyTranslations(lang) {
+// Fonction pour appliquer les traductions
+async function changeLanguage(lang) {
   const translations = await loadLanguage(lang);
-  document.querySelectorAll("[data-translate]").forEach((element) => {
-    const key = element.getAttribute("data-translate");
+  localStorage.setItem("preferredLanguage", lang);
+
+  const elements = document.querySelectorAll("[data-i18n]");
+  elements.forEach((element) => {
+    const key = element.getAttribute("data-i18n");
     element.textContent = translations[key] || key;
   });
 }
 
-// Function to change language
-function changeLanguage(lang) {
-  currentLanguage = lang;
-  localStorage.setItem("preferredLanguage", lang);
-  applyTranslations(lang);
-}
-
-// Initialize translations on page load
-document.addEventListener("DOMContentLoaded", () => {
-  applyTranslations(currentLanguage);
-});
-// Initialize translations on page load with preferred language
+// Initialiser les traductions au chargement de la page
 document.addEventListener("DOMContentLoaded", () => {
   const preferredLanguage = localStorage.getItem("preferredLanguage") || "fr";
   changeLanguage(preferredLanguage);
