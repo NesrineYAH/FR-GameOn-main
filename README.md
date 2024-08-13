@@ -8,7 +8,7 @@ Ce projet sert à créer une site web pour un évenement soprtif les jeux olympi
 J'ai travaillé sur la partie JavaScript du projet en utilisant les concepts suivants :
 
 🔧 Manipulation du DOM pour sélectionner et modifier des éléments HTML.
-
+Création des fonctions pour la gestion des cookies, donc l'utlisateur a le choix de choisir soit accepter, refuser les cookies ou accéder au paramètres des cookies.
 🖱️ Gestion des événements pour réagir aux actions de l'utilisateur, tels que les clics sur les boutons.
 ✅ Validation du formulaire en vérifiant les champs obligatoires, les formats d'entrée corrects et les contraintes spécifiques, comme l'âge minimum.
 
