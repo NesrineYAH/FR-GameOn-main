@@ -11,7 +11,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     Modal.style.display = "block";
     backdrop.style.display = "block";
   }
-  // Fermer le modal lorsque l'utilisateur clique sur le X
+  // Fermer le modal lorsque l'utilisateur clique sur le X pour fermer
+  
   function closeModal() {
     Modal.style.display = "none";
     backdrop.style.display = "none";
