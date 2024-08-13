@@ -184,7 +184,7 @@ main {
   min-height: 100vh;
   width: 100%;
   overflow: auto;
-  background-color: white;
+  background-color: transparent;
 }
 
 .content {
@@ -214,7 +214,7 @@ main {
   font-size: 40px;
 }
 
-.modal-body {
+.modal-bodyI {
   padding: 2% 10%;
   margin: 15px auto;
 }

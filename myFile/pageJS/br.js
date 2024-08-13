@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     backdrop.style.display = "block";
   }
   // Fermer le modal lorsque l'utilisateur clique sur le X pour fermer
-  
+
   function closeModal() {
     Modal.style.display = "none";
     backdrop.style.display = "none";
