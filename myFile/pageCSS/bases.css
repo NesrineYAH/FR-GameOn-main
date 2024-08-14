@@ -364,11 +364,11 @@ a {
 }
 
 /*ajout le modal_text */
-
+/*
 #email {
   padding: 1.1rem;
   width: 90%;
-}
+}*/
 .modal-header {
   background-color: var(--Theme-color);
   height: 80px;

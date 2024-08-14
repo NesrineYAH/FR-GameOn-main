@@ -21,7 +21,6 @@ function changeLanguage(language) {
 
   elements.forEach((element) => {
     const key = element.getAttribute("data-i18n"); // Obtenez la clé de traduction de l'attribut `data-i18n`
-
     element.textContent = translations[language][key]; // Changez le texte de l'élément avec la traduction correspondante
   });
 }

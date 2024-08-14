@@ -9,24 +9,23 @@
     <link rel="stylesheet" href="./myFile/pageCSS/event.css" />
     <link rel="stylesheet" href="./myFile/pageCSS/FAQ.css" />
     <link rel="stylesheet" href="./myFile/pageCSS/qr.css" />
-    
+
 </head>
 
 <body>
     <header class="header__navigation" role="navigation">
         <div class="mobile-menu">
             <button class="hamburger" id="hamburger">☰</button>
-  
-            <button  id="closebutton"  data-bs-dismiss="modal" aria-label="Close" aria-label="Close">
-                <svg class="fa fa-xmark" aria-hidden="true" focusable="false"
-                    xmlns="http://www.w3.org/2000/svg"
+
+            <button id="closebutton" data-bs-dismiss="modal" aria-label="Close" aria-label="Close">
+                <svg class="fa fa-xmark" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 384 512">
                     <path class="" fill="currentColor"
                         d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
                     </path>
                 </svg>
             </button>
-          </div>
+        </div>
         <div class="dropdownI" id="menu">
             <ul class="listHeader">
                 <a href="">
@@ -35,7 +34,7 @@
                 <a href="./benevolat.html">
                     <li class="flag">Bénévolat</li>
                 </a>
-  
+
                 <a href="./soutient.html">
                     <li class=" flag ">Nous soutenir</li>
                 </a>
@@ -50,19 +49,21 @@
             </ul>
             <ul class="listLangue">
                 <li class="nav__link nav__link--arrow" data-lang="fr">
-              <select  class="btn_lang" style="width: 50px; height: 32px;">
-                  <option value="fr" onclick="changeLanguage('fr')"    style="width: 50px; height: 32px; color:#000">Fr</option >
+                    <select class="btn_lang" style="width: 50px; height: 32px;">
+                        <option value="fr" onclick="changeLanguage('fr')" style="width: 50px; height: 32px; color:#000">
+                            Fr</option>
                 </li>
-      
+
                 <li class="nav__link nav__link--arrow">
-                  <option value="fr" onclick="changeLanguage('en')"   style="width: 50px; height: 32px; color:#000">en</option >
-                
+                    <option value="fr" onclick="changeLanguage('en')" style="width: 50px; height: 32px; color:#000">en
+                    </option>
+
                 </li>
-            </select>
+                </select>
             </ul>
         </div>
-  
-  
+
+
     </header>
 
     <main>
@@ -118,7 +119,7 @@
             </a>
 
             <a id="openModal-button" class="share-item  qrcode" style="  background: var(--qrcode-color);"
-                data-ga-event="share" data-ga-value="QrCode" >
+                data-ga-event="share" data-ga-value="QrCode">
                 <svg class="svg-inline--fa fa-qrcode" aria-hidden="true" focusable="false" data-prefix="fas"
                     data-icon="qrcode" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <path style="width:15px;" fill="currentColor"
@@ -232,34 +233,34 @@
         </section>
 
         <section id="sectionVI">
-                <div class="col-12">
-                    <h1>Qui souhaiteriez-vous soutenir?</h1>
-                    <div class="col-12I">
-                        <h4>Une personne spécifique</h4>
-                        <a href="/fundraisers/donate" class="col-12I_Button">
-                            <button>
-                                Continuez
-                            </button>
-                        </a>
-                    </div>
-                    <div class="col-12I">
-                        <h4>Un événement spécifique</h4>
-                        <a href="/projects/donate" class="col-12I_Button">
-                            <button>
-                                Continuez
-                            </button>
-                        </a>
-
-                    </div>
-                    <div class="col-12I">
-                        <h4>Ou voudriez-vous faire un don général ?</h4>
-                        <a href="/donate" class="col-12I_Button">
-                            <button>
-                                Continuez
-                            </button>
-                        </a>
-                    </div>
+            <div class="col-12">
+                <h1>Qui souhaiteriez-vous soutenir?</h1>
+                <div class="col-12I">
+                    <h4>Une personne spécifique</h4>
+                    <a href="/fundraisers/donate" class="col-12I_Button">
+                        <button>
+                            Continuez
+                        </button>
+                    </a>
                 </div>
+                <div class="col-12I">
+                    <h4>Un événement spécifique</h4>
+                    <a href="/projects/donate" class="col-12I_Button">
+                        <button>
+                            Continuez
+                        </button>
+                    </a>
+
+                </div>
+                <div class="col-12I">
+                    <h4>Ou voudriez-vous faire un don général ?</h4>
+                    <a href="/donate" class="col-12I_Button">
+                        <button>
+                            Continuez
+                        </button>
+                    </a>
+                </div>
+            </div>
         </section>
 
         <!-- <section class="newletter newsletter" id="sectionIII" data-component-name="Newsletter">-->
@@ -272,9 +273,9 @@
                         Abonnez-vous à notre newsletter !</p>
                 </div>
                 <div class="right-side" role="button">
-          
+
                     <span id="openButtonEmail">Indiquer votre adresse mail !</span>
-                    <a  target="_blank">
+                    <a target="_blank">
                         <svg class="fa fa-arrow" aria-hidden="true" focusable="false" data-prefix="fas"
                             data-icon="arrow-right-long" role="img" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512">
@@ -301,8 +302,8 @@
                             </svg>
 
                             <button type="button" id="close" data-bs-dismiss="modal" aria-label="Close">
-                                <svg class="fa fa-xmark" aria-hidden="true" focusable="false"
-                                    data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="fa fa-xmark" aria-hidden="true" focusable="false" data-prefix="fas"
+                                    data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 384 512">
                                     <path class="" fill="currentColor"
                                         d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
@@ -339,128 +340,103 @@
 
         <div id="modal-display" class="modal-backdrop">
             <div id="modal-ideal">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <div class="modal-header-inner">
-                    <svg
-                      class="fas fa-qrcode"
-                      aria-hidden="true"
-                      focusable="false"
-                      data-icon="qrcode"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 448 512"
-                    >
-                      <path
-                        style="width: 15px"
-                        fill="currentColor"
-                        d="M0 80C0 53.5 21.5 32 48 32h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80zM64 96v64h64V96H64zM0 336c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V336zm64 16v64h64V352H64zM304 32h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H304c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48zm80 64H320v64h64V96zM256 304c0-8.8 7.2-16 16-16h64c8.8 0 16 7.2 16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s7.2-16 16-16s16 7.2 16 16v96c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s-7.2-16-16-16s-16 7.2-16 16v64c0 8.8-7.2 16-16 16H272c-8.8 0-16-7.2-16-16V304zM368 480a16 16 0 1 1 0-32 16 16 0 1 1 0 32zm64 0a16 16 0 1 1 0-32 16 16 0 1 1 0 32z"
-                      ></path>
-                    </svg>
-                    <button
-                      type="button"
-                       id="close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <svg
-                        class="fa fa-xmark"
-                        aria-hidden="true"
-                 
-                        role="img"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 384 512"
-                      >
-                        <path
-                          class=""
-                          fill="currentColor"
-                          d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
-                        ></path>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-                <div class="modal-pincipal">
-                  <p>
-                    Permettez à d'autres personnes de scanner ce code QR afin qu'elles
-                    puissent rapidement faire un don à cette page.
-                  </p>
-                  <form method="post" class="form">
-                    <img src="../assetes/imgGlobale/Untitled.svg" id="qrcode" />
-                    <label for="email" class="mandatory"></label>
-                    <div class="invalid-feedback"></div>
-      
-                    <div class="form-fancy-toggle">
-                      <input
-                        id="news_accept"
-                        type="checkbox"
-                        name="accept"
-                        class="fancy-toggle"
-                      />
-                      <label for="news_accept" class="checkbox-label">
-                        <p>
-                          Oui, je souhaite recevoir des notifications e-mail lors de
-                          la publication d'actualités
-                        </p>
-                        <span></span>
-                      </label>
-                    </div>
-                    <div class="form-fancy">
-                      <button type="submit">Télécharger ce code QR</button>
-                      <button type="submit">Créer un poste QR</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-
-            
-     <div id="modal-exemple" class="modal-backdrop">
-        <div id="modal-show">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="modal-header-inner">
-                        <svg class="fa-envelope fas svg-inline--fa " aria-hidden="true" 
-                            data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                            <path class="" fill="currentColor"
-                                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                            </path>
-                        </svg>
-      
-                       <button type="button" id="close" class="Fermer" >x</button> 
-                    </div>
-                </div>
-                <div class="modal-pincipal">
-                    <h5>Inscrivez-vous à notre newsletter</h5>
-                    <p>Vous souhaitez rester au curant de l'actualité de notre association? Abonnez-vous à notre newletter!</p>
-                    <form method="post" class="form">
-      
-                        <input id="email" type="email" name="email" placeholder="Adresse e-mail" />
-                        <label for="email" class="mandatory"></label>
-                        <div class="invalid-feedback"></div>
-      
-                        <div class="form-fancy-toggle">
-                            <input id="news_accept" type="checkbox" name="accept" class="fancy-toggle" />
-                            <label for="news_accept" class="checkbox-label">
-                                <p> Oui, je souhaite recevoir des notifications e-mail lors de la publication
-                                    d'actualités
-                                </p>
-                                <span></span>
-                            </label>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-header-inner">
+                            <svg class="fas fa-qrcode" aria-hidden="true" focusable="false" data-icon="qrcode"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path style="width: 15px" fill="currentColor"
+                                    d="M0 80C0 53.5 21.5 32 48 32h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80zM64 96v64h64V96H64zM0 336c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V336zm64 16v64h64V352H64zM304 32h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H304c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48zm80 64H320v64h64V96zM256 304c0-8.8 7.2-16 16-16h64c8.8 0 16 7.2 16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s7.2-16 16-16s16 7.2 16 16v96c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s-7.2-16-16-16s-16 7.2-16 16v64c0 8.8-7.2 16-16 16H272c-8.8 0-16-7.2-16-16V304zM368 480a16 16 0 1 1 0-32 16 16 0 1 1 0 32zm64 0a16 16 0 1 1 0-32 16 16 0 1 1 0 32z">
+                                </path>
+                            </svg>
+                            <button type="button" id="close" data-bs-dismiss="modal" aria-label="Close">
+                                <svg class="fa fa-xmark" aria-hidden="true" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                    <path class="" fill="currentColor"
+                                        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                                    </path>
+                                </svg>
+                            </button>
                         </div>
-                        <button type="submit" class="disabled btn">Connecter</button>
-                    </form>
+                    </div>
+                    <div class="modal-pincipal">
+                        <p>
+                            Permettez à d'autres personnes de scanner ce code QR afin qu'elles
+                            puissent rapidement faire un don à cette page.
+                        </p>
+                        <form method="post" class="form">
+                            <img src="./myFile/assetes/imgGlobale/Untitled.svg" id="qrcode" alt="qr code" />
+                            <label for="email" class="mandatory"></label>
+                            <div class="invalid-feedback"></div>
+
+                            <div class="form-fancy-toggle">
+                                <input id="news_accept" type="checkbox" name="accept" class="fancy-toggle" />
+                                <label for="news_accept" class="checkbox-label">
+                                    <p>
+                                        Oui, je souhaite recevoir des notifications e-mail lors de
+                                        la publication d'actualités
+                                    </p>
+                                    <span></span>
+                                </label>
+                            </div>
+                            <div class="form-fancy">
+                                <button type="submit">Télécharger ce code QR</button>
+                                <button type="submit">Créer un poste QR</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-     </div>
+
+
+        <div id="modal-exemple" class="modal-backdrop">
+            <div id="modal-show">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-header-inner">
+                            <svg class="fa-envelope fas svg-inline--fa " aria-hidden="true" data-icon="envelope"
+                                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path class="" fill="currentColor"
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
+                                </path>
+                            </svg>
+
+                            <button type="button" id="close" class="Fermer">x</button>
+                        </div>
+                    </div>
+                    <div class="modal-pincipal">
+                        <h5>Inscrivez-vous à notre newsletter</h5>
+                        <p>Vous souhaitez rester au curant de l'actualité de notre association? Abonnez-vous à notre
+                            newletter!</p>
+                        <form method="post" class="form">
+
+                            <input id="email" type="email" name="email" placeholder="Adresse e-mail" />
+                            <label for="email" class="mandatory"></label>
+                            <div class="invalid-feedback"></div>
+
+                            <div class="form-fancy-toggle">
+                                <input id="news_accept" type="checkbox" name="accept" class="fancy-toggle" />
+                                <label for="news_accept" class="checkbox-label">
+                                    <p> Oui, je souhaite recevoir des notifications e-mail lors de la publication
+                                        d'actualités
+                                    </p>
+                                    <span></span>
+                                </label>
+                            </div>
+                            <button type="submit" class="disabled btn">Connecter</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
     <footer>
         <div class="btn-social-holder">
-            <a class="btn-social-follow btn-social-facebook" target="_blank"
-                href="https://www.facebook.com/apfhandicap" rel="noopener"><svg class="svg-inline--fa fa-facebook"
-                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <a class="btn-social-follow btn-social-facebook" target="_blank" href="https://www.facebook.com/apfhandicap"
+                rel="noopener"><svg class="svg-inline--fa fa-facebook" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512">
                     <path class="" fill="currentColor"
                         d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z">
                     </path>
@@ -512,145 +488,159 @@
         </ul>
         <span class="text--sm">Téléchargez l'application Paris 2024</span>
         <br />
-        <div
-        style="display: flex; flex-direction: row; padding-top: 25px; gap: 20px">
-        <img
-          alt="Télécharger l’application Android"
-          class="lazyloaded"
-          src="https://img.olympics.com/images/image/private/t_original_760/f_auto/primary/pqdqxbupq6l1jljqjcxy"/>
+        <div style="display: flex; flex-direction: row; padding-top: 25px; gap: 20px">
+            <img alt="Télécharger l’application Android" class="lazyloaded"
+                src="https://img.olympics.com/images/image/private/t_original_760/f_auto/primary/pqdqxbupq6l1jljqjcxy" />
 
-        <img
-          alt="Télécharger l’application IOS"
-          class="lazyloaded"
-          src="https://img.olympics.com/images/image/private/t_original_760/f_auto/primary/a5tl7s4kndaogucwcmx4" />
-      </div>
+            <img alt="Télécharger l’application IOS" class="lazyloaded"
+                src="https://img.olympics.com/images/image/private/t_original_760/f_auto/primary/a5tl7s4kndaogucwcmx4" />
+        </div>
     </footer>
 
-         
+
     <div id="cookieConsent" class="ot-sdk-container cookie-consent hidden">
         <div class="ot-sdk-row">
-        <div id="onetrust-group-container" class="ot-sdk-eight ot-sdk-columns">
-         <h4>Gérer les préférences de cookies</h4>
-          <div id="onetrust-policy-text"> En cliquant sur « Accepter tous les cookies », vous acceptez le stockage de cookies sur votre appareil pour améliorer la navigation sur le site, analyser son utilisation et contribuer à nos efforts de marketing. 
-          </div> platefor
-        </div>
-          <div id="onetrust-button-group-parent" class="ot-sdk-three ot-sdk-columns has-reject-all-button">
-            <div id="onetrust-button-group">
-              <button id="onetrust-pc-btn-handler" onclick="ParamCookies()">Paramètres des cookies</button>
-              
-            
-              <button id="onetrust-reject-all-handler"
-                  onclick="refuserLesCookies()">
-                  Refuser les cookies
-                </button>
-                <button id="onetrust-accept-btn-handler"
-                  onclick="accepterLesCookies()">
-                  Autoriser tous les cookies
-                </button>
-    
-              
-              <div id="allCookieCategory"  style="display: none;">
-                <div class="allCookieCategory">
-                  <button type="button" id="Close" class="Fermer close" >x</button>
-                <h2>Centre de préférences de la confidentialité</h2>
-                <span class="textCookies">
-                  Lorsque vous consultez un site Web, des données peuvent être stockées dans votre navigateur ou récupérées à partir de celui-ci, généralement sous la forme de cookies. Ces informations peuvent porter sur vous, sur vos préférences ou sur votre appareil et sont principalement utilisées pour s'assurer que le site Web fonctionne correctement. Les informations ne permettent généralement pas de vous identifier directement, mais peuvent vous permettre de bénéficier d'une expérience Web personnalisée. Parce que nous respectons votre droit à la vie privée, nous vous donnons la possibilité de ne pas autoriser certains types de cookies. Cliquez sur les différentes catégories pour obtenir plus de détails sur chacune d'entre elles, et modifier les paramètres par défaut. Toutefois, si vous bloquez certains types de cookies, votre expérience de navigation et les services que nous sommes en mesure de vous offrir peuvent être impactés. </span>
-                  <button style="position: relative; left:-39%"  id="onetrust-accept-btn-handler"
-                  onclick="accepterLesCookies()">
-                  Tout autoriser
-                </button> 
-            
-                  <div class="cookie-category">
-                    <div class="someTile">
-                    <h4>Cookies Stricktement nécéssaires </h4>
-                    <h5>Toujours Actif</h5>
-                     </div>      
-                    <div id="lebel">
-                      <button id="toggleButton" onclick="toggleShow('contenu35', this)" >
-                        <span class="Chevron Chevron__down"></span> +
-                    </button> 
-                    </div>
-                    <div id="contenu35" class="Contenu" style="display: none;">
-                      <p>Ces cookies sont nécessaires au bon fonctionnement du site web et ne peuvent pas être désactivés dans nos systèmes.</p>
-                    </div>
-                 </div>
-               <div class="cookie-category">
-                  <h4>Cookies Essentiels</h4>      
-                  <div id="lebel">
-                  <button id="toggleButton" onclick="toggleShow('contenu36', this)" >
-                      <span class="Chevron Chevron__down"></span> +
-                  </button>
-                    <label class="switch">
-                      <input type="checkbox"  checked/>
-                      <span class="slider" aria-label="cookies de performance"></span>
-                    </label>
-                  </div>
-                  <div id="contenu36" class="Contenu" style="display: none;">
-                    <p>Ces cookies sont nécessaires au bon fonctionnement du site web et ne peuvent pas être désactivés dans nos systèmes.</p>
-                  </div>
-              </div>
-              <div class="cookie-category">
-                  <h4>Cookies de Performance</h4>
-                  <div id="lebel">
-                  <button id="toggleButton" onclick="toggleShow('contenu37', this)">
-                    <span class="Chevron Chevron__down"></span> +
-                </button> 
-                <label class="switch">
-                  <input type="checkbox" checked/>
-                  <span class="slider" aria-label="cookies de performance"></span>
-                </label>
-                  </div>
-                <div id="contenu37" class="Contenu" style="display: none;">
-                  <p>Ces cookies sont nécessaires aloremu bon fonctionnement du site web et ne peuvent pas être désactivés dans nos systèmes.
-                  Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.
-                  </p>
-                </div>
-               
-              </div>  
-              <div class="cookie-category">
-                  <h4>Cookies de Fonctionnalité</h4>
-            
-               
-                <div id="lebel">
-                  <button id="toggleButton" onclick="toggleShow('contenu38', this)">
-                    <span class="Chevron Chevron__down"></span> +
-                  </button> 
-                  <label class="switch">
-                    <input type="checkbox" checked/>
-                    <span class="slider" aria-label="cookies de performance"></span>
-                  </label>
-                 </div>
-    
-                <div id="contenu38" class="Contenu" style="display: none;">
-                <p>Ces cookies sont nécessaires au bon fonctionnement du site web et ne peuvent pas être désactivés dans nos systèmes.</p>
-                </div>
-    
-              </div>    
-              <div class="cookie-category">
-                  <h4>Cookies de Ciblage</h4>
-                  <div id="lebel">
-                    <button id="toggleButton" onclick="toggleShow('contenu39', this)">
-                      <span class="Chevron Chevron__down"></span> +
-                  </button> 
-                  <label class="switch">
-                    <input type="checkbox" checked />
-                    <span class="slider" aria-label="cookies de performance"></span>
-                  </label>
-                   </div>
-                <div id="contenu39" class="Contenu" style="display: none;">
-                  <p>Ces cookies sont nécessaires au bon fonctionnement du site web et ne peuvent pas être désactivés dans nos systèmes.</p>
-                </div>
-              </div>
-    
-              <button style="position: relative; right:-35%; bottom:30%; margin-top: 15px; width: 180px;" id="onetrust-accept-btn-handler" onclick="accepterLesCookies()">Confirmer la selection</button>
-               </div>
-            </div> 
-    </div>
-              </div>
+            <div id="onetrust-group-container" class="ot-sdk-eight ot-sdk-columns">
+                <h4>Gérer les préférences de cookies</h4>
+                <div id="onetrust-policy-text"> En cliquant sur « Accepter tous les cookies », vous acceptez le stockage
+                    de cookies sur votre appareil pour améliorer la navigation sur le site, analyser son utilisation et
+                    contribuer à nos efforts de marketing.
+                </div> platefor
             </div>
+            <div id="onetrust-button-group-parent" class="ot-sdk-three ot-sdk-columns has-reject-all-button">
+                <div id="onetrust-button-group">
+                    <button id="onetrust-pc-btn-handler" onclick="ParamCookies()">Paramètres des cookies</button>
+
+
+                    <button id="onetrust-reject-all-handler" onclick="refuserLesCookies()">
+                        Refuser les cookies
+                    </button>
+                    <button id="onetrust-accept-btn-handler" onclick="accepterLesCookies()">
+                        Autoriser tous les cookies
+                    </button>
+
+
+                    <div id="allCookieCategory" style="display: none;">
+                        <div class="allCookieCategory">
+                            <button type="button" id="Close" class="Fermer close">x</button>
+                            <h2>Centre de préférences de la confidentialité</h2>
+                            <span class="textCookies">
+                                Lorsque vous consultez un site Web, des données peuvent être stockées dans votre
+                                navigateur ou récupérées à partir de celui-ci, généralement sous la forme de cookies.
+                                Ces informations peuvent porter sur vous, sur vos préférences ou sur votre appareil et
+                                sont principalement utilisées pour s'assurer que le site Web fonctionne correctement.
+                                Les informations ne permettent généralement pas de vous identifier directement, mais
+                                peuvent vous permettre de bénéficier d'une expérience Web personnalisée. Parce que nous
+                                respectons votre droit à la vie privée, nous vous donnons la possibilité de ne pas
+                                autoriser certains types de cookies. Cliquez sur les différentes catégories pour obtenir
+                                plus de détails sur chacune d'entre elles, et modifier les paramètres par défaut.
+                                Toutefois, si vous bloquez certains types de cookies, votre expérience de navigation et
+                                les services que nous sommes en mesure de vous offrir peuvent être impactés. </span>
+                            <button style="position: relative; left:-39%" id="onetrust-accept-btn-handler"
+                                onclick="accepterLesCookies()">
+                                Tout autoriser
+                            </button>
+
+                            <div class="cookie-category">
+                                <div class="someTile">
+                                    <h4>Cookies Stricktement nécéssaires </h4>
+                                    <h5>Toujours Actif</h5>
+                                </div>
+                                <div id="lebel">
+                                    <button id="toggleButton" onclick="toggleShow('contenu35', this)">
+                                        <span class="Chevron Chevron__down"></span> +
+                                    </button>
+                                </div>
+                                <div id="contenu35" class="Contenu" style="display: none;">
+                                    <p>Ces cookies sont nécessaires au bon fonctionnement du site web et ne peuvent pas
+                                        être désactivés dans nos systèmes.</p>
+                                </div>
+                            </div>
+                            <div class="cookie-category">
+                                <h4>Cookies Essentiels</h4>
+                                <div id="lebel">
+                                    <button id="toggleButton" onclick="toggleShow('contenu36', this)">
+                                        <span class="Chevron Chevron__down"></span> +
+                                    </button>
+                                    <label class="switch">
+                                        <input type="checkbox" checked />
+                                        <span class="slider" aria-label="cookies de performance"></span>
+                                    </label>
+                                </div>
+                                <div id="contenu36" class="Contenu" style="display: none;">
+                                    <p>Ces cookies sont nécessaires au bon fonctionnement du site web et ne peuvent pas
+                                        être désactivés dans nos systèmes.</p>
+                                </div>
+                            </div>
+                            <div class="cookie-category">
+                                <h4>Cookies de Performance</h4>
+                                <div id="lebel">
+                                    <button id="toggleButton" onclick="toggleShow('contenu37', this)">
+                                        <span class="Chevron Chevron__down"></span> +
+                                    </button>
+                                    <label class="switch">
+                                        <input type="checkbox" checked />
+                                        <span class="slider" aria-label="cookies de performance"></span>
+                                    </label>
+                                </div>
+                                <div id="contenu37" class="Contenu" style="display: none;">
+                                    <p>Ces cookies sont nécessaires aloremu bon fonctionnement du site web et ne peuvent
+                                        pas être désactivés dans nos systèmes.
+                                        Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit
+                                        amet.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="cookie-category">
+                                <h4>Cookies de Fonctionnalité</h4>
+
+
+                                <div id="lebel">
+                                    <button id="toggleButton" onclick="toggleShow('contenu38', this)">
+                                        <span class="Chevron Chevron__down"></span> +
+                                    </button>
+                                    <label class="switch">
+                                        <input type="checkbox" checked />
+                                        <span class="slider" aria-label="cookies de performance"></span>
+                                    </label>
+                                </div>
+
+                                <div id="contenu38" class="Contenu" style="display: none;">
+                                    <p>Ces cookies sont nécessaires au bon fonctionnement du site web et ne peuvent pas
+                                        être désactivés dans nos systèmes.</p>
+                                </div>
+
+                            </div>
+                            <div class="cookie-category">
+                                <h4>Cookies de Ciblage</h4>
+                                <div id="lebel">
+                                    <button id="toggleButton" onclick="toggleShow('contenu39', this)">
+                                        <span class="Chevron Chevron__down"></span> +
+                                    </button>
+                                    <label class="switch">
+                                        <input type="checkbox" checked />
+                                        <span class="slider" aria-label="cookies de performance"></span>
+                                    </label>
+                                </div>
+                                <div id="contenu39" class="Contenu" style="display: none;">
+                                    <p>Ces cookies sont nécessaires au bon fonctionnement du site web et ne peuvent pas
+                                        être désactivés dans nos systèmes.</p>
+                                </div>
+                            </div>
+
+                            <button style="position: relative; right:-35%; bottom:30%; margin-top: 15px; width: 180px;"
+                                id="onetrust-accept-btn-handler" onclick="accepterLesCookies()">Confirmer la
+                                selection</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
+
 </html>
 
 

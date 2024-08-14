@@ -236,9 +236,9 @@
 }
 .globleCard {
   width: 460px;
-  height: 420px;
   line-height: 1.2em !important;
   opacity: 1;
+  height: auto;
 }
 
 .detail {

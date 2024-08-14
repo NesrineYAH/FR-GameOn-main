@@ -489,16 +489,16 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 1;
+  z-index: 10;
   left: 0;
   top: 0;
   min-height: 100vh;
   width: 100%;
+  background-color: #66696a;
   overflow: auto;
-  background-color: transparent;
 }
 
-.content {
+.contentt {
   margin: 5% auto;
   width: 100%;
   max-width: 450px;
@@ -509,7 +509,6 @@ p {
   overflow: hidden;
   position: relative;
   color: #fff;
-  padding-top: 10px;
 }
 
 /*ajout le modal_text */
@@ -525,9 +524,9 @@ p {
   font-size: 40px;
 }
 
-.modal-bodyI {
-  padding: 2% 10%;
-  margin: 15px auto;
+.modal-body {
+  padding: 4% 10%;
+  margin: 12px auto;
 }
 .pp {
   font-size: 12px;
@@ -564,10 +563,8 @@ p {
 /* form */
 label {
   width: 100%;
-  margin-bottom: 10px;
   font-size: 17px;
   font-family: var(--font-default);
-  font-size: 17px;
   font-weight: normal;
   margin-bottom: 8px;
 }
@@ -581,18 +578,21 @@ input {
 
 .text-control {
   margin: 0;
-  padding: 8px;
   width: 100%;
   border-radius: 8px;
   font-size: 17px;
-  height: 48px;
+  height: 28px;
 }
 
 .text-label {
   font-size: 12px;
+  color: #fff;
+}
+.form {
+  width: 95%;
 }
 .formData {
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 .formData[data-error]::after {
   content: attr(data-error);
@@ -616,7 +616,15 @@ input {
 .formData[data-error-visible="false"] .text-control {
   border: 3px solid #279e7a;
 }
-
+.location {
+  gap: 40px;
+  width: 100%;
+  line-height: 182%;
+  display: block;
+}
+.checkbox-label {
+  margin-bottom: 20px;
+}
 .checkbox-label,
 .checkbox2-label {
   position: relative;
@@ -627,8 +635,8 @@ input {
 .checkbox-label .checkbox-icon,
 .checkbox2-label .checkbox-icon {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   border: 2px solid #279e7a;
   border-radius: 50%;
   text-indent: 29px;
@@ -711,4 +719,57 @@ input {
   to {
     opacity: 1;
   }
+}
+#sectionI3 {
+  position: relative;
+  min-height: 100vh;
+}
+
+.imagePage {
+  width: 85%;
+  height: 90vh;
+  margin-bottom: 8%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 28%);
+}
+.share-Groupe {
+  margin-bottom: 120px;
+  position: relative;
+  left: 7.5%;
+  margin-top: 70px;
+}
+
+/*
+.> a {
+  color: #000;
+  font-size: 0.875em;
+  line-height: 1.5;
+  position: relative;
+  margin-bottom: 80px;
+}*/
+.prtg {
+  width: 20px;
+  height: 20px;
+}
+.fa-share-nodes {
+  width: 25px;
+  height: 25px;
+}
+
+.addtoany_share::after {
+  content: "Partager";
+  margin-left: 10px;
+}
+
+.rel {
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 18px;
+  position: relative;
+}
+
+.rel:hover {
+  transform: scale(1.2);
 }

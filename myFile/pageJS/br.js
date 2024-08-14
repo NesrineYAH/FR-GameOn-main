@@ -93,7 +93,7 @@ let currentLanguage = "fr"; // Langue par défaut
 
 async function loadLanguage(lang) {
   try {
-    const response = await fetch(`../lang/${lang}.json`);
+    const response = await fetch(`./myfile/lang/${lang}.json`);
     if (!response.ok) {
       throw new Error(
         `Erreur de chargement du fichier de langue: ${response.statusText}`
