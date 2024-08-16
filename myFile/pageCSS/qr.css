@@ -767,3 +767,11 @@ input {
 .rel:hover {
   transform: scale(1.2);
 }
+#TitrePage {
+  color: #00536a;
+  font-size: 1.2rem;
+  width: 85%;
+  text-align: center;
+  overflow: hidden;
+  padding-left: 6rem;
+}

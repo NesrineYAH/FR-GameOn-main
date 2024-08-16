@@ -595,11 +595,12 @@ footer {
 }
 
 .globleCardI {
-  width: 360px;
-  height: 500px;
+  width: 370px;
+  height: 580px;
   border-radius: 10px;
   background-color: #fff;
   cursor: pointer;
+  margin-bottom: 32px;
 }
 .globleCardI :hover {
   transform: scale(1.02);
@@ -609,6 +610,9 @@ footer {
   width: 99.8%;
   height: 280px;
   overflow: clip;
+}
+.globleCardI p {
+  line-height: 158%;
 }
 .Detail {
   color: #000;
