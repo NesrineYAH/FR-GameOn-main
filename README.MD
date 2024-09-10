@@ -23,6 +23,18 @@ Maquette de GameOn
 - Les images présentes dans la maquette.<br />
 - Les issues du repo GitHub qui décrivent ce qu'il reste à faire.<br />
 <br />
-<h2 style='font-weight:blod;'> Note du projet </h2> 
-- Le développement à été réalisé sur l'éditeur Brackets sans plugins.<br />
-- La validation des champs du formulaire à été réalisé avec Regex.<br />
+<h2 style='text-decoration:underline; font-weight:blod;'>Éléments fournis pour le projet </h2> 
+
+<ul dir="auto">
+<li><a href="https://www.figma.com/file/prxFGnSUoEhk6PTcMaJQim/UI-Design-GameOn-EN?node-id=0%3A1" rel="nofollow">La maquette</a> qui est déjà intégrée.</li>
+<li><a href="https://github.com/OpenClassrooms-Student-Center/GameOn-website-FR/">Le repo</a> avec le code qui à déjà été complété.</li> 
+<li>Les images présentes dans la maquette.</li>
+<li><a href="https://github.com/OpenClassrooms-Student-Center/GameOn-website-FR/issues">Les issues</a> du repo GitHub qui décrivent ce qu'il reste à faire.</li>
+</ul>
+
+
+<h2 style='text-decoration:underline; font-weight:blod;'> Note du projet </h2> 
+<ul dir="auto">
+<li>Le développement à été réalisé sur l'éditeur <a href="http://brackets.io/" rel="nofollow">Brackets</a> sans plugins.</li>
+<li>La validation des champs du formulaire à été réalisé avec <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Expressions_r%C3%A9guli%C3%A8res" rel="nofollow">Regex</a>.</li>
+</ul>
