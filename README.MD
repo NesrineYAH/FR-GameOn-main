@@ -3,7 +3,7 @@ Quatrième projet du parcours "Développeur Front-End" d'OpenClassrooms. L'objec
 <br />
 
 <img src='./MainFile/IMG README.png' alt ='image pricipale GAMEON' />
-Maquette de GameOn
+<h3>Maquette de GameOn</h3>
 <br />
 <br />
 <br />
