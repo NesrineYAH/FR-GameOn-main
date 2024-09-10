@@ -1,7 +1,11 @@
 Quatrième projet du parcours "Développeur Front-End" d'OpenClassrooms. L'objectif de ce projet est de dynamiser une page web avec des animations CSS.
-<img src='./MainFile/bg_img.jpg' alt ='image pricipale GAMEON'>
-
+<img src='./MainFile/IMG README.png' alt ='image pricipale GAMEON'>
 Maquette de GameOn
+<br />
+<br />
+<br />
+
+
 
 Cahier des charges
 Le site doit être fait en JavaScript sans jQuery.
