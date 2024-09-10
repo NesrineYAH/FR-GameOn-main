@@ -24,8 +24,10 @@ function launchModal() {
 
 /////////////validation pour le prenom
 function validateFirst(form) {
+  const regexFirstName = /^[a-zA-ZÀ-ÿ]{2,35}([-' ,][a-zA-ZÀ-ÿ]+)*$/i;
   const validateFirst = document.querySelector(".first");
   const first = form["first"].value.trim();
+
   //Si le prénom est vide ou contient moins de 2 lettres
   if (first === "" || first.length < 2) {
     validateFirst.setAttribute("data-error-visible", "true");
@@ -36,6 +38,14 @@ function validateFirst(form) {
 
     return false;
     //Si le prénom est correctement rempli
+  } else if (!regexFirstName.test(first)) {
+    validateFirst.setAttribute("data-error-visible", "true");
+    validateFirst.setAttribute(
+      "data-error",
+      "Erreur de votre prénom, veuillez le corriger "
+    );
+
+    return false;
   } else {
     validateFirst.setAttribute("data-error-visible", "false");
     validateFirst.removeAttribute(
@@ -48,6 +58,7 @@ function validateFirst(form) {
 
 ///////////////validation pour le nom
 function validateLast(form) {
+  const regexLastName = /^[a-zA-ZÀ-ÿ]{2,35}([-' ,][a-zA-ZÀ-ÿ]+)*$/i;
   const validateLast = document.querySelector(".last");
   const last = form["last"].value.trim();
   //Si le nom est vide ou contient moins de 2 lettres
@@ -60,6 +71,14 @@ function validateLast(form) {
 
     return false;
     //Si le prénom est correctement rempli
+  } else if (!regexLastName.test(last)) {
+    validateLast.setAttribute("data-error-visible", "true");
+    validateLast.setAttribute(
+      "data-error",
+      "Erreur de votre nom, veuillez le corriger "
+    );
+
+    return false;
   } else {
     validateLast.setAttribute("data-error-visible", "false");
     validateLast.removeAttribute(
@@ -100,6 +119,8 @@ function validateEmail(form) {
 }
 ///////////////validation pour la date de naissance
 function validateBirthdate(form) {
+  const regexBirthdateISO =
+    /^(19|20)\d{2}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$/;
   const validateBirthdate = document.querySelector(".birthdate");
   const birthdate = form["birthdate"].value;
   const birthdateForAge = new Date(birthdate);
@@ -115,13 +136,19 @@ function validateBirthdate(form) {
     );
 
     return false;
-  }
-  //l'age min 18ans
-  else if (age < 18) {
+  } else if (age < 18) {
     validateBirthdate.setAttribute("data-error-visible", "true");
     validateBirthdate.setAttribute(
       "data-error",
       "Vous devez avoir au moins 18 ans"
+    );
+
+    return false;
+  } else if (!regexBirthdateISO.test(birthdate)) {
+    validateBirthdate.setAttribute("data-error-visible", "true");
+    validateBirthdate.setAttribute(
+      "data-error",
+      "Veuillez corriger votre date de naissance"
     );
 
     return false;
@@ -144,7 +171,6 @@ function validateQuantity(form) {
       "data-error",
       "Veuillez saisir une valeur numérique"
     );
-
     return false;
 
     //si la quantity est moin de 0
@@ -239,7 +265,7 @@ function validate() {
   const isRadioButtonsValid = validateRadioButtons(form);
   const isConditionsValid = validateConditions(form);
 
-  //alert("formulaire ok");
+  // alert("formulaire ok");
 
   return (
     isFirstNameValid &&
@@ -257,11 +283,9 @@ function modal() {
 
   const modal = `
     <div class="modal-body">
-    <div class="modal_text">
-      <p>Merci pour </p>
-      <p>votre inscription</p>
-      </div>
-      <input id="closeModal2" class="btn-submit" type="submit"   value="Fermer" />
+    <P class="modal_text">Merci pour votre inscription</p>
+
+      <input id="closeModal2" class="btn-submit" type="submit"  value="Fermer" />
     </div>`;
   document.querySelector(".modal-body").innerHTML = modal;
   document

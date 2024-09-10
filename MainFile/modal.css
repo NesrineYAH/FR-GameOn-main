@@ -145,11 +145,12 @@ main {
 }
 /*ajout le modal_text */
 .modal_text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 600px;
+  overflow: hidden;
+  width: 90%;
+  height: 400px;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 168%;
 }
 .modal_text p {
   font-size: 40px;
