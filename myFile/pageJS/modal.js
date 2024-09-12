@@ -256,7 +256,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const isRadioButtonsValid = validateRadioButtons(form);
     const isConditionsValid = validateConditions(form);
 
-    //alert("formulaire ok");
+    alert("formulaire ok"); //alerter si le formulaire  est ok
     return (
       isFirstNameValid &&
       isLastNameValid &&
@@ -290,7 +290,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       modal();
     }
   }
-  //ecoute  le click de submit
+  //ecoute  le click de submit lorsque on clique sur soumettre le formulaire
   document
     .getElementById("btn-submit")
     .addEventListener("click", handleFormSubmit);
